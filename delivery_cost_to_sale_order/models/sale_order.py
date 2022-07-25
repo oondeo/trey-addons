@@ -5,8 +5,8 @@ from odoo import fields, models
 
 
 class SaleOrder(models.Model):
-    _inherit = 'sale.order'
+    _inherit = "sale.order"
 
     delivery_cost_to_sale_order = fields.Boolean(
-        string='Delivery Cost from Picking',
+        string="Delivery Cost from Picking",
     )

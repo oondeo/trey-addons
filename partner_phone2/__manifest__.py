@@ -18,16 +18,14 @@
 #
 ###############################################################################
 {
-    'name': 'Second phone in partner',
-    'summary': 'Add second phone in partner',
-    'category': 'Extra Tools',
-    'version': '12.0.0.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': ['base_setup'],
-    'data': [
-        'views/res_partner.xml'
-    ],
-    'installable': True,
+    "name": "Second phone in partner",
+    "summary": "Add second phone in partner",
+    "category": "Extra Tools",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": ["base_setup"],
+    "data": ["views/res_partner.xml"],
+    "installable": True,
 }

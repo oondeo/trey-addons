@@ -5,24 +5,24 @@ from odoo import api, models
 
 
 class ProductPricelist(models.Model):
-    _inherit = 'product.pricelist'
+    _inherit = "product.pricelist"
 
-    @api.multi
     def _get_rules_sql(self, products, date):
         _select, _from, _where, _orderby, params = super()._get_rules_sql(
-            products, date)
+            products, date
+        )
         brand_ids = [
-            p.product_brand_id.id for p in products if p.product_brand_id]
+            p.product_brand_id.id for p in products if p.product_brand_id
+        ]
         if not brand_ids:
             return _select, _from, _where, _orderby, params
         _where += (
-            'AND (item.product_brand_id IS NULL '
-            'OR item.product_brand_id = any(%s)) '
+            "AND (item.product_brand_id IS NULL "
+            "OR item.product_brand_id = any(%s)) "
         )
         params.append(brand_ids)
         return _select, _from, _where, _orderby, params
 
-    @api.multi
     def _is_valid_rule(self, rule, product, qty):
         is_valid = super()._is_valid_rule(rule, product, qty)
         if not is_valid:

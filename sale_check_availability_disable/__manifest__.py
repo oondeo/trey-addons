@@ -18,17 +18,17 @@
 #
 ##############################################################################
 {
-    'name': 'Sale check availabitily disable',
-    'summary': 'Disable o enable stock availability warning by user',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sale',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'sale_stock',
+    "name": "Sale check availabitily disable",
+    "summary": "Disable o enable stock availability warning by user",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "sale_stock",
     ],
-    'data': [
-        'security/security.xml',
+    "data": [
+        "security/security.xml",
     ],
 }

@@ -39,7 +39,6 @@
         <field name="name">Add material</field>
         <field name="res_model">fieldservice.add_material</field>
         <field name="type">ir.actions.act_window</field>
-        <field name="view_type">form</field>
         <field name="view_mode">form</field>
         <field name="view_id" ref="fieldservice_add_material"/>
         <field name="target">new</field>

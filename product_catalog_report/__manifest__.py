@@ -18,20 +18,20 @@
 #
 ###############################################################################
 {
-    'name': 'Product Catalog Report',
-    'summary': 'Report selected products and selected pricelist',
-    'category': 'Product',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product',
+    "name": "Product Catalog Report",
+    "summary": "Report selected products and selected pricelist",
+    "category": "Product",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product",
     ],
-    'data': [
-        'report/product_catalog_templates.xml',
-        'report/web.xml',
-        'wizard/product_catalog_report_options.xml',
+    "data": [
+        "report/product_catalog_templates.xml",
+        "report/web.xml",
+        "wizard/product_catalog_report_options.xml",
     ],
-    'installable': True,
+    "installable": True,
 }

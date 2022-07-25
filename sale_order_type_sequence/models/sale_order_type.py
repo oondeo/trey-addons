@@ -5,10 +5,10 @@ from odoo import fields, models
 
 
 class SaleOrderType(models.Model):
-    _inherit = 'sale.order.type'
-    _order = 'sequence'
+    _inherit = "sale.order.type"
+    _order = "sequence"
 
     sequence = fields.Integer(
-        string='Sequence',
+        string="Sequence",
         default=10,
     )

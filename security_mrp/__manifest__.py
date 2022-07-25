@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Security mrp',
-    'summary': 'Security mrp extend',
-    'category': 'mrp',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'crm_team_config',
-        'mrp',
+    "name": "Security mrp",
+    "summary": "Security mrp extend",
+    "category": "mrp",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "crm_team_config",
+        "mrp",
     ],
-    'data': [
-        'security/security.xml',
-        'security/ir.model.access.csv',
+    "data": [
+        "security/security.xml",
+        "security/ir.model.access.csv",
     ],
 }

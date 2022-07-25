@@ -5,8 +5,8 @@ from odoo import fields, models
 
 
 class StockMove(models.Model):
-    _inherit = 'stock.move'
+    _inherit = "stock.move"
 
     ede_document_id = fields.Char(
-        string='Ede document',
+        string="Ede document",
     )

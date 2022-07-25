@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class ProjectTask(models.Model):
-    _inherit = 'project.task'
+    _inherit = "project.task"
 
     analytic_unit_balance = fields.Float(
-        related='project_id.analytic_account_id.unit_balance',
-        string='Analytic unit balance',
+        related="project_id.analytic_account_id.unit_balance",
+        string="Analytic unit balance",
     )

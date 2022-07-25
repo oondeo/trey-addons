@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Stock picking hide number of packages',
-    'summary': 'Hide number of packages from stock picking form',
-    'category': 'Stock',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'delivery_package_number',
-        'stock_picking_delivery_info_computation',
+    "name": "Stock picking hide number of packages",
+    "summary": "Hide number of packages from stock picking form",
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "delivery_package_number",
+        "stock_picking_delivery_info_computation",
     ],
-    'data': [
-        'views/stock_picking_views.xml',
+    "data": [
+        "views/stock_picking_views.xml",
     ],
 }

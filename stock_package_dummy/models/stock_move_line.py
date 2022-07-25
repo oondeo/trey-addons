@@ -5,8 +5,8 @@ from odoo import fields, models
 
 
 class StockMoveLine(models.Model):
-    _inherit = 'stock.move.line'
+    _inherit = "stock.move.line"
 
     dummy_barcode = fields.Char(
-        string='Dummy barcode',
+        string="Dummy barcode",
     )

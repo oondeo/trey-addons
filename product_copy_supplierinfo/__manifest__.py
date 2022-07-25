@@ -18,14 +18,14 @@
 #
 ##############################################################################
 {
-    'name': 'Product copy supplierinfo',
-    'summary': 'When duplicate a product copy supplier info',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Product',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'product',
+    "name": "Product copy supplierinfo",
+    "summary": "When duplicate a product copy supplier info",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Product",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "product",
     ],
 }

@@ -18,20 +18,20 @@
 #
 ###############################################################################
 {
-    'name': 'Purchase return',
-    'summary': 'Create return purchase stock from Purchase Order',
-    'category': 'Purchase',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'purchase',
-        'purchase_stock',
+    "name": "Purchase return",
+    "summary": "Create return purchase stock from Purchase Order",
+    "category": "Purchase",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "purchase",
+        "purchase_stock",
     ],
-    'data': [
-        'data/email_template.xml',
-        'reports/purchase_return_report.xml',
+    "data": [
+        "data/email_template.xml",
+        "reports/purchase_return_report.xml",
     ],
 }

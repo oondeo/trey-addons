@@ -18,17 +18,17 @@
 #
 ##############################################################################
 {
-    'name': 'Account invoice supplier reference year',
-    'summary': (
-        'Allow validate supplier invoices with same reference in same year'),
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Accounting',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'account',
+    "name": "Account invoice supplier reference year",
+    "summary": (
+        "Allow validate supplier invoices with same reference in same year"
+    ),
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Accounting",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "account",
     ],
-    'data': [
-    ],
+    "data": [],
 }

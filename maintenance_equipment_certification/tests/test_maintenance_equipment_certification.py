@@ -6,25 +6,41 @@ from odoo.tests.common import TransactionCase
 
 
 class TestMaintenanceEquipmentCertification(TransactionCase):
-
     def setUp(self):
         super().setUp()
-        self.equipment = self.env['maintenance.equipment'].create({
-            'name': 'Test equipment',
-        })
-        self.user_demo = self.env.ref('base.user_demo')
+        self.equipment = self.env["maintenance.equipment"].create(
+            {
+                "name": "Test equipment",
+            }
+        )
+        self.user_demo = self.env.ref("base.user_demo")
         self.assertTrue(self.equipment)
 
     def test_user_permissions(self):
         with self.assertRaises(AccessError):
-            self.equipment.sudo(self.user_demo).write({
-                'name': 'Test equipment rename',
-            })
-        self.user_demo.write({
-            'groups_id': [(6, 0, [self.env.ref(
-                'maintenance.group_equipment_manager').id])],
-        })
-        self.equipment.sudo(self.user_demo).write({
-            'name': 'Test equipment rename',
-        })
-        self.assertEquals(self.equipment.name, 'Test equipment rename')
+            self.equipment.with_user(self.user_demo).write(
+                {
+                    "name": "Test equipment rename",
+                }
+            )
+        self.user_demo.write(
+            {
+                "groups_id": [
+                    (
+                        6,
+                        0,
+                        [
+                            self.env.ref(
+                                "maintenance.group_equipment_manager"
+                            ).id
+                        ],
+                    )
+                ],
+            }
+        )
+        self.equipment.with_user(self.user_demo).write(
+            {
+                "name": "Test equipment rename",
+            }
+        )
+        self.assertEquals(self.equipment.name, "Test equipment rename")

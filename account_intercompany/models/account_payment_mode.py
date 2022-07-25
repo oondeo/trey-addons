@@ -6,20 +6,21 @@ from odoo.exceptions import UserError
 
 
 class AccountPaymentMode(models.Model):
-    _inherit = 'account.payment.mode'
+    _inherit = "account.payment.mode"
 
     intercompany_map_ids = fields.Many2many(
         domain='[("company_id", "!=", company_id)]',
-        comodel_name='account.payment.mode',
-        relation='account_payment_mode_intercompany',
-        column1='mode_id',
-        column2='mapped_id')
+        comodel_name="account.payment.mode",
+        relation="account_payment_mode_intercompany",
+        column1="mode_id",
+        column2="mapped_id",
+    )
 
     def check_intercompany_map_ids(self):
         for record in self:
-            companies = record.intercompany_map_ids.mapped('company_id')
+            companies = record.intercompany_map_ids.mapped("company_id")
             if len(companies) != len(record.intercompany_map_ids):
-                raise UserError(_('Only a record by company'))
+                raise UserError(_("Only a record by company"))
 
     @api.model
     def create(self, vals):
@@ -27,7 +28,6 @@ class AccountPaymentMode(models.Model):
         res.check_intercompany_map_ids()
         return res
 
-    @api.multi
     def write(self, vals):
         res = super().write(vals)
         self.check_intercompany_map_ids()

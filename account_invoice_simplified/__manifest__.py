@@ -18,18 +18,18 @@
 #
 ##############################################################################
 {
-    'name': 'Account invoice simplified',
-    'summary': 'Account invoice simplified journal selection',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Invoicing Management',
-    'version': '12.0.2.0.0',
-    'depends': [
-        'account',
-        'sale',
+    "name": "Account invoice simplified",
+    "summary": "Account invoice simplified journal selection",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Invoicing Management",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "account",
+        "sale",
     ],
-    'data': [
-        'views/account_journal_views.xml',
+    "data": [
+        "views/account_journal_views.xml",
     ],
 }

@@ -5,8 +5,8 @@ from odoo import fields, models
 
 
 class StockLocationRoute(models.Model):
-    _inherit = 'stock.location.route'
+    _inherit = "stock.location.route"
 
     is_season = fields.Boolean(
-        string='Is season',
+        string="Is season",
     )

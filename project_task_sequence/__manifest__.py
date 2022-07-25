@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Project task sequence',
-    'summary': 'Allow to assign a sequence to be used as a task priority',
-    'category': 'Project',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'project',
+    "name": "Project task sequence",
+    "summary": "Allow to assign a sequence to be used as a task priority",
+    "category": "Project",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "project",
     ],
-    'data': [
-        'views/project_task_views.xml',
+    "data": [
+        "views/project_task_views.xml",
     ],
 }

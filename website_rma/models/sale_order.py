@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class SaleOrder(models.Model):
-    _inherit = 'sale.order'
+    _inherit = "sale.order"
 
     parent_sale_order = fields.Many2one(
-        comodel_name='sale.order',
-        string='Parent Sale Order',
+        comodel_name="sale.order",
+        string="Parent Sale Order",
     )

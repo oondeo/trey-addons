@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Search Scope',
-    'summary': 'Set search scope to current category or entire catalog',
-    'category': 'Website',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'website_sale',
+    "name": "Website Sale Search Scope",
+    "summary": "Set search scope to current category or entire catalog",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "website_sale",
     ],
-    'data': [
-        'views/website_template.xml',
-        'views/website_sale_template.xml',
-        'views/website_sale_search_scope_template.xml',
+    "data": [
+        "views/website_template.xml",
+        "views/website_sale_template.xml",
+        "views/website_sale_search_scope_template.xml",
     ],
 }

@@ -5,10 +5,10 @@ from odoo import fields, models
 
 
 class EventProduct(models.Model):
-    _inherit = 'event.product'
+    _inherit = "event.product"
 
     address_id = fields.Many2one(
-        string='Location',
-        comodel_name='res.partner',
+        string="Location",
+        comodel_name="res.partner",
         required=True,
     )

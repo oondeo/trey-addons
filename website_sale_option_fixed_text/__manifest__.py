@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Option Fixed Text',
-    'summary': 'Toggle fixed text under product description',
-    'description': '''Hide or show fixed text under product description
-                with a toggle in Customize menu''',
-    'category': 'Website',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': ['website_sale'],
-    'data': [
-        'views/website_sale.xml',
+    "name": "Website Sale Option Fixed Text",
+    "summary": "Toggle fixed text under product description",
+    "description": """Hide or show fixed text under product description
+                with a toggle in Customize menu""",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": ["website_sale"],
+    "data": [
+        "views/website_sale.xml",
     ],
-    'installable': True,
+    "installable": True,
 }

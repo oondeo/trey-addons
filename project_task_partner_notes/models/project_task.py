@@ -5,10 +5,10 @@ from odoo import fields, models
 
 
 class ResPartner(models.Model):
-    _inherit = 'project.task'
+    _inherit = "project.task"
 
     partner_comment = fields.Text(
-        string='Partner internal notes',
-        related='partner_id.commercial_partner_id.comment',
+        string="Partner internal notes",
+        related="partner_id.commercial_partner_id.comment",
         readonly=True,
     )

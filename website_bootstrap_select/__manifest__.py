@@ -18,13 +18,13 @@
 #
 ###############################################################################
 {
-    'name': 'Website Bootstrap Select',
-    'category': 'Website',
-    'summary': 'Add scripts and styles to use Bootstrap Select library',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': ['website'],
-    'data': ['views/website.xml'],
-    'installable': True,
+    "name": "Website Bootstrap Select",
+    "category": "Website",
+    "summary": "Add scripts and styles to use Bootstrap Select library",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": ["website"],
+    "data": ["views/website.xml"],
+    "installable": True,
 }

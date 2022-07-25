@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Sale Order Type Sequence',
-    'summary': 'Add sequence in sale order type',
-    'category': 'sale',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale_order_type',
+    "name": "Sale Order Type Sequence",
+    "summary": "Add sequence in sale order type",
+    "category": "sale",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "sale_order_type",
     ],
-    'data': [
-        'views/sale_order_type_views.xml',
+    "data": [
+        "views/sale_order_type_views.xml",
     ],
 }

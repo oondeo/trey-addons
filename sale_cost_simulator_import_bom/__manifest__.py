@@ -18,21 +18,21 @@
 #
 ##############################################################################
 {
-    'name': 'Sale Cost Simulator Import BoM',
-    'summary': 'Wizart to import BoM to a simulator cost',
-    'description': 'Wizard to import BoM to a simulator cost',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'website': 'https://www.trey.es',
-    'category': 'Sale',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'mrp',
-        'sale_cost_simulator',
+    "name": "Sale Cost Simulator Import BoM",
+    "summary": "Wizart to import BoM to a simulator cost",
+    "description": "Wizard to import BoM to a simulator cost",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "website": "https://www.trey.es",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "mrp",
+        "sale_cost_simulator",
     ],
-    'data': [
-        'wizards/sale_cost_import_bom_views.xml',
-        'views/sale_cost_line_views.xml',
-        'views/sale_cost_simulator_views.xml',
+    "data": [
+        "wizards/sale_cost_import_bom_views.xml",
+        "views/sale_cost_line_views.xml",
+        "views/sale_cost_simulator_views.xml",
     ],
 }

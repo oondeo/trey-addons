@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Purchase Propagated Comment',
-    'summary': 'Comment form purchase order to stock pickings and invoices',
-    'category': 'purchase',
-    'version': '12.0.1.0.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'account',
-        'purchase_stock',
+    "name": "Purchase Propagated Comment",
+    "summary": "Comment form purchase order to stock pickings and invoices",
+    "category": "purchase",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "account",
+        "purchase_stock",
     ],
-    'data': [
-        'views/account_invoice_views.xml',
-        'views/purchase_order_views.xml',
-        'views/res_partner_views.xml',
-        'views/stock_picking_views.xml',
+    "data": [
+        "views/account_invoice_views.xml",
+        "views/purchase_order_views.xml",
+        "views/res_partner_views.xml",
+        "views/stock_picking_views.xml",
     ],
 }

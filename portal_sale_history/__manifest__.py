@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Portal sale history',
-    'category': 'Website',
-    'summary': 'Add a status history table in portal in a sale order',
-    'version': '12.0.1.0.0',
-    'website': 'https://www.trey.es',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale',
-        'stock',
-        'website_sale',
+    "name": "Portal sale history",
+    "category": "Website",
+    "summary": "Add a status history table in portal in a sale order",
+    "version": "13.0.1.0.0",
+    "website": "https://www.trey.es",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": [
+        "sale",
+        "stock",
+        "website_sale",
     ],
-    'data': [
-        'views/sale_portal_template.xml',
+    "data": [
+        "views/sale_portal_template.xml",
     ],
 }

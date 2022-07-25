@@ -5,11 +5,8 @@ from odoo import fields, models
 
 
 class SaleCustomizationType(models.Model):
-    _name = 'sale.customization.type'
-    _description = 'Sale customization type'
-    _order = 'name'
+    _name = "sale.customization.type"
+    _description = "Sale customization type"
+    _order = "name"
 
-    name = fields.Char(
-        string='Type',
-        translate=True,
-        required=True)
+    name = fields.Char(string="Type", translate=True, required=True)

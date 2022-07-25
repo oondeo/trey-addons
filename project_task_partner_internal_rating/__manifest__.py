@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Project Task Partner Internal Rating',
-    'summary': 'Displays the rating of the partner in the task',
-    'category': 'Project',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'partner_internal_rating',
-        'project',
+    "name": "Project Task Partner Internal Rating",
+    "summary": "Displays the rating of the partner in the task",
+    "category": "Project",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "partner_internal_rating",
+        "project",
     ],
-    'data': [
-        'views/project_task_views.xml',
+    "data": [
+        "views/project_task_views.xml",
     ],
 }

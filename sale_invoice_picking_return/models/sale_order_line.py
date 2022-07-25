@@ -5,10 +5,11 @@ from odoo import api, models
 
 
 class SaleOrderLine(models.Model):
-    _inherit = 'sale.order.line'
+    _inherit = "sale.order.line"
 
     @api.depends(
-        'qty_invoiced', 'qty_delivered', 'product_uom_qty', 'order_id.state')
+        "qty_invoiced", "qty_delivered", "product_uom_qty", "order_id.state"
+    )
     def _get_to_invoice_qty(self):
         res = super()._get_to_invoice_qty()
         for line in self:

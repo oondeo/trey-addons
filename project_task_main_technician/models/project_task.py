@@ -5,9 +5,9 @@ from odoo import api, models
 
 
 class ProjectTask(models.Model):
-    _inherit = 'project.task'
+    _inherit = "project.task"
 
-    @api.onchange('project_id')
+    @api.onchange("project_id")
     def _onchange_project(self):
         res = super()._onchange_project()
         if self.project_id and self.project_id.main_technical_id:

@@ -5,12 +5,12 @@ from odoo import fields, models
 
 
 class DeliveryCarrier(models.Model):
-    _inherit = 'delivery.carrier'
+    _inherit = "delivery.carrier"
 
     not_available_from = fields.Boolean(
-        string='Not available if order amount is above',
+        string="Not available if order amount is above",
     )
     limit_amount = fields.Float(
-        string='Limit amount',
-        help='Limit amount so that no shipping method can be selected',
+        string="Limit amount",
+        help="Limit amount so that no shipping method can be selected",
     )

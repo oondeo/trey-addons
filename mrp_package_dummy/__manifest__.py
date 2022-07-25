@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'MRP package dummy',
-    'summary': 'Generate package from production orders.',
-    'category': 'Manufacture',
-    'version': '12.0.1.0.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'mrp',
-        'stock',
-        'stock_package_dummy',
+    "name": "MRP package dummy",
+    "summary": "Generate package from production orders.",
+    "category": "Manufacture",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "mrp",
+        "stock",
+        "stock_package_dummy",
     ],
-    'data': [
-        'views/mrp_production_views.xml',
+    "data": [
+        "views/mrp_production_views.xml",
     ],
 }

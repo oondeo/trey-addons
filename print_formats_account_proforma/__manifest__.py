@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Print Formats Account Proforma',
-    'summary': 'Proforma invoicing print formats',
-    'category': 'Accounting & Finance',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'account',
+    "name": "Print Formats Account Proforma",
+    "summary": "Proforma invoicing print formats",
+    "category": "Accounting & Finance",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "account",
     ],
-    'data': [
-        'views/report_account_invoice.xml',
+    "data": [
+        "views/report_account_invoice.xml",
     ],
 }

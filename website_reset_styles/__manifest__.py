@@ -18,14 +18,14 @@
 #
 ###############################################################################
 {
-    'name': 'Website Reset Styles',
-    'summary': 'Reset some website default elements and styles',
-    'category': 'Website',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': ['website'],
-    'data': ['templates/website.xml'],
-    'installable': True,
+    "name": "Website Reset Styles",
+    "summary": "Reset some website default elements and styles",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": ["website"],
+    "data": ["templates/website.xml"],
+    "installable": True,
 }

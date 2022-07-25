@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Print Formats Field Service Order',
-    'summary': 'FSM report customization',
-    'version': '12.0.1.1.0',
-    'category': 'Field Service',
-    'website': 'https://www.trey.es',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': [
-        'fieldservice',
-        'print_formats_base',
+    "name": "Print Formats Field Service Order",
+    "summary": "FSM report customization",
+    "version": "13.0.1.0.0",
+    "category": "Field Service",
+    "website": "https://www.trey.es",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": [
+        "fieldservice",
+        "print_formats_base",
     ],
-    'data': [
-        'views/report_fsm_order.xml',
+    "data": [
+        "views/report_fsm_order.xml",
     ],
-    'application': True,
+    "application": True,
 }

@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Sale order line optional product auto',
-    'summary': 'Cross selling. Add optional products when a product is added '
-               'to a quoatation.',
-    'category': 'Sale',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product',
-        'sale_management',
+    "name": "Sale order line optional product auto",
+    "summary": "Cross selling. Add optional products when a product is added "
+    "to a quoatation.",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product",
+        "sale_management",
     ],
-    'data': [
-        'views/product_template_views.xml',
+    "data": [
+        "views/product_template_views.xml",
     ],
 }

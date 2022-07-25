@@ -18,19 +18,16 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Collapse Filters',
-    'category': 'Website',
-    'summary': 'Allow to collapse/expand products list filters',
-    'version': '12.0.1.0.0',
-    'website': 'https://www.trey.es',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': [
-        'website',
-        'website_sale',
+    "name": "Website Sale Collapse Filters",
+    "category": "Website",
+    "summary": "Allow to collapse/expand products list filters",
+    "version": "13.0.1.0.0",
+    "website": "https://www.trey.es",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": [
+        "website",
+        "website_sale",
     ],
-    'data': [
-        'views/website_template.xml',
-        'views/website_sale_template.xml'
-    ],
+    "data": ["views/website_template.xml", "views/website_sale_template.xml"],
 }

@@ -5,10 +5,11 @@ from odoo import api, models
 
 
 class SaleOrderLine(models.Model):
-    _inherit = 'sale.order.line'
+    _inherit = "sale.order.line"
 
-    @api.onchange('product_id')
+    @api.onchange("product_id")
     def product_id_change(self):
         super().product_id_change()
         self.discount = sum(
-            self.mapped('order_id.global_discount_ids.total_percent'))
+            self.mapped("order_id.global_discount_ids.total_percent")
+        )

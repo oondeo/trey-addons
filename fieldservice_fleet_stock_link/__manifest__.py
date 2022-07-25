@@ -18,22 +18,22 @@
 #
 ##############################################################################
 {
-    'name': 'Fieldservice fleet stock link',
-    'summary': 'Allow to link stock location with stock warehouses and apply on'
-               ' fieldservice orders.',
-    'category': 'Stock',
-    'version': '12.0.1.1.3',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'fieldservice',
-        'fieldservice_stock',
-        'fleet',
-        'stock',
+    "name": "Fieldservice fleet stock link",
+    "summary": "Allow to link stock location with stock warehouses and apply on"
+    " fieldservice orders.",
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "fieldservice",
+        "fieldservice_stock",
+        "fleet",
+        "stock",
     ],
-    'data': [
-        'views/fsm_order_views.xml',
-        'views/stock_warehouse_views.xml',
+    "data": [
+        "views/fsm_order_views.xml",
+        "views/stock_warehouse_views.xml",
     ],
 }

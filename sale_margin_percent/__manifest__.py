@@ -18,17 +18,17 @@
 #
 ##############################################################################
 {
-    'name': 'Sale margin percent',
-    'summary': 'Add margin percent to sale order',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.1.1',
-    'depends': [
-        'sale_margin',
+    "name": "Sale margin percent",
+    "summary": "Add margin percent to sale order",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "sale_margin",
     ],
-    'data': [
-        'views/sale_order.xml',
+    "data": [
+        "views/sale_order.xml",
     ],
 }

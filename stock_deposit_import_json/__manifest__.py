@@ -18,16 +18,15 @@
 #
 ###############################################################################
 {
-    'name': 'Stock Deposit Import JSON',
-    'summary': 'Controller to create a stock deposit',
-    'category': 'Stock',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'stock_deposit',
+    "name": "Stock Deposit Import JSON",
+    "summary": "Controller to create a stock deposit",
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "stock_deposit",
     ],
-    'data': [
-    ],
+    "data": [],
 }

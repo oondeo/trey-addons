@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Notifications settings account',
-    'summary': 'Account notifications by mail',
-    'category': 'Account',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'notifications_settings',
-        'website_sale',
+    "name": "Notifications settings account",
+    "summary": "Account notifications by mail",
+    "category": "Account",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "notifications_settings",
+        "website_sale",
     ],
-    'data': [
-        'views/res_config_settings_views.xml',
+    "data": [
+        "views/res_config_settings_views.xml",
     ],
 }

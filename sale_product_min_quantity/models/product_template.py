@@ -5,7 +5,6 @@ from odoo import fields, models
 
 
 class ProductTemplate(models.Model):
-    _inherit = 'product.template'
+    _inherit = "product.template"
 
-    min_order_qty = fields.Float(
-        string='Minimum order quantity')
+    min_order_qty = fields.Float(string="Minimum order quantity")

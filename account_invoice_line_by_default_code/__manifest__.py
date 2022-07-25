@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Account invoice line by default code',
-    'summary': 'Allows us to quickly add or remove lines from an invoice',
-    'category': 'Account',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'account',
-        'sale_stock',
+    "name": "Account invoice line by default code",
+    "summary": "Allows us to quickly add or remove lines from an invoice",
+    "category": "Account",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "account",
+        "sale_stock",
     ],
-    'data': [
-        'views/account_invoice_views.xml',
-        'wizards/account_invoice_line_by_default_code.xml',
+    "data": [
+        "views/account_invoice_views.xml",
+        "wizards/account_invoice_line_by_default_code.xml",
     ],
 }

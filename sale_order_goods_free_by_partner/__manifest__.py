@@ -18,22 +18,22 @@
 #
 ###############################################################################
 {
-    'name': 'Sale order goods free by partner',
-    'summary': 'Add conditions in the partner so that when you place an order '
-               'with certain products, other products will be added with a '
-               'discount.',
-    'category': 'Sale',
-    'version': '12.0.1.2.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale',
+    "name": "Sale order goods free by partner",
+    "summary": "Add conditions in the partner so that when you place an order "
+    "with certain products, other products will be added with a "
+    "discount.",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "sale",
     ],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/res_partner_goods_free_views.xml',
-        'views/res_partner_views.xml',
-        'views/sale_order_views.xml',
+    "data": [
+        "security/ir.model.access.csv",
+        "views/res_partner_goods_free_views.xml",
+        "views/res_partner_views.xml",
+        "views/sale_order_views.xml",
     ],
 }

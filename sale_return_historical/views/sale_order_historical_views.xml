@@ -52,7 +52,6 @@
     <record id="sale_return_historical_action" model="ir.actions.act_window">
         <field name="name">Order history</field>
         <field name="res_model">sale.order.historical</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
     <menuitem id="menu_sale_return_historical"

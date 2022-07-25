@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Purchase Order Season',
-    'summary': 'Marks a purchase order as seasonal',
-    'category': 'Purchases',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'purchase',
-        'sale_order_type_season',
+    "name": "Purchase Order Season",
+    "summary": "Marks a purchase order as seasonal",
+    "category": "Purchases",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "purchase",
+        "sale_order_type_season",
     ],
-    'data': [
-        'views/purchase_order_views.xml',
+    "data": [
+        "views/purchase_order_views.xml",
     ],
 }

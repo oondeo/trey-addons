@@ -18,19 +18,19 @@
 #
 ##############################################################################
 {
-    'name': 'Payment Acquirer Payment Mode',
-    'summary': 'Asign to payment acquirers payment modes',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Invoicing & Payments',
-    'version': '12.0.1.4.1',
-    'depends': [
-        'account_payment_sale',
-        'payment',
-        'website_sale',
+    "name": "Payment Acquirer Payment Mode",
+    "summary": "Asign to payment acquirers payment modes",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Invoicing & Payments",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "account_payment_sale",
+        "payment",
+        "website_sale",
     ],
-    'data': [
-        'views/payment_acquirer_views.xml',
+    "data": [
+        "views/payment_acquirer_views.xml",
     ],
 }

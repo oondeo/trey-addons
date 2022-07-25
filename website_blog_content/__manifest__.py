@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Website Blog Content',
-    'summary': 'Edit posts content from backend',
-    'category': 'website',
-    'version': '12.0.1.0.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'website',
-        'website_blog',
+    "name": "Website Blog Content",
+    "summary": "Edit posts content from backend",
+    "category": "website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "website",
+        "website_blog",
     ],
-    'data': [
-        'views/website_blog_views.xml',
+    "data": [
+        "views/website_blog_views.xml",
     ],
 }

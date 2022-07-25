@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class StockQuantPackage(models.Model):
-    _inherit = 'stock.quant.package'
+    _inherit = "stock.quant.package"
 
     dummy_id = fields.Many2one(
-        comodel_name='stock.quant.package_dummy',
-        string='Dummy label',
+        comodel_name="stock.quant.package_dummy",
+        string="Dummy label",
     )

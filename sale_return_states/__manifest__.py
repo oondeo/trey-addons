@@ -18,22 +18,22 @@
 #
 ###############################################################################
 {
-    'name': 'Sale return states',
-    'summary': 'Add states to sale return lines and create stock pickings',
-    'category': 'Sale',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale',
-        'sale_order_recreate_picking',
-        'sale_return',
-        'sale_stock',
-        'stock',
+    "name": "Sale return states",
+    "summary": "Add states to sale return lines and create stock pickings",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "sale",
+        "sale_order_recreate_picking",
+        "sale_return",
+        "sale_stock",
+        "stock",
     ],
-    'data': [
-        'data/data.xml',
-        'views/sale_order_views.xml',
+    "data": [
+        "data/data.xml",
+        "views/sale_order_views.xml",
     ],
 }

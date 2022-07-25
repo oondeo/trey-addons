@@ -18,24 +18,24 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Product Grid',
-    'summary': 'Functionalities to sell products by grid',
-    'category': 'website',
-    'version': '12.0.1.2.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product_attribute_utils',
-        'stock',
-        'website',
-        'website_fancybox',
-        'website_sale',
-        'website_sale_cart_add_multi',
+    "name": "Website Sale Product Grid",
+    "summary": "Functionalities to sell products by grid",
+    "category": "website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product_attribute_utils",
+        "stock",
+        "website",
+        "website_fancybox",
+        "website_sale",
+        "website_sale_cart_add_multi",
     ],
-    'data': [
-        'views/website.xml',
-        'views/website_sale.xml',
-        'views/website_sale_product_grid.xml',
+    "data": [
+        "views/website.xml",
+        "views/website_sale.xml",
+        "views/website_sale_product_grid.xml",
     ],
 }

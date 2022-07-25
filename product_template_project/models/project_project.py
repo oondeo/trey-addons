@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class ProjectProject(models.Model):
-    _inherit = 'project.project'
+    _inherit = "project.project"
 
     product_tmpl_id = fields.Many2one(
-        comodel_name='product.template',
-        string='Product template',
+        comodel_name="product.template",
+        string="Product template",
     )

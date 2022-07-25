@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Sale order confirm risk',
-    'summary': 'Allow to confirm sales orders with financial risk',
-    'category': 'Sales Management',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale_financial_risk',
-        'sale_order_confirm_action',
+    "name": "Sale order confirm risk",
+    "summary": "Allow to confirm sales orders with financial risk",
+    "category": "Sales Management",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "sale_financial_risk",
+        "sale_order_confirm_action",
     ],
-    'data': [
-        'wizards/sale_order_confirm.xml',
+    "data": [
+        "wizards/sale_order_confirm.xml",
     ],
 }

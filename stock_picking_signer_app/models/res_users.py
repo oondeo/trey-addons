@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class ResUsers(models.Model):
-    _inherit = 'res.users'
+    _inherit = "res.users"
 
     signed_device = fields.Many2one(
-        comodel_name='iot.device',
-        string='Signature device',
+        comodel_name="iot.device",
+        string="Signature device",
     )

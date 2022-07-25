@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Payment By Mode',
-    'summary': 'Show payment method according to payment mode',
-    'category': 'website',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'account_payment_mode',
-        'payment',
-        'website_sale',
+    "name": "Website Sale Payment By Mode",
+    "summary": "Show payment method according to payment mode",
+    "category": "website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "account_payment_mode",
+        "payment",
+        "website_sale",
     ],
-    'data': [
-        'views/payment_acquirer_views.xml',
+    "data": [
+        "views/payment_acquirer_views.xml",
     ],
 }

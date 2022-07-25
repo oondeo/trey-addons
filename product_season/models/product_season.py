@@ -5,33 +5,29 @@ from odoo import api, fields, models
 
 
 class ProductSeason(models.Model):
-    _name = 'product.season'
-    _description = 'Product season'
-    _order = 'name'
+    _name = "product.season"
+    _description = "Product season"
+    _order = "name"
 
-    name = fields.Char(
-        string='Name',
-        translate=True,
-        required=True)
+    name = fields.Char(string="Name", translate=True, required=True)
     company_id = fields.Many2one(
-        string='Company',
-        comodel_name='res.company',
+        string="Company",
+        comodel_name="res.company",
         required=True,
-        default=lambda self: self.env.user.company_id.id)
-    date_from = fields.Date(
-        string='From')
-    date_to = fields.Date(
-        srtring='To')
+        default=lambda self: self.env.user.company_id.id,
+    )
+    date_from = fields.Date(string="From")
+    date_to = fields.Date(srtring="To")
     product_tmpl_ids = fields.One2many(
-        string='Products',
-        comodel_name='product.template',
-        inverse_name='season_id')
+        string="Products",
+        comodel_name="product.template",
+        inverse_name="season_id",
+    )
     product_tmpl_count = fields.Integer(
-        string='Products count',
-        compute='_compute_products_count')
+        string="Products count", compute="_compute_products_count"
+    )
 
-    @api.multi
-    @api.depends('product_tmpl_ids')
+    @api.depends("product_tmpl_ids")
     def _compute_products_count(self):
         for season in self:
             season.product_tmpl_count = len(self.product_tmpl_ids)

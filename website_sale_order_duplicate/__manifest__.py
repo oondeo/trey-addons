@@ -18,20 +18,20 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Order Duplicate',
-    'summary': 'Duplicate order and set it as current cart',
-    'category': 'Website',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'portal',
-        'sale',
-        'website_sale',
+    "name": "Website Sale Order Duplicate",
+    "summary": "Duplicate order and set it as current cart",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "portal",
+        "sale",
+        "website_sale",
     ],
-    'data': [
-        'views/sale_portal_templates.xml',
+    "data": [
+        "views/sale_portal_templates.xml",
     ],
-    'installable': True,
+    "installable": True,
 }

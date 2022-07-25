@@ -5,16 +5,16 @@ from odoo import fields, models
 
 
 class ResPartner(models.Model):
-    _inherit = 'res.partner'
+    _inherit = "res.partner"
 
     evaluation = fields.Selection(
         selection=[
-            ('not_set', 'Not set'),
-            ('very_low', 'Very low'),
-            ('low', 'Low'),
-            ('medium', 'Medium'),
-            ('high', 'High'),
-            ('very_high', 'Very high'),
+            ("not_set", "Not set"),
+            ("very_low", "Very low"),
+            ("low", "Low"),
+            ("medium", "Medium"),
+            ("high", "High"),
+            ("very_high", "Very high"),
         ],
-        string='Partner evaluation',
+        string="Partner evaluation",
     )

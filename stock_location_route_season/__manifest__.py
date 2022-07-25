@@ -18,19 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Stock Location Route Season',
-    'summary': 'Marks a stock location route as seasonal',
-    'category': 'Stock',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'stock',
+    "name": "Stock Location Route Season",
+    "summary": "Marks a stock location route as seasonal",
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "stock",
     ],
-    'data': [
-        'views/stock_location_route_views.xml',
+    "data": [
+        "views/stock_location_route_views.xml",
     ],
-    'post_init_hook': 'post_init_hook',
-
+    "post_init_hook": "post_init_hook",
 }

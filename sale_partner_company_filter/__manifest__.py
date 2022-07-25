@@ -18,16 +18,16 @@
 #
 ##############################################################################
 {
-    'name': 'Sale partner company filter',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'sale',
+    "name": "Sale partner company filter",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "sale",
     ],
-    'data': [
-        'views/sale_order_views.xml',
+    "data": [
+        "views/sale_order_views.xml",
     ],
 }

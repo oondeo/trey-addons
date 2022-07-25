@@ -18,20 +18,20 @@
 #
 ##############################################################################
 {
-    'name': 'Maintenance equipment category QC inspection',
-    'summary': 'Adds relation between quality control inspections and '
-               'maintenance equipment categories.',
-    'category': 'Human Resources',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'hr_maintenance',
-        'quality_control',
+    "name": "Maintenance equipment category QC inspection",
+    "summary": "Adds relation between quality control inspections and "
+    "maintenance equipment categories.",
+    "category": "Human Resources",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "hr_maintenance",
+        "quality_control",
     ],
-    'data': [
-        'views/maintenance_equipment_category_views.xml',
-        'views/maintenance_equipment_views.xml',
+    "data": [
+        "views/maintenance_equipment_category_views.xml",
+        "views/maintenance_equipment_views.xml",
     ],
 }

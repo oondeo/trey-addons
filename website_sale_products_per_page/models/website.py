@@ -5,10 +5,10 @@ from odoo import fields, models
 
 
 class Website(models.Model):
-    _inherit = 'website'
+    _inherit = "website"
 
     ppg_values = fields.Char(
-        string='Products per page',
-        default='20,40,60,100',
-        help='Values must be separated by commas, for example: 20,40,60',
+        string="Products per page",
+        default="20,40,60,100",
+        help="Values must be separated by commas, for example: 20,40,60",
     )

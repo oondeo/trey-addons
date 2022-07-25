@@ -18,20 +18,20 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Product Qty Limit',
-    'summary': 'Check for quantity limit on cart',
-    'category': 'Website',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product_qty_limit',
-        'website_sale',
-        'website_sale_stock',
+    "name": "Website Sale Product Qty Limit",
+    "summary": "Check for quantity limit on cart",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product_qty_limit",
+        "website_sale",
+        "website_sale_stock",
     ],
-    'data': [
-        'templates/website_template.xml',
-        'templates/website_sale_template.xml',
+    "data": [
+        "templates/website_template.xml",
+        "templates/website_sale_template.xml",
     ],
 }

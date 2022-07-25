@@ -5,8 +5,8 @@ from odoo import fields, models
 
 
 class SaleOrderLine(models.Model):
-    _inherit = 'sale.order.line'
+    _inherit = "sale.order.line"
 
     customization_id = fields.Many2one(
-        comodel_name='sale.customization',
-        string='Customization')
+        comodel_name="sale.customization", string="Customization"
+    )

@@ -18,25 +18,25 @@
 #
 ##############################################################################
 {
-    'name': 'HR Timesheet balance',
-    'summary': 'Check and prepare account for create intercompany invoices',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.2.0',
-    'depends': [
-        'contract',
-        'sale',
-        'hr_timesheet',
+    "name": "HR Timesheet balance",
+    "summary": "Check and prepare account for create intercompany invoices",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "contract",
+        "sale",
+        "hr_timesheet",
     ],
-    'data': [
-        'data/account_analytic_account_email.xml',
-        'data/account_analytic_tag.xml',
-        'data/cron_data.xml',
-        'views/account_analytic_account.xml',
-        'views/account_analytic_line.xml',
-        'views/product_product.xml',
-        'views/product_template.xml',
-    ]
+    "data": [
+        "data/account_analytic_account_email.xml",
+        "data/account_analytic_tag.xml",
+        "data/cron_data.xml",
+        "views/account_analytic_account.xml",
+        "views/account_analytic_line.xml",
+        "views/product_product.xml",
+        "views/product_template.xml",
+    ],
 }

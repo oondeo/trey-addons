@@ -6,15 +6,17 @@ from odoo.exceptions import ValidationError
 
 
 class PrintOptionsSale(models.TransientModel):
-    _name = 'print.options.sale'
-    _description = 'Prints according to options selected.'
+    _name = "print.options.sale"
+    _description = "Prints according to options selected."
 
     name = fields.Char(
-        string='Empty',
+        string="Empty",
     )
 
-    @api.multi
     def button_print(self):
-        raise ValidationError(_(
-            'You must define options fields for this wizard and report to '
-            'return.'))
+        raise ValidationError(
+            _(
+                "You must define options fields for this wizard and report to "
+                "return."
+            )
+        )

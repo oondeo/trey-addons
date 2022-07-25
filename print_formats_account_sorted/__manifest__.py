@@ -18,15 +18,15 @@
 #
 ###############################################################################
 {
-    'name': 'Print Formats Account Sorted',
-    'summary': 'Sort invoice lines by product attributes sequences',
-    'version': '12.0.1.0.3',
-    'category': 'Accounting & Finance',
-    'website': 'https://www.trey.es',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': [
-        'account',
-        'print_formats_account',
+    "name": "Print Formats Account Sorted",
+    "summary": "Sort invoice lines by product attributes sequences",
+    "version": "13.0.1.0.0",
+    "category": "Accounting & Finance",
+    "website": "https://www.trey.es",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": [
+        "account",
+        "print_formats_account",
     ],
 }

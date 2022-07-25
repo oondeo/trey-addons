@@ -142,7 +142,6 @@
         <field name="name">Business unit</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">product.business.unit</field>
-        <field name="view_type">form</field>
         <field name="view_mode">kanban,tree,form</field>
         <field name="search_view_id" ref="product_business_unit_search"/>
     </record>

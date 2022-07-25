@@ -57,7 +57,6 @@
         <field name="name">Cost price history</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">product.standard_price.history</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form,pivot</field>
         <field name="search_view_id" ref="product_standard_price_history_search"/>
     </record>

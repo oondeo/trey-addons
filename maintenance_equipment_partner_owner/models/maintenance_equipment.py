@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class MaintenanceEquipment(models.Model):
-    _inherit = 'maintenance.equipment'
+    _inherit = "maintenance.equipment"
 
     owner_id = fields.Many2one(
-        comodel_name='res.partner',
-        string='Owner',
+        comodel_name="res.partner",
+        string="Owner",
     )

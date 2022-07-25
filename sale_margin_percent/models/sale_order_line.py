@@ -5,16 +5,15 @@ from odoo import api, fields, models
 
 
 class SaleOrderLine(models.Model):
-    _inherit = 'sale.order.line'
+    _inherit = "sale.order.line"
 
     margin_percent = fields.Float(
-        string='Margin (%)',
-        compute='_compute_margin_percent',
+        string="Margin (%)",
+        compute="_compute_margin_percent",
         store=True,
     )
 
-    @api.depends('margin', 'price_subtotal')
-    @api.multi
+    @api.depends("margin", "price_subtotal")
     def _compute_margin_percent(self):
         for line in self:
             if not line.price_subtotal:

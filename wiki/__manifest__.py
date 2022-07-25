@@ -18,25 +18,25 @@
 #
 ###############################################################################
 {
-    'name': 'wiki',
-    'category': 'Tools',
-    'summary': 'Wiki',
-    'version': '12.0.1.2.0',
-    'description': '''
+    "name": "wiki",
+    "category": "Tools",
+    "summary": "Wiki",
+    "version": "13.0.1.0.0",
+    "description": """
 Wiki to insert content. Allows users belonging to the group 'Employee' to
 register entries and search by title, tags and description.
 
 This module depends OCA module web_widget_text_markdown you can found at:
 https://github.com/OCA/web/tree/8.0
-''',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': ['base', 'mail'],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/wiki_view.xml',
-        'views/wiki_tag_view.xml',
-        'views/menu.xml',
+""",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": ["base", "mail"],
+    "data": [
+        "security/ir.model.access.csv",
+        "views/wiki_view.xml",
+        "views/wiki_tag_view.xml",
+        "views/menu.xml",
     ],
-    'installable': True,
+    "installable": True,
 }

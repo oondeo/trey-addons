@@ -18,19 +18,19 @@
 #
 ##############################################################################
 {
-    'name': 'Stock deposit supplier',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Stock',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'product',
-        'purchase_stock',
-        'stock',
+    "name": "Stock deposit supplier",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "product",
+        "purchase_stock",
+        "stock",
     ],
-    'data': [
-        'data/data.xml',
-        'views/stock_picking_type_views.xml',
+    "data": [
+        "data/data.xml",
+        "views/stock_picking_type_views.xml",
     ],
 }

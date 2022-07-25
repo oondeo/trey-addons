@@ -18,15 +18,15 @@
 #
 ##############################################################################
 {
-    'name': 'Product barcode auto',
-    'summary': 'Create a barcode for product if has one',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Product',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'product',
+    "name": "Product barcode auto",
+    "summary": "Create a barcode for product if has one",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Product",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "product",
     ],
-    'post_init_hook': 'post_init_hook',
+    "post_init_hook": "post_init_hook",
 }

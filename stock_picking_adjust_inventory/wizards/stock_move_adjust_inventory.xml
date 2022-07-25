@@ -36,7 +36,6 @@
     <record id="stock_move_adjust_inventory_action" model="ir.actions.act_window">
         <field name="name">Adjust inventory</field>
         <field name="res_model">stock.move.adjust_inventory</field>
-        <field name="view_type">form</field>
         <field name="view_mode">form</field>
         <field name="target">new</field>
     </record>

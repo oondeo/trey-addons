@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Threshold Notice',
-    'summary': 'Notice customer salesman when not enough stock in product cart',
-    'category': 'Website',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'website_sale',
-        'website_sale_stock',
+    "name": "Website Sale Threshold Notice",
+    "summary": "Notice customer salesman when not enough stock in product cart",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "website_sale",
+        "website_sale_stock",
     ],
-    'data': [
-        'data/website_sale_threshold_notice.xml',
-        'views/website_sale_template.xml',
+    "data": [
+        "data/website_sale_threshold_notice.xml",
+        "views/website_sale_template.xml",
     ],
 }

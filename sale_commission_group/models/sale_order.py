@@ -5,15 +5,20 @@ from odoo import api, fields, models
 
 
 class SaleOrder(models.Model):
-    _inherit = 'sale.order'
+    _inherit = "sale.order"
 
     agents_name = fields.Char(
-        string='Agents',
-        compute='_compute_agents_name',
-        store=True)
+        string="Agents", compute="_compute_agents_name", store=True
+    )
 
-    @api.one
-    @api.depends('order_line.agents')
+    @api.depends("order_line.agents")
     def _compute_agents_name(self):
-        self.agents_name = ', '.join(list({
-            ag.agent.name for line in self.order_line for ag in line.agents}))
+        self.agents_name = ", ".join(
+            list(
+                {
+                    ag.agent.name
+                    for line in self.order_line
+                    for ag in line.agents
+                }
+            )
+        )

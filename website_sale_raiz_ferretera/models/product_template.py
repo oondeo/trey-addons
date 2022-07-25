@@ -5,8 +5,8 @@ from odoo import fields, models
 
 
 class ProductTemplate(models.Model):
-    _inherit = 'product.template'
+    _inherit = "product.template"
 
     show_raiz_ferretera_data = fields.Boolean(
-        string='Show Raíz Ferretera data',
+        string="Show Raíz Ferretera data",
     )

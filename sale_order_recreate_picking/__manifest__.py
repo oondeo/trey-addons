@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Sale Order Recreate Picking',
-    'summary': 'Recreated picking from sale order',
-    'category': 'Sale',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale_stock',
+    "name": "Sale Order Recreate Picking",
+    "summary": "Recreated picking from sale order",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "sale_stock",
     ],
-    'data': [
-        'views/sale_order_view.xml',
+    "data": [
+        "views/sale_order_view.xml",
     ],
 }

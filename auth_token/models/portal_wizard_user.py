@@ -5,9 +5,8 @@ from odoo import api, models
 
 
 class PortalWizardUser(models.TransientModel):
-    _inherit = 'portal.wizard.user'
+    _inherit = "portal.wizard.user"
 
-    @api.multi
     def _create_user(self):
         user = super()._create_user()
         user._set_default_token()

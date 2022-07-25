@@ -5,18 +5,17 @@ from odoo import api, fields, models
 
 
 class ProductTemplate(models.Model):
-    _inherit = 'product.template'
+    _inherit = "product.template"
 
     attachment_template_ids = fields.One2many(
-        comodel_name='ir.attachment',
-        inverse_name='res_id',
-        string='Attachment Template Files',
-        domain=[('res_model', '=', 'product.template')],
+        comodel_name="ir.attachment",
+        inverse_name="res_id",
+        string="Attachment Template Files",
+        domain=[("res_model", "=", "product.template")],
     )
 
-    @api.multi
     def write(self, values):
-        for attachment in values.get('attachment_template_ids', []):
+        for attachment in values.get("attachment_template_ids", []):
             if attachment and attachment[0] == 0:
-                attachment[2]['res_model'] = 'product.template'
+                attachment[2]["res_model"] = "product.template"
         return super().write(values)

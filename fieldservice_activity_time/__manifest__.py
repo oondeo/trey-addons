@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Fieldservice activity time',
-    'summary': 'Add time in fieldservice activities',
-    'category': 'Field Service',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'fieldservice_activity',
+    "name": "Fieldservice activity time",
+    "summary": "Add time in fieldservice activities",
+    "category": "Field Service",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "fieldservice_activity",
     ],
-    'data': [
-        'views/fsm_order_views.xml',
-    ]
+    "data": [
+        "views/fsm_order_views.xml",
+    ],
 }

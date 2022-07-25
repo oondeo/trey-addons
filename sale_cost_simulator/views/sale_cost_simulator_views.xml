@@ -108,7 +108,6 @@
         <field name="name">Sale cost simulator</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">sale.cost.simulator</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
         <field name="search_view_id" ref="sale_cost_simulator_search"/>
     </record>

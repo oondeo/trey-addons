@@ -18,14 +18,14 @@
 #
 ##############################################################################
 {
-    'name': 'Product Pricelist Base',
-    'version': '12.0.1.0.0',
-    'summary': 'This addons is used for inherit pricelist process',
-    'category': 'Sales',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product',
+    "name": "Product Pricelist Base",
+    "version": "13.0.1.0.0",
+    "summary": "This addons is used for inherit pricelist process",
+    "category": "Sales",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product",
     ],
 }

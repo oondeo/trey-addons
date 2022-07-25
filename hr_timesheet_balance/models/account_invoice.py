@@ -5,7 +5,7 @@ from odoo import models
 
 
 class AccountInvoice(models.Model):
-    _inherit = 'account.invoice'
+    _inherit = "account.invoice"
 
     def action_move_create(self):
         self = self.with_context(reset_balance=True)

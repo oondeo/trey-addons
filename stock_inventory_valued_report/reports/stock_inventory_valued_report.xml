@@ -58,7 +58,6 @@
     <record id="action_stock_inventory_valued_report" model="ir.actions.act_window">
         <field name="name">Inventory valued analysis</field>
         <field name="res_model">stock.inventory_valued.report</field>
-        <field name="view_type">form</field>
         <field name="view_mode">graph,pivot</field>
         <field name="view_id"></field>  <!-- force empty -->
         <field name="search_view_id" ref="stock_inventory_valued_report_search"/>

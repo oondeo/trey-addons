@@ -49,7 +49,6 @@
     <record id="search_history_action" model="ir.actions.act_window">
         <field name="name">Search history</field>
         <field name="res_model">search.history</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
     <menuitem id="menu_website_search_history"

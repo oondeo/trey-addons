@@ -8,17 +8,20 @@ from odoo.tests import common
 
 
 class TestSaleReturnHistorical(common.TransactionCase):
-
     def setUp(self):
         super().setUp()
-        self.sale_historical = self.env['sale.order.historical'].create({
-            'name': 'Order Test',
-        })
-        sale_order_historical_line = self.env['sale.order.historical.line']
-        self.historical_line_1 = sale_order_historical_line.create({
-            'name': 'Order Line Test 1',
-            'order_id': self.sale_historical.id,
-        })
+        self.sale_historical = self.env["sale.order.historical"].create(
+            {
+                "name": "Order Test",
+            }
+        )
+        sale_order_historical_line = self.env["sale.order.historical.line"]
+        self.historical_line_1 = sale_order_historical_line.create(
+            {
+                "name": "Order Line Test 1",
+                "order_id": self.sale_historical.id,
+            }
+        )
 
     def test_sale_return_historical(self):
         self.assertTrue(self.sale_historical.available_return)
@@ -37,11 +40,13 @@ class TestSaleReturnHistorical(common.TransactionCase):
 
     def test_several_sale_return_historical_lines(self):
         self.assertTrue(self.sale_historical.available_return)
-        sale_order_historical_line = self.env['sale.order.historical.line']
-        self.historical_line_2 = sale_order_historical_line.create({
-            'name': 'Order Line Test 2',
-            'order_id': self.sale_historical.id,
-        })
+        sale_order_historical_line = self.env["sale.order.historical.line"]
+        self.historical_line_2 = sale_order_historical_line.create(
+            {
+                "name": "Order Line Test 2",
+                "order_id": self.sale_historical.id,
+            }
+        )
         self.assertEqual(len(self.sale_historical.order_line_ids), 2)
         day_1 = (datetime.now() + timedelta(days=1)).date()
         day_2 = (datetime.now() - timedelta(days=1)).date()

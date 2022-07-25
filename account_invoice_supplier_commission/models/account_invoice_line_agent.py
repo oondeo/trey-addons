@@ -10,6 +10,6 @@ class AccountInvoiceLineAgent(models.Model):
     def _compute_amount(self):
         res = super()._compute_amount()
         for line in self:
-            if line.invoice.type.startswith('in_'):
+            if line.invoice.type.startswith("in_"):
                 line.amount = -line.amount
         return res

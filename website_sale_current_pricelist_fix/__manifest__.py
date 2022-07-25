@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Website sale current pricelist fix',
-    'summary': 'Fix website pricelist acquisition',
-    'category': 'Website',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'website_sale',
+    "name": "Website sale current pricelist fix",
+    "summary": "Fix website pricelist acquisition",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "website_sale",
     ],
-    'data': [
-        'views/res_config_settings.xml',
+    "data": [
+        "views/res_config_settings.xml",
     ],
 }

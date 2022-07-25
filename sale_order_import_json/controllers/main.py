@@ -8,14 +8,16 @@ from odoo.http import request
 
 
 class SaleOrderImportJson(http.Controller):
-    @http.route(
-        ['/sale_order/import'],
-        type='json', auth='user')
+    @http.route(["/sale_order/import"], type="json", auth="user")
     def sale_order_import_json(self, **kw):
         info = json.loads(request.httprequest.data)
-        result = request.env['sale.order'].sudo().with_context(
-            login_user=request.env.user).json_import(info)
+        result = (
+            request.env["sale.order"]
+            .sudo()
+            .with_context(login_user=request.env.user)
+            .json_import(info)
+        )
         res = {
-            'result': result,
+            "result": result,
         }
         return json.dumps(res)

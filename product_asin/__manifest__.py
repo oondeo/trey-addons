@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Product ASIN',
-    'summary': 'Add Amazon Standard Identification Number (ASIN) to products',
-    'category': 'Product',
-    'version': '12.0.1.0.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'product',
+    "name": "Product ASIN",
+    "summary": "Add Amazon Standard Identification Number (ASIN) to products",
+    "category": "Product",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "product",
     ],
-    'data': [
-        'views/product_template_views.xml',
-        'views/product_product_views.xml',
+    "data": [
+        "views/product_template_views.xml",
+        "views/product_product_views.xml",
     ],
-    'installable': True,
-    'auto_install': False
+    "installable": True,
+    "auto_install": False,
 }

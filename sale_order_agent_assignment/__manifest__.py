@@ -18,18 +18,16 @@
 #
 ###############################################################################
 {
-    'name': 'Sale Order Agent Assignment',
-    'summary': 'Wizard for assigning agents to sale order lines.',
-    'category': 'Sale',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale_commission',
-        'sale_management',
+    "name": "Sale Order Agent Assignment",
+    "summary": "Wizard for assigning agents to sale order lines.",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "sale_commission",
+        "sale_management",
     ],
-    'data': [
-        'wizards/sale_order_agent_assignment.xml'
-    ],
+    "data": ["wizards/sale_order_agent_assignment.xml"],
 }

@@ -18,20 +18,20 @@
 #
 ##############################################################################
 {
-    'name': 'Contract Sale UoM',
-    'summary': 'Add quantity and UoM to sale order line for contract',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'product_contract',
-        'sale',
+    "name": "Contract Sale UoM",
+    "summary": "Add quantity and UoM to sale order line for contract",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "product_contract",
+        "sale",
     ],
-    'data': [
-        'data/uom_category.xml',
-        'data/uom_uom.xml',
-        'views/sale_order_line.xml',
+    "data": [
+        "data/uom_category.xml",
+        "data/uom_uom.xml",
+        "views/sale_order_line.xml",
     ],
 }

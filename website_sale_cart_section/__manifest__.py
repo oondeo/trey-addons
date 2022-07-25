@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Website sale cart section',
-    'summary': 'Keeps section lines in the shopping cart',
-    'category': 'Website',
-    'version': '12.0.1.0.2',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'website_sale',
+    "name": "Website sale cart section",
+    "summary": "Keeps section lines in the shopping cart",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "website_sale",
     ],
-    'data': [
-        'views/website_sale_cart_section_views.xml',
+    "data": [
+        "views/website_sale_cart_section_views.xml",
     ],
 }

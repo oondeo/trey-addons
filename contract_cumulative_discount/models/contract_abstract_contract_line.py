@@ -8,25 +8,24 @@ from odoo.exceptions import UserError, ValidationError
 
 
 class ContractAbstractContractLine(models.AbstractModel):
-    _inherit = 'contract.abstract.contract.line'
+    _inherit = "contract.abstract.contract.line"
 
     multiple_discount = fields.Char(
-        string='Disc. Applied',
+        string="Disc. Applied",
     )
     discount_name = fields.Char(
-        string='Discount Name',
+        string="Discount Name",
     )
     discount = fields.Float(
-        compute='_compute_discount',
+        compute="_compute_discount",
     )
 
-    @api.multi
-    @api.depends('multiple_discount')
+    @api.depends("multiple_discount")
     def _compute_discount(self):
         def _normalize_discount(discount):
-            discount = discount.replace(' ', '')
-            discount = discount.replace(',', '.')
-            if discount and discount[0] == '+':
+            discount = discount.replace(" ", "")
+            discount = discount.replace(",", ".")
+            if discount and discount[0] == "+":
                 discount = discount[1:]
             return discount
 
@@ -36,20 +35,22 @@ class ContractAbstractContractLine(models.AbstractModel):
                 continue
             if self._validate_discount(line.multiple_discount):
                 normalized_discount = _normalize_discount(
-                    line.multiple_discount)
+                    line.multiple_discount
+                )
             else:
                 line.discount = 0
                 raise UserError(
-                    _('Warning! The discount format is not recognized.'))
-            tokens = re.split(r'([+-])', normalized_discount)
+                    _("Warning! The discount format is not recognized.")
+                )
+            tokens = re.split(r"([+-])", normalized_discount)
             numeric_tokens = []
             last_sign = 1
             for token in tokens:
                 if not token:
                     continue
-                if token == '-':
+                if token == "-":
                     last_sign = -1
-                elif token == '+':
+                elif token == "+":
                     last_sign = 1
                 else:
                     numeric_tokens.append(float(token) * last_sign)
@@ -64,17 +65,19 @@ class ContractAbstractContractLine(models.AbstractModel):
     @staticmethod
     def _validate_discount(discount):
         discount_regex = re.compile(
-            r'^(\s*[-+]{0,1}\s*\d+([,.]\d+)?){1}'
-            r'(\s*[-+]\s*\d+([,.]\d+)?\s*)*$'
+            r"^(\s*[-+]{0,1}\s*\d+([,.]\d+)?){1}"
+            r"(\s*[-+]\s*\d+([,.]\d+)?\s*)*$"
         )
         if discount and not discount_regex.match(discount):
             return False
         return True
 
-    @api.constrains('multiple_discount')
+    @api.constrains("multiple_discount")
     def validate_discount(self):
         for line in self:
             if line.multiple_discount and not self._validate_discount(
-                    line.multiple_discount):
+                line.multiple_discount
+            ):
                 raise ValidationError(
-                    _('Warning! The discount format is not recognized.'))
+                    _("Warning! The discount format is not recognized.")
+                )

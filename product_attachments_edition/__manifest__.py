@@ -18,20 +18,20 @@
 #
 ##############################################################################
 {
-    'name': 'Product Attachments Edition',
-    'summary': 'Allow advanced edition for product and categories attachments',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Product',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'base',
-        'document',
-        'product',
-        'website_sale',
+    "name": "Product Attachments Edition",
+    "summary": "Allow advanced edition for product and categories attachments",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Product",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "base",
+        "document",
+        "product",
+        "website_sale",
     ],
-    'data': [
-        'views/product_views.xml',
+    "data": [
+        "views/product_views.xml",
     ],
 }

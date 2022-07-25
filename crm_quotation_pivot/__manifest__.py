@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'CRM Quotation Pivot',
-    'summary': 'Add Quotation import to CRM pivot view',
-    'category': 'sales',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'crm',
-        'sale_crm',
+    "name": "CRM Quotation Pivot",
+    "summary": "Add Quotation import to CRM pivot view",
+    "category": "sales",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "crm",
+        "sale_crm",
     ],
-    'data': [
-        'templates/crm_lead_views.xml',
+    "data": [
+        "templates/crm_lead_views.xml",
     ],
-    'installable': True,
+    "installable": True,
 }

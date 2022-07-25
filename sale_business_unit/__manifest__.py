@@ -18,23 +18,23 @@
 #
 ##############################################################################
 {
-    'name': 'Sale business unit',
-    'summary': 'Add information sale to business dashboard',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'product_business_unit',
-        'sale',
+    "name": "Sale business unit",
+    "summary": "Add information sale to business dashboard",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "product_business_unit",
+        "sale",
     ],
-    'data': [
-        'reports/sale_report.xml',
-        'reports/account_invoice_report.xml',
-        'views/account_invoice_line.xml',
-        'views/sale_order_line.xml',
-        'views/sale_order.xml',
-        'views/product_business_unit.xml',
-    ]
+    "data": [
+        "reports/sale_report.xml",
+        "reports/account_invoice_report.xml",
+        "views/account_invoice_line.xml",
+        "views/sale_order_line.xml",
+        "views/sale_order.xml",
+        "views/product_business_unit.xml",
+    ],
 }

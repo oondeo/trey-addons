@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Import template user',
-    'summary': 'Import user data from files Excel or CSV from templates',
-    'category': 'Tools',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'import_template',
+    "name": "Import template user",
+    "summary": "Import user data from files Excel or CSV from templates",
+    "category": "Tools",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "import_template",
     ],
-    'data': [
-        'data/data.xml',
+    "data": [
+        "data/data.xml",
     ],
 }

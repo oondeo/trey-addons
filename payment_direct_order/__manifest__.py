@@ -18,19 +18,19 @@
 #
 ##############################################################################
 {
-    'name': 'Payment Direct Order',
-    'summary': 'Payment Acquirer: Direct Order Payment to website',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Invoicing & Payments',
-    'version': '12.0.1.2.0',
-    'depends': [
-        'payment',
+    "name": "Payment Direct Order",
+    "summary": "Payment Acquirer: Direct Order Payment to website",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Invoicing & Payments",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "payment",
     ],
-    'data': [
-        'templates/direct_order_acquirer_button_template.xml',
-        'data/payment.acquirer_data.xml',
-        'views/payment_acquirer_views.xml',
+    "data": [
+        "templates/direct_order_acquirer_button_template.xml",
+        "data/payment.acquirer_data.xml",
+        "views/payment_acquirer_views.xml",
     ],
 }

@@ -5,13 +5,13 @@ from odoo import fields, models
 
 
 class ProductTemplate(models.Model):
-    _inherit = 'product.template'
+    _inherit = "product.template"
 
     optional_product_method = fields.Selection(
         selection=[
-            ('configure', 'When configure product'),
-            ('auto', 'When add line in quotation'),
+            ("configure", "When configure product"),
+            ("auto", "When add line in quotation"),
         ],
-        string='Optional method',
-        default='configure',
+        string="Optional method",
+        default="configure",
     )

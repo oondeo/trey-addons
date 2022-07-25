@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Fieldservice sale purchase stock',
-    'category': 'Purchase',
-    'version': '12.0.1.0.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'fieldservice_sale',
-        'fieldservice_sale_stock',
-        'fieldservice_stock',
-        'purchase',
-        'purchase_order_sale_order_link',
-        'sale',
+    "name": "Fieldservice sale purchase stock",
+    "category": "Purchase",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "fieldservice_sale",
+        "fieldservice_sale_stock",
+        "fieldservice_stock",
+        "purchase",
+        "purchase_order_sale_order_link",
+        "sale",
     ],
 }

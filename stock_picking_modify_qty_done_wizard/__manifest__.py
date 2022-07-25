@@ -18,18 +18,18 @@
 #
 ##############################################################################
 {
-    'name': 'Stock picking modify qty done wizard',
-    'summary': 'Wizard to modify qty done from a picking',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Inventory',
-    'version': '12.0.1.0.1',
-    'depends': [
-        'stock',
+    "name": "Stock picking modify qty done wizard",
+    "summary": "Wizard to modify qty done from a picking",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Inventory",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "stock",
     ],
-    'data': [
-        'wizards/stock_picking_modify_qty_done.xml',
-        'views/stock_picking_views.xml',
+    "data": [
+        "wizards/stock_picking_modify_qty_done.xml",
+        "views/stock_picking_views.xml",
     ],
 }

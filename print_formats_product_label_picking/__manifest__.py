@@ -18,18 +18,15 @@
 #
 ###############################################################################
 {
-    'name': 'Print Formats Product Label Picking',
-    'summary': 'Product label from pickings',
-    'category': 'Sales Management',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'print_formats_product_label',
-        'stock'
-    ],
-    'data': [
-        'wizard/wizard_report_from_picking.xml',
+    "name": "Print Formats Product Label Picking",
+    "summary": "Product label from pickings",
+    "category": "Sales Management",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": ["print_formats_product_label", "stock"],
+    "data": [
+        "wizard/wizard_report_from_picking.xml",
     ],
 }

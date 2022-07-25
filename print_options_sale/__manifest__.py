@@ -18,20 +18,20 @@
 #
 ###############################################################################
 {
-    'name': 'Print Options Sale',
-    'category': 'Tools',
-    'summary': 'Print options sale',
-    'version': '12.0.1.0.0',
-    'description': '''
+    "name": "Print Options Sale",
+    "category": "Tools",
+    "summary": "Print options sale",
+    "version": "13.0.1.0.0",
+    "description": """
 Add a button in sale order to call a wizard that print a report or another
-depending on the options selected.''',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale',
+depending on the options selected.""",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": [
+        "sale",
     ],
-    'data': [
-        'views/sale_order_views.xml',
-        'wizards/print_options_sale_views.xml',
+    "data": [
+        "views/sale_order_views.xml",
+        "wizards/print_options_sale_views.xml",
     ],
 }

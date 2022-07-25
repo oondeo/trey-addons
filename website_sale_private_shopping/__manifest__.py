@@ -18,16 +18,16 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Private Shopping',
-    'summary': 'Useful modules for public navigation and private shopping',
-    'category': 'website',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'website_sale_private_add_to_cart',
-        'website_sale_private_price',
-        'website_sale_private_stock',
+    "name": "Website Sale Private Shopping",
+    "summary": "Useful modules for public navigation and private shopping",
+    "category": "website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "website_sale_private_add_to_cart",
+        "website_sale_private_price",
+        "website_sale_private_stock",
     ],
 }

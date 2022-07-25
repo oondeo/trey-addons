@@ -5,8 +5,8 @@ from odoo import fields, models
 
 
 class WizProductLabelFromPickingLine(models.TransientModel):
-    _inherit = 'product.label.line'
+    _inherit = "product.label.line"
 
     product_customer_code = fields.Char(
-        string='Product Customer Code',
+        string="Product Customer Code",
     )

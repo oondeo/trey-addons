@@ -18,26 +18,26 @@
 #
 ###############################################################################
 {
-    'name': 'Vertical Website',
-    'category': 'Vertical',
-    'summary': 'Addons dependencies for Website',
-    'version': '12.0.1.5.0',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'author': 'Trey (www.trey.es)',
-    'depends': [
-        'website',
-        'website_canonical_url',
-        'website_crm_privacy_policy',
-        'website_fix_protocol_language_links',
-        'website_fix_protocol_metas',
-        'website_logo',
-        'website_protocol',
-        'website_reset_styles',
-        'website_schema_org',
+    "name": "Vertical Website",
+    "category": "Vertical",
+    "summary": "Addons dependencies for Website",
+    "version": "13.0.1.0.0",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "author": "Trey (www.trey.es)",
+    "depends": [
+        "website",
+        "website_canonical_url",
+        "website_crm_privacy_policy",
+        "website_fix_protocol_language_links",
+        "website_fix_protocol_metas",
+        "website_logo",
+        "website_protocol",
+        "website_reset_styles",
+        "website_schema_org",
     ],
-    'data': [
-        'views/website_templates.xml',
+    "data": [
+        "views/website_templates.xml",
     ],
-    'application': True,
+    "application": True,
 }

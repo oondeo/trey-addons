@@ -18,14 +18,14 @@
 #
 ###############################################################################
 {
-    'name': 'Partner Email Unique',
-    'summary': 'Module to make the email unique for customers and suppliers',
-    'category': 'Customer Relationship Management',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale',
+    "name": "Partner Email Unique",
+    "summary": "Module to make the email unique for customers and suppliers",
+    "category": "Customer Relationship Management",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "sale",
     ],
 }

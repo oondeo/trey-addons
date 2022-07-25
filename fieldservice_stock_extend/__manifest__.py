@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Fieldservice stock extend',
-    'summary': 'Extend fieldservice stock',
-    'category': 'Warehouse Management',
-    'version': '12.0.1.3.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'fieldservice_stock',
+    "name": "Fieldservice stock extend",
+    "summary": "Extend fieldservice stock",
+    "category": "Warehouse Management",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "fieldservice_stock",
     ],
-    'data': [
-        'views/fsm_order_views.xml',
+    "data": [
+        "views/fsm_order_views.xml",
     ],
 }

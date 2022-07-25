@@ -5,11 +5,11 @@ from odoo import fields, models
 
 
 class PurchaseOrderLine(models.Model):
-    _inherit = 'purchase.order.line'
+    _inherit = "purchase.order.line"
 
     is_ede_danger = fields.Boolean(
-        string='EDE Danger',
+        string="EDE Danger",
     )
     ede_invoice_id = fields.Char(
-        string='EDE Invoice ID',
+        string="EDE Invoice ID",
     )

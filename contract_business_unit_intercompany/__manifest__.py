@@ -18,18 +18,19 @@
 #
 ##############################################################################
 {
-    'name': 'Contract business unit intercompany',
-    'summary': (
-        'Create a contract per business unit in the company that '
-        'corresponds.'),
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'account_intercompany',
-        'contract_business_unit',
-        'sale',
+    "name": "Contract business unit intercompany",
+    "summary": (
+        "Create a contract per business unit in the company that "
+        "corresponds."
+    ),
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "account_intercompany",
+        "contract_business_unit",
+        "sale",
     ],
 }

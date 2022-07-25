@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Sale order partner default carrier',
-    'summary': 'Associate carrier with a customer',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'delivery',
-        'sale',
+    "name": "Sale order partner default carrier",
+    "summary": "Associate carrier with a customer",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "delivery",
+        "sale",
     ],
-    'data': [
-        'views/res_partner.xml',
+    "data": [
+        "views/res_partner.xml",
     ],
 }

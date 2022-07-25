@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Account Sequence Menu',
-    'summary': 'Moves Sequences menu to Account configuration menu',
-    'category': 'Website',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'account',
-        'base',
+    "name": "Account Sequence Menu",
+    "summary": "Moves Sequences menu to Account configuration menu",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "account",
+        "base",
     ],
-    'data': [
-        'security/res_groups_security.xml',
-        'security/ir.model.access.csv',
-        'views/account_views.xml',
-        'views/base_views.xml',
+    "data": [
+        "security/res_groups_security.xml",
+        "security/ir.model.access.csv",
+        "views/account_views.xml",
+        "views/base_views.xml",
     ],
 }

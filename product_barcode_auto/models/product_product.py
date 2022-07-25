@@ -5,15 +5,15 @@ from odoo import api, models
 
 
 class ProductProduct(models.Model):
-    _inherit = 'product.product'
+    _inherit = "product.product"
 
     def barcode_set(self):
-        prefix = '84999'
+        prefix = "84999"
         for product in self:
-            code = '%s%s' % (prefix, str(product.id).zfill(12 - len(prefix)))
+            code = "%s%s" % (prefix, str(product.id).zfill(12 - len(prefix)))
             dc = sum([(i % 2 and 3 or 1) * int(code[i]) for i in range(12)])
             dc = (10 - dc % 10) % 10
-            product.barcode = '%s%s' % (code[:12], dc)
+            product.barcode = "%s%s" % (code[:12], dc)
 
     @api.model
     def create(self, vals):
@@ -22,7 +22,6 @@ class ProductProduct(models.Model):
             res.barcode_set()
         return res
 
-    @api.multi
     def write(self, vals):
         res = super().write(vals)
         self.filtered(lambda p: not p.barcode).barcode_set()

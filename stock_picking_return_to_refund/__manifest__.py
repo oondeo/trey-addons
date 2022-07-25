@@ -18,15 +18,15 @@
 #
 ##############################################################################
 {
-    'name': 'Stock picking return to refund',
-    'summary': '''
-Active "to_refund" field in the revert stock picking wizard lines.''',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Stock',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'stock',
+    "name": "Stock picking return to refund",
+    "summary": """
+Active "to_refund" field in the revert stock picking wizard lines.""",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "stock",
     ],
 }

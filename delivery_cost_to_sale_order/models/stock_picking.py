@@ -5,9 +5,8 @@ from odoo import api, models
 
 
 class StockPicking(models.Model):
-    _inherit = 'stock.picking'
+    _inherit = "stock.picking"
 
-    @api.multi
     def _add_delivery_cost_to_so(self):
         self.ensure_one()
         if self.sale_id and self.sale_id.delivery_cost_to_sale_order:

@@ -10,7 +10,7 @@ _log = logging.getLogger(__name__)
 
 
 class ProductTemplate(models.Model):
-    _inherit = 'product.template'
+    _inherit = "product.template"
 
     def _name_get_parse(self, pattern, record):
         def _get_field_value(obj, parts):
@@ -20,19 +20,23 @@ class ProductTemplate(models.Model):
             return _get_field_value(value, parts[1:])
 
         data = {}
-        for field in re.findall(r'\((.*?)\)', pattern):
+        for field in re.findall(r"\((.*?)\)", pattern):
             try:
-                data[field] = _get_field_value(record, field.split('.'))
+                data[field] = _get_field_value(record, field.split("."))
             except Exception:
-                _log.error('Field %s in pattern "%s" not exists for %s' % (
-                    field, pattern, record._name))
-                data[field] = '%%(%s)s' % field
+                _log.error(
+                    'Field %s in pattern "%s" not exists for %s'
+                    % (field, pattern, record._name)
+                )
+                data[field] = "%%(%s)s" % field
         return pattern % data
 
-    @api.multi
     def name_get(self):
-        pattern = self.env['ir.config_parameter'].sudo().get_param(
-            'product_name_get.product_template_name_pattern')
-        if not pattern or 'partner_id' in self._context:
+        pattern = (
+            self.env["ir.config_parameter"]
+            .sudo()
+            .get_param("product_name_get.product_template_name_pattern")
+        )
+        if not pattern or "partner_id" in self._context:
             return super().name_get()
         return [(p.id, p._name_get_parse(pattern, p)) for p in self]

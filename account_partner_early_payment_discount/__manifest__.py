@@ -19,20 +19,20 @@
 ###############################################################################
 
 {
-    'name': 'Account Partner Early Payment Discount',
-    'category': 'Account',
-    'summary': 'Early payment discount on Invoice',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'account',
+    "name": "Account Partner Early Payment Discount",
+    "category": "Account",
+    "summary": "Early payment discount on Invoice",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "account",
     ],
-    'data': [
-        'views/company_view.xml',
-        'views/invoice_view.xml',
-        'views/partner_view.xml',
+    "data": [
+        "views/company_view.xml",
+        "views/invoice_view.xml",
+        "views/partner_view.xml",
     ],
-    'installable': True,
+    "installable": True,
 }

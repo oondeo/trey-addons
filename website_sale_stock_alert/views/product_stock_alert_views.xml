@@ -42,7 +42,6 @@
         <field name="name">Product Stock Alert</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">product.stock.alert</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
         <field name="search_view_id" ref="product_stock_alert_search"/>
     </record>

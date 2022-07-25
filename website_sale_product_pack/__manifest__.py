@@ -18,18 +18,16 @@
 #
 ##############################################################################
 {
-    'name': 'Website Sale Product Pack',
-    'summary': 'Allow to sell product packs in ecommerce.',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Website',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'sale_product_pack',
-        'website_sale',
+    "name": "Website Sale Product Pack",
+    "summary": "Allow to sell product packs in ecommerce.",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "sale_product_pack",
+        "website_sale",
     ],
-    'data': [
-        'templates/website_sale_template.xml'
-    ],
+    "data": ["templates/website_sale_template.xml"],
 }

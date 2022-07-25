@@ -7,9 +7,10 @@ from odoo import api, models
 
 
 class ProductTemplate(models.Model):
-    _inherit = 'product.template'
+    _inherit = "product.template"
 
     @api.model
     def _get_variants_qty_limit(self):
         return json.dumps(
-            {v.id: v.qty_limit for v in self.product_variant_ids})
+            {v.id: v.qty_limit for v in self.product_variant_ids}
+        )

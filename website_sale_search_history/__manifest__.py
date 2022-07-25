@@ -18,20 +18,20 @@
 #
 ###############################################################################
 {
-    'name': 'Website sale search history',
-    'summary': 'Record searches in the online store',
-    'category': 'Website',
-    'version': '12.0.1.2.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base_setup',
-        'website_sale',
+    "name": "Website sale search history",
+    "summary": "Record searches in the online store",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base_setup",
+        "website_sale",
     ],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/res_config_settings_views.xml',
-        'views/search_history_views.xml',
+    "data": [
+        "security/ir.model.access.csv",
+        "views/res_config_settings_views.xml",
+        "views/search_history_views.xml",
     ],
 }

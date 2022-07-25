@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Print Formats Product Label Customer Code',
-    'summary': 'Product customer code in product label',
-    'category': 'Tools',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'print_formats_product_label',
-        'product_supplierinfo_for_customer_picking',
-        'stock',
+    "name": "Print Formats Product Label Customer Code",
+    "summary": "Product customer code in product label",
+    "category": "Tools",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "print_formats_product_label",
+        "product_supplierinfo_for_customer_picking",
+        "stock",
     ],
-    'data': [
-        'views/report_product_label.xml',
+    "data": [
+        "views/report_product_label.xml",
     ],
 }

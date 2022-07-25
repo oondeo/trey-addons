@@ -5,8 +5,8 @@ from odoo import fields, models
 
 
 class ResPartner(models.Model):
-    _inherit = 'res.partner'
+    _inherit = "res.partner"
 
     registration_date = fields.Date(
-        string='Registration date',
-        default=fields.Date.today)
+        string="Registration date", default=fields.Date.today
+    )

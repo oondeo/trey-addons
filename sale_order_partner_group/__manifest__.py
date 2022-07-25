@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Sale Order Partner Group',
-    'summary': 'Allow to group partners by groups and associates the partner '
-               'group with the sale order.',
-    'category': 'Sales',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale',
+    "name": "Sale Order Partner Group",
+    "summary": "Allow to group partners by groups and associates the partner "
+    "group with the sale order.",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "sale",
     ],
-    'data': [
-        'views/res_partner_views.xml',
-        'views/sale_order_views.xml',
+    "data": [
+        "views/res_partner_views.xml",
+        "views/sale_order_views.xml",
     ],
 }

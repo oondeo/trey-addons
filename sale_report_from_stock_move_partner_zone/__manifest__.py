@@ -18,18 +18,18 @@
 #
 ##############################################################################
 {
-    'name': 'Sale report from stock move partner zone',
-    'summary': 'Add partner zone data to sale report usign stock move',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'partner_zone',
-        'sale_report_from_stock_move',
+    "name": "Sale report from stock move partner zone",
+    "summary": "Add partner zone data to sale report usign stock move",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "partner_zone",
+        "sale_report_from_stock_move",
     ],
-    'data': [
-        'reports/sale_report_from_stock_move.xml',
+    "data": [
+        "reports/sale_report_from_stock_move.xml",
     ],
 }

@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class ResPartner(models.Model):
-    _inherit = 'res.partner'
+    _inherit = "res.partner"
 
     early_discount = fields.Many2one(
-        comodel_name='partner.early.payment.discount',
-        string='Early payment discount',
+        comodel_name="partner.early.payment.discount",
+        string="Early payment discount",
     )

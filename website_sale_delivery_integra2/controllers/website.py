@@ -16,7 +16,11 @@ except (ImportError, IOError) as err:
 
 class Website(Website):
     @http.route(
-        ['/get_tracking_info_integra2'], type='json', auth='public',
-        methods=['post'], website=True)
+        ["/get_tracking_info_integra2"],
+        type="json",
+        auth="public",
+        methods=["post"],
+        website=True,
+    )
     def get_tracking_info_integra2(self, url):
         return requests.get(url).text

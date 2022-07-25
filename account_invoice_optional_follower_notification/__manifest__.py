@@ -18,18 +18,18 @@
 #
 ##############################################################################
 {
-    'name': 'Account invoice optional follower notification',
-    'summary': 'Choose to notify followers on invoice send wizard',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Invoicing Management',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'account',
-        'mail_optional_follower_notification',
+    "name": "Account invoice optional follower notification",
+    "summary": "Choose to notify followers on invoice send wizard",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Invoicing Management",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "account",
+        "mail_optional_follower_notification",
     ],
-    'data': [
-        'wizards/wizard_account_invoice_send.xml',
+    "data": [
+        "wizards/wizard_account_invoice_send.xml",
     ],
 }

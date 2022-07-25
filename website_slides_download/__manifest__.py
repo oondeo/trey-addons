@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Website Slides Download',
-    'summary': 'Download presentation link',
-    'category': 'Website',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'website_slides',
+    "name": "Website Slides Download",
+    "summary": "Download presentation link",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "website_slides",
     ],
-    'data': [
-        'views/website_slides_templates.xml',
+    "data": [
+        "views/website_slides_templates.xml",
     ],
 }

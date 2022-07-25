@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Delivery Carrier Tracking',
-    'summary': 'Base for delivery tracking methods implementation',
-    'category': 'Delivery',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'delivery',
+    "name": "Delivery Carrier Tracking",
+    "summary": "Base for delivery tracking methods implementation",
+    "category": "Delivery",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "delivery",
     ],
-    'data': [
-        'data/product_product.xml',
-        'views/delivery_carrier.xml',
+    "data": [
+        "data/product_product.xml",
+        "views/delivery_carrier.xml",
     ],
 }

@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Private Stock',
-    'summary': 'Hide products stock info from public users',
-    'category': 'website',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'website_sale_stock',
+    "name": "Website Sale Private Stock",
+    "summary": "Hide products stock info from public users",
+    "category": "website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "website_sale_stock",
     ],
-    'data': [
-        'views/website_sale_stock_templates.xml',
+    "data": [
+        "views/website_sale_stock_templates.xml",
     ],
 }

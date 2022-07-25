@@ -18,25 +18,25 @@
 #
 ###############################################################################
 {
-    'name': 'Fieldservice sale picking pack',
-    'category': 'Sales Management',
-    'version': '12.0.1.4.3',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'fieldservice_sale',
-        'fieldservice_sale_stock',
-        'fieldservice_stock',
-        'fieldservice_stock_extend',
-        'product',
-        'sale',
-        'sale_stock_product_pack',
+    "name": "Fieldservice sale picking pack",
+    "category": "Sales Management",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "fieldservice_sale",
+        "fieldservice_sale_stock",
+        "fieldservice_stock",
+        "fieldservice_stock_extend",
+        "product",
+        "sale",
+        "sale_stock_product_pack",
     ],
-    'data': [
-        'wizards/sale_order_relate_to_installations.xml',
-        'views/product_product_views.xml',
-        'views/product_template_views.xml',
-        'views/sale_order_views.xml',
+    "data": [
+        "wizards/sale_order_relate_to_installations.xml",
+        "views/product_product_views.xml",
+        "views/product_template_views.xml",
+        "views/sale_order_views.xml",
     ],
 }

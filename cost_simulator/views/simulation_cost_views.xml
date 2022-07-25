@@ -265,7 +265,6 @@
     <record id="simulation_cost_all_view" model="ir.actions.act_window">
         <field name="name">Simulations</field>
         <field name="res_model">simulation.cost</field>
-        <field name="view_type">form</field>
         <field name="domain">[]</field>
         <field name="view_mode">tree,form</field>
         <field name="view_id" ref="view_simulation_cost_filter"/>

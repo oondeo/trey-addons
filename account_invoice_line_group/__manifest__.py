@@ -18,20 +18,20 @@
 #
 ##############################################################################
 {
-    'name': "Account Invoice Line Group",
-    'summary': "Print invoices report grouping lines by group_Id",
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'category': 'Accounting',
-    'license': 'AGPL-3',
-    'version': '12.0.1.1.0',
-    'depends': [
-        'print_formats_account',
-        'sale',
+    "name": "Account Invoice Line Group",
+    "summary": "Print invoices report grouping lines by group_Id",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "category": "Accounting",
+    "license": "AGPL-3",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "print_formats_account",
+        "sale",
     ],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/account_invoice_views.xml',
-        'reports/report_invoice.xml',
-    ]
+    "data": [
+        "security/ir.model.access.csv",
+        "views/account_invoice_views.xml",
+        "reports/report_invoice.xml",
+    ],
 }

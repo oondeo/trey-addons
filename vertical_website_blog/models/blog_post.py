@@ -5,5 +5,5 @@ from odoo import models
 
 
 class BlogPost(models.Model):
-    _inherit = 'blog.post'
-    _order = 'post_date DESC, id DESC'
+    _inherit = "blog.post"
+    _order = "post_date DESC, id DESC"

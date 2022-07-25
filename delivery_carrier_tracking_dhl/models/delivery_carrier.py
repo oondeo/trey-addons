@@ -5,31 +5,36 @@ from odoo import fields, models
 
 
 class DeliveryCarrier(models.Model):
-    _inherit = 'delivery.carrier'
+    _inherit = "delivery.carrier"
 
     tracking_method = fields.Selection(
         selection_add=[
-            ('dhl', 'DHL'),
+            ("dhl", "DHL"),
         ],
     )
 
     def _get_tracking_link_dhl(self, picking):
-        tracking_link = self.env['ir.config_parameter'].sudo().get_param(
-            'delivery_carrier.tracking_link.dhl')
+        tracking_link = (
+            self.env["ir.config_parameter"]
+            .sudo()
+            .get_param("delivery_carrier.tracking_link.dhl")
+        )
         if (
-            not picking or not picking.carrier_tracking_ref
-                or tracking_link.find('%s') == -1):
-            return ''
+            not picking
+            or not picking.carrier_tracking_ref
+            or tracking_link.find("%s") == -1
+        ):
+            return ""
         return tracking_link % picking.carrier_tracking_ref
 
     def fixed_get_tracking_link(self, picking):
         res = super().fixed_get_tracking_link(picking)
-        if self.tracking_method == 'dhl':
+        if self.tracking_method == "dhl":
             return self._get_tracking_link_dhl(picking)
         return res
 
     def base_on_rule_get_tracking_link(self, picking):
         res = super().base_on_rule_get_tracking_link(picking)
-        if self.tracking_method == 'dhl':
+        if self.tracking_method == "dhl":
             return self._get_tracking_link_dhl(picking)
         return res

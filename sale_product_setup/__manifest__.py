@@ -18,29 +18,28 @@
 #
 ###############################################################################
 {
-    'name': 'Product setup',
-    'summary': 'Product setup',
-    'category': 'Sale',
-    'version': '12.0.1.11.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product',
-        'sale',
-        'sale_management',
-        'sales_team',
+    "name": "Product setup",
+    "summary": "Product setup",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product",
+        "sale",
+        "sale_management",
+        "sales_team",
     ],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/product_setup_category_views.xml',
-        'views/product_setup_group_views.xml',
-        'views/product_setup_property_views.xml',
-        'views/product_template_views.xml',
-        'wizards/sale_product_setup.xml',
+    "data": [
+        "security/ir.model.access.csv",
+        "views/product_setup_category_views.xml",
+        "views/product_setup_group_views.xml",
+        "views/product_setup_property_views.xml",
+        "views/product_template_views.xml",
+        "wizards/sale_product_setup.xml",
     ],
-    'demo': [
-        'demo/setup_demo.xml',
+    "demo": [
+        "demo/setup_demo.xml",
     ],
-
 }

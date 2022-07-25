@@ -18,18 +18,18 @@
 #
 ##############################################################################
 {
-    'name': 'Sale Order Avoid Locking',
-    'summary': 'Hide locking buttons depending on user permission',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.0.1',
-    'depends': [
-        'sale',
+    "name": "Sale Order Avoid Locking",
+    "summary": "Hide locking buttons depending on user permission",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "sale",
     ],
-    'data': [
-        'security/security.xml',
-        'views/sale_order_views.xml',
+    "data": [
+        "security/security.xml",
+        "views/sale_order_views.xml",
     ],
 }

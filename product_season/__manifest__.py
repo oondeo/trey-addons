@@ -18,24 +18,24 @@
 #
 ###############################################################################
 {
-    'name': 'Product Season',
-    'summary': 'Product Season Manager',
-    'category': 'Product',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'product',
-        'sale',
+    "name": "Product Season",
+    "summary": "Product Season Manager",
+    "category": "Product",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "product",
+        "sale",
     ],
-    'data': [
-        'security/ir.model.access.csv',
-        'security/multicompany.xml',
-        'views/product_season_view.xml',
-        'views/product_template_view.xml'
+    "data": [
+        "security/ir.model.access.csv",
+        "security/multicompany.xml",
+        "views/product_season_view.xml",
+        "views/product_template_view.xml",
     ],
-    'installable': True,
-    'auto_install': False
+    "installable": True,
+    "auto_install": False,
 }

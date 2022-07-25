@@ -5,8 +5,8 @@ from odoo import fields, models
 
 
 class AccountJournal(models.Model):
-    _inherit = 'account.journal'
+    _inherit = "account.journal"
 
     limit_amount_total = fields.Float(
-        string='Amount limit for open invoices',
+        string="Amount limit for open invoices",
     )

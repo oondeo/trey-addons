@@ -14,7 +14,6 @@
     <record id="email_reminder_action" model="ir.actions.act_window">
         <field name="name">Email Reminders</field>
         <field name="res_model">email.reminder.line</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
 </odoo>

@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Mail alias external email',
-    'summary': (
-        'Send email related to alias when an email comes in to create '
-        'a new register'
+    "name": "Mail alias external email",
+    "summary": (
+        "Send email related to alias when an email comes in to create "
+        "a new register"
     ),
-    'category': 'Social Network',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'mail',
+    "category": "Social Network",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "mail",
     ],
-    'data': [
-        'views/mail_alias_views.xml',
+    "data": [
+        "views/mail_alias_views.xml",
     ],
 }

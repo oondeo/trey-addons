@@ -6,7 +6,7 @@ from odoo.exceptions import AccessDenied
 
 
 class ResUsers(models.Model):
-    _inherit = 'res.users'
+    _inherit = "res.users"
 
     def _check_credentials(self, password):
         try:

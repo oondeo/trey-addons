@@ -18,23 +18,24 @@
 #
 ###############################################################################
 {
-    'name': 'Stock picking delivery wizard',
-    'summary': (
-        'Allow change carrier in picking when is validated or when not has '
-        'selected one'),
-    'category': 'Delivery',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'delivery',
-        'delivery_package_number',
-        'stock',
+    "name": "Stock picking delivery wizard",
+    "summary": (
+        "Allow change carrier in picking when is validated or when not has "
+        "selected one"
+    ),
+    "category": "Delivery",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "delivery",
+        "delivery_package_number",
+        "stock",
     ],
-    'data': [
-        'views/stock_picking_view.xml',
-        'wizards/stock_picking_delivery_wizard.xml',
-        'wizards/stock_immediate_transfer_views.xml',
+    "data": [
+        "views/stock_picking_view.xml",
+        "wizards/stock_picking_delivery_wizard.xml",
+        "wizards/stock_immediate_transfer_views.xml",
     ],
 }

@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Sale product margin limit',
-    'summary': 'Add margin limit to product form for if a sale line price '
-               'unit is below must be approve by a manager',
-    'category': 'Sale',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product',
-        'sale',
-        'sale_user_limits',
+    "name": "Sale product margin limit",
+    "summary": "Add margin limit to product form for if a sale line price "
+    "unit is below must be approve by a manager",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product",
+        "sale",
+        "sale_user_limits",
     ],
-    'data': [
-        'views/product_template_views.xml',
-        'views/res_users_views.xml',
+    "data": [
+        "views/product_template_views.xml",
+        "views/res_users_views.xml",
     ],
 }

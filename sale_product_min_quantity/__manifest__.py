@@ -18,15 +18,13 @@
 #
 ###############################################################################
 {
-    'name': 'Sale product min quantity',
-    'summary': 'Minimum sale of a particular product',
-    'version': '12.0.1.0.0',
-    'category': 'Product',
-    'website': 'https://www.trey.es',
-    'author': 'Trey (www.trey.es)',
-    'license': 'LGPL-3',
-    'depends': ['product', 'sale'],
-    'data': [
-        'views/product_template.xml'
-    ],
+    "name": "Sale product min quantity",
+    "summary": "Minimum sale of a particular product",
+    "version": "13.0.1.0.0",
+    "category": "Product",
+    "website": "https://www.trey.es",
+    "author": "Trey (www.trey.es)",
+    "license": "LGPL-3",
+    "depends": ["product", "sale"],
+    "data": ["views/product_template.xml"],
 }

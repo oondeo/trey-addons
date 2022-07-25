@@ -18,28 +18,28 @@
 #
 ###############################################################################
 {
-    'name': 'Stock package dummy',
-    'summary': 'Generate package labels dummy with barcodes uniques.',
-    'category': 'Stock',
-    'version': '12.0.1.6.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'stock',
+    "name": "Stock package dummy",
+    "summary": "Generate package labels dummy with barcodes uniques.",
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "stock",
     ],
-    'external_dependencies': {
-        'python': ['checkdigit'],
+    "external_dependencies": {
+        "python": ["checkdigit"],
     },
-    'data': [
-        'security/ir.model.access.csv',
-        'data/ir_config_parameter.xml',
-        'data/report_paperformat.xml',
-        'views/report_stock_package_dummy_label.xml',
-        'views/stock_package_dummy_views.xml',
-        'views/stock_picking_views.xml',
-        'views/web_template.xml',
-        'wizards/stock_package_dummy_read.xml',
-        'wizards/stock_package_dummy_print.xml',
+    "data": [
+        "security/ir.model.access.csv",
+        "data/ir_config_parameter.xml",
+        "data/report_paperformat.xml",
+        "views/report_stock_package_dummy_label.xml",
+        "views/stock_package_dummy_views.xml",
+        "views/stock_picking_views.xml",
+        "views/web_template.xml",
+        "wizards/stock_package_dummy_read.xml",
+        "wizards/stock_package_dummy_print.xml",
     ],
 }

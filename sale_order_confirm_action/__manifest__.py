@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Sale order confirm action',
-    'summary': 'Confirm multiple sale orders from tree',
-    'category': 'Sales Management',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale',
+    "name": "Sale order confirm action",
+    "summary": "Confirm multiple sale orders from tree",
+    "category": "Sales Management",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "sale",
     ],
-    'data': [
-        'wizards/sale_order_confirm.xml',
+    "data": [
+        "wizards/sale_order_confirm.xml",
     ],
 }

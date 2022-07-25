@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class EventTicket(models.Model):
-    _inherit = 'event.event.ticket'
+    _inherit = "event.event.ticket"
 
     project_id = fields.Many2one(
-        comodel_name='project.project',
-        string='Project',
+        comodel_name="project.project",
+        string="Project",
     )

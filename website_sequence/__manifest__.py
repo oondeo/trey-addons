@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sequence',
-    'summary': 'Add sequence to website list',
-    'category': 'Website',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'website',
+    "name": "Website Sequence",
+    "summary": "Add sequence to website list",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "website",
     ],
-    'data': [
-        'views/website_views.xml',
+    "data": [
+        "views/website_views.xml",
     ],
 }

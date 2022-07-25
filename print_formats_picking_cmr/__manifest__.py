@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Print Formats Picking CMR',
-    'summary': 'CMR Report from Picking',
-    'version': '12.0.1.1.0',
-    'category': 'Warehouse Management',
-    'website': 'https://www.trey.es',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': [
-        'stock',
-        'web',
+    "name": "Print Formats Picking CMR",
+    "summary": "CMR Report from Picking",
+    "version": "13.0.1.0.0",
+    "category": "Warehouse Management",
+    "website": "https://www.trey.es",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": [
+        "stock",
+        "web",
     ],
-    'data': [
-        'data/report_paperformat.xml',
-        'views/report_cmr.xml',
-        'views/stock_picking_views.xml',
+    "data": [
+        "data/report_paperformat.xml",
+        "views/report_cmr.xml",
+        "views/stock_picking_views.xml",
     ],
-    'application': True,
+    "application": True,
 }

@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Stock move partner',
-    'summary': 'Add partner from picking to stock move for group and filter',
-    'category': 'Stock',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'stock',
+    "name": "Stock move partner",
+    "summary": "Add partner from picking to stock move for group and filter",
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "stock",
     ],
-    'data': [
-        'views/stock_move_views.xml',
+    "data": [
+        "views/stock_move_views.xml",
     ],
 }

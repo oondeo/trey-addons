@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Product images url',
-    'summary': 'Add URLs of the images to product page.',
-    'category': 'Product',
-    'version': '12.0.1.0.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product',
-        'website',
-        'website_sale',
+    "name": "Product images url",
+    "summary": "Add URLs of the images to product page.",
+    "category": "Product",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product",
+        "website",
+        "website_sale",
     ],
-    'data': [
-        'views/product_template_views.xml',
+    "data": [
+        "views/product_template_views.xml",
     ],
 }

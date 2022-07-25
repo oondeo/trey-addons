@@ -52,7 +52,6 @@
     <record id="action_rma_report_from_stock_move" model="ir.actions.act_window">
         <field name="name">RMA analysis from stock moves</field>
         <field name="res_model">sale.rma.stats.from_stock_move</field>
-        <field name="view_type">form</field>
         <field name="view_mode">graph,pivot</field>
         <field name="view_id"></field>
         <field name="search_view_id" ref="sale_rma_stats_from_stock_move_search"/>

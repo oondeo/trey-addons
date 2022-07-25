@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Mail activity datetime',
-    'summary': 'Add datetime in activity planning',
-    'category': 'Social Network',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'mail_activity_board',
+    "name": "Mail activity datetime",
+    "summary": "Add datetime in activity planning",
+    "category": "Social Network",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "mail_activity_board",
     ],
-    'data': [
-        'views/mail_activity_views.xml',
+    "data": [
+        "views/mail_activity_views.xml",
     ],
 }

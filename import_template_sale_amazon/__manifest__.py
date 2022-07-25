@@ -18,25 +18,25 @@
 #
 ###############################################################################
 {
-    'name': 'Import template sale Amazon',
-    'summary': '''
-Import Amazon sale data from files Excel or CSV from templates''',
-    'category': 'Tools',
-    'version': '12.0.1.0.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'account_payment_mode',
-        'account_payment_sale',
-        'base',
-        'delivery',
-        'import_template',
-        'product',
-        'sale',
+    "name": "Import template sale Amazon",
+    "summary": """
+Import Amazon sale data from files Excel or CSV from templates""",
+    "category": "Tools",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "account_payment_mode",
+        "account_payment_sale",
+        "base",
+        "delivery",
+        "import_template",
+        "product",
+        "sale",
     ],
-    'data': [
-        'data/data.xml',
-        'wizards/import_template_sale_amazon.xml',
+    "data": [
+        "data/data.xml",
+        "wizards/import_template_sale_amazon.xml",
     ],
 }

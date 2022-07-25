@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Sale Order Stock Picking Date Planned',
-    'summary': 'Force picking planned date from order',
-    'version': '12.0.1.1.1',
-    'category': 'Sale',
-    'website': 'https://www.trey.es',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale_stock',
+    "name": "Sale Order Stock Picking Date Planned",
+    "summary": "Force picking planned date from order",
+    "version": "13.0.1.0.0",
+    "category": "Sale",
+    "website": "https://www.trey.es",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": [
+        "sale_stock",
     ],
-    'data': [
-        'views/sale_order_views.xml',
+    "data": [
+        "views/sale_order_views.xml",
     ],
 }

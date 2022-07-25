@@ -18,16 +18,16 @@
 #
 ##############################################################################
 {
-    'name': 'Stock rule purchase fix',
-    'summary': 'Fix for purchase rules',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Warehouse',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'purchase',
-        'sale',
-        'stock',
+    "name": "Stock rule purchase fix",
+    "summary": "Fix for purchase rules",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Warehouse",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "purchase",
+        "sale",
+        "stock",
     ],
 }

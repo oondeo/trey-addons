@@ -18,20 +18,20 @@
 #
 ###############################################################################
 {
-    'name': 'Sale RMA stats from stock move',
-    'summary': 'RMA stats usign stock move information',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.1.0',
-    'depends': [
-        'sale',
-        'sale_stock',
-        'sale_return',
+    "name": "Sale RMA stats from stock move",
+    "summary": "RMA stats usign stock move information",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "sale",
+        "sale_stock",
+        "sale_return",
     ],
-    'data': [
-        'security/ir.model.access.csv',
-        'reports/sale_rma_stats_from_stock_move.xml',
+    "data": [
+        "security/ir.model.access.csv",
+        "reports/sale_rma_stats_from_stock_move.xml",
     ],
 }

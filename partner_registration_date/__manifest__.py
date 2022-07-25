@@ -18,17 +18,15 @@
 #
 ###############################################################################
 {
-    'name': 'Partner registration date',
-    'summary': 'Add registration date field in partner',
-    'category': 'Extra Tools',
-    'version': '12.0.0.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': ['base'],
-    'data': [
-        'views/res_partner.xml'
-    ],
-    'post_init_hook': 'post_init_hook',
-    'installable': True,
+    "name": "Partner registration date",
+    "summary": "Add registration date field in partner",
+    "category": "Extra Tools",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": ["base"],
+    "data": ["views/res_partner.xml"],
+    "post_init_hook": "post_init_hook",
+    "installable": True,
 }

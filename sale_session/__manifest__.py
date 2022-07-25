@@ -18,35 +18,36 @@
 #
 ##############################################################################
 {
-    'name': 'Sale session',
-    'summary': (
-        'Manage sale sessions how a point of sale, but with sale orders'),
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.6.1',
-    'depends': [
-        'account',
-        'account_financial_risk',
-        'crm_team_config',
-        'mail',
-        'print_formats_account_ticket',
-        'sale',
-        'sale_stock',
+    "name": "Sale session",
+    "summary": (
+        "Manage sale sessions how a point of sale, but with sale orders"
+    ),
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "account",
+        "account_financial_risk",
+        "crm_team_config",
+        "mail",
+        "print_formats_account_ticket",
+        "sale",
+        "sale_stock",
     ],
-    'data': [
-        'security/security.xml',
-        'data/ir_sequence.xml',
-        'security/ir.model.access.csv',
-        'wizards/sale_session_payment.xml',
-        'wizards/sale_session_close.xml',
-        'wizards/sale_session_wizard_cash_count.xml',
-        'wizards/sale_order_confirm_and_pay.xml',
-        'views/report_sale_session_ticket.xml',
-        'views/sale_order.xml',
-        'views/sale_session.xml',
-        'views/sale_session_cash_count.xml',
-        'views/crm_team.xml',
-    ]
+    "data": [
+        "security/security.xml",
+        "data/ir_sequence.xml",
+        "security/ir.model.access.csv",
+        "wizards/sale_session_payment.xml",
+        "wizards/sale_session_close.xml",
+        "wizards/sale_session_wizard_cash_count.xml",
+        "wizards/sale_order_confirm_and_pay.xml",
+        "views/report_sale_session_ticket.xml",
+        "views/sale_order.xml",
+        "views/sale_session.xml",
+        "views/sale_session_cash_count.xml",
+        "views/crm_team.xml",
+    ],
 }

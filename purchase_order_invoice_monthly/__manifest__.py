@@ -18,17 +18,17 @@
 #
 ##############################################################################
 {
-    'name': 'Purchase order invoice monthly',
-    'summary': 'Invoice purchase order by stock move months',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Purchases',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'account',
-        'purchase',
-        'purchase_order_invoice',
-        'purchase_stock',
+    "name": "Purchase order invoice monthly",
+    "summary": "Invoice purchase order by stock move months",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Purchases",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "account",
+        "purchase",
+        "purchase_order_invoice",
+        "purchase_stock",
     ],
 }

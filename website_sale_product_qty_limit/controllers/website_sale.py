@@ -11,7 +11,7 @@ class WebsiteSale(main.WebsiteSale):
         for line in order.order_line:
             if (
                 line.product_id
-                and line.product_id.type == 'product'
+                and line.product_id.type == "product"
                 and line.product_id.qty_limit > 0
                 and line.product_uom_qty > line.product_id.qty_limit
             ):

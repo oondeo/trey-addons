@@ -5,11 +5,11 @@ from odoo import fields, models
 
 
 class CrmLead(models.Model):
-    _inherit = 'crm.lead'
+    _inherit = "crm.lead"
 
     business_unit_ids = fields.Many2many(
-        comodel_name='product.business.unit',
-        relation='productbusinessunit2crm',
-        column1='lead_id',
-        column2='unit_id',
+        comodel_name="product.business.unit",
+        relation="productbusinessunit2crm",
+        column1="lead_id",
+        column2="unit_id",
     )

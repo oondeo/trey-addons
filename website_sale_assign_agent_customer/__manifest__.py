@@ -18,22 +18,22 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Assign Agent Customer',
-    'summary': 'Assign agent customer to cart in checkout process',
-    'category': 'Website',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale',
-        'sale_commission',
-        'sale_commission_group',
-        'website_sale',
-        'website_sale_checkout_extra_fields',
+    "name": "Website Sale Assign Agent Customer",
+    "summary": "Assign agent customer to cart in checkout process",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "sale",
+        "sale_commission",
+        "sale_commission_group",
+        "website_sale",
+        "website_sale_checkout_extra_fields",
     ],
-    'data': [
-        'views/website_sale.xml',
+    "data": [
+        "views/website_sale.xml",
     ],
-    'installable': True,
+    "installable": True,
 }

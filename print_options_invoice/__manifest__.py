@@ -18,20 +18,20 @@
 #
 ###############################################################################
 {
-    'name': 'Print Options Invoice',
-    'category': 'Tools',
-    'summary': 'Print options invoice',
-    'version': '12.0.1.0.0',
-    'description': '''
+    "name": "Print Options Invoice",
+    "category": "Tools",
+    "summary": "Print options invoice",
+    "version": "13.0.1.0.0",
+    "description": """
 Add a button in account invoice to call a wizard that print a report or another
-depending on the options selected.''',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': [
-        'account',
+depending on the options selected.""",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": [
+        "account",
     ],
-    'data': [
-        'views/account_invoice_views.xml',
-        'wizards/print_options_account_invoice_views.xml',
+    "data": [
+        "views/account_invoice_views.xml",
+        "wizards/print_options_account_invoice_views.xml",
     ],
 }

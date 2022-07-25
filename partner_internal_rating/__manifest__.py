@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Partner Internal Rating',
-    'summary': 'Private customer evaluation',
-    'category': 'Extra Tools',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
+    "name": "Partner Internal Rating",
+    "summary": "Private customer evaluation",
+    "category": "Extra Tools",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
     ],
-    'data': [
-        'views/res_partner_views.xml',
+    "data": [
+        "views/res_partner_views.xml",
     ],
 }

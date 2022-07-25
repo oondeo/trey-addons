@@ -5,10 +5,10 @@ from odoo import models
 
 
 class SaleOrderLine(models.Model):
-    _inherit = 'sale.order.line'
+    _inherit = "sale.order.line"
 
     def _field_create_fsm_order_prepare_values(self):
         self.ensure_one()
         res = super()._field_create_fsm_order_prepare_values()
-        res['warehouse_id'] = self.order_id.warehouse_id.id
+        res["warehouse_id"] = self.order_id.warehouse_id.id
         return res

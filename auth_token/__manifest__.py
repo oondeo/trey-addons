@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Auth Token',
-    'summary': 'Login into Odoo with token',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Tools',
-    'version': '12.0.1.1.0',
-    'depends': [
-        'base',
-        'portal',
-        'web',
-        'website',
+    "name": "Auth Token",
+    "summary": "Login into Odoo with token",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Tools",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "base",
+        "portal",
+        "web",
+        "website",
     ],
-    'data': [
-        'views/res_config_settings_views.xml',
-        'views/res_users_views.xml',
+    "data": [
+        "views/res_config_settings_views.xml",
+        "views/res_users_views.xml",
     ],
 }

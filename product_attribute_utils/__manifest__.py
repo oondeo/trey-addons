@@ -18,15 +18,15 @@
 #
 ###############################################################################
 {
-    'name': 'Product Attribute Utils',
-    'summary': 'Utilities for product attributes',
-    'category': 'Product',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product',
-        'website_sale',
+    "name": "Product Attribute Utils",
+    "summary": "Utilities for product attributes",
+    "category": "Product",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product",
+        "website_sale",
     ],
 }

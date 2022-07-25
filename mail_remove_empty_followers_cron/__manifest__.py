@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Mail Remove Empty Followers Cron',
-    'summary': 'Remove followers without email',
-    'category': 'Mail',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'mail',
+    "name": "Mail Remove Empty Followers Cron",
+    "summary": "Remove followers without email",
+    "category": "Mail",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "mail",
     ],
-    'data': [
-        'data/cron_data.xml',
-    ]
+    "data": [
+        "data/cron_data.xml",
+    ],
 }

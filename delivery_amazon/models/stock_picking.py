@@ -5,8 +5,8 @@ from odoo import fields, models
 
 
 class StockPicking(models.Model):
-    _inherit = 'stock.picking'
+    _inherit = "stock.picking"
 
     amazon_shipment_id = fields.Text(
-        string='Amazon Shipment Id',
+        string="Amazon Shipment Id",
     )

@@ -6,7 +6,7 @@ from odoo.exceptions import UserError
 
 
 class AccountInvoice(models.Model):
-    _inherit = 'account.invoice'
+    _inherit = "account.invoice"
 
     @api.model
     def intercompany_get_id(self, record, company):
@@ -15,13 +15,21 @@ class AccountInvoice(models.Model):
         if record.company_id == company:
             return record.id
         record_map = record.intercompany_map_ids.filtered(
-            lambda r: r.company_id == company)
+            lambda r: r.company_id == company
+        )
         if not record_map:
-            raise UserError(_(
-                'You must create a mapped for %s "%s" of the company "%s" for '
-                'the company "%s"' % (
-                    record._description, record.name, record.company_id.name,
-                    company.name)))
+            raise UserError(
+                _(
+                    'You must create a mapped for %s "%s" of the company "%s" for '
+                    'the company "%s"'
+                    % (
+                        record._description,
+                        record.name,
+                        record.company_id.name,
+                        company.name,
+                    )
+                )
+            )
         return record_map.id if record_map else False
 
     @api.model
@@ -29,19 +37,24 @@ class AccountInvoice(models.Model):
         def same_company(field):
             return (
                 self[field].company_id == self.company_id
-                if self[field] else True)
+                if self[field]
+                else True
+            )
 
         self.ensure_one()
         self = self.with_context(ignore_intercompany=True)
-        if not same_company('journal_id'):
+        if not same_company("journal_id"):
             self.journal_id = self.intercompany_get_id(
-                self.journal_id, self.company_id)
-        if not same_company('payment_term_id'):
+                self.journal_id, self.company_id
+            )
+        if not same_company("payment_term_id"):
             self.payment_term_id = self.intercompany_get_id(
-                self.payment_term_id, self.company_id)
-        if not same_company('payment_mode_id'):
+                self.payment_term_id, self.company_id
+            )
+        if not same_company("payment_mode_id"):
             self.payment_mode_id = self.intercompany_get_id(
-                self.payment_mode_id, self.company_id)
+                self.payment_mode_id, self.company_id
+            )
 
     @api.model
     def create(self, vals):
@@ -50,9 +63,8 @@ class AccountInvoice(models.Model):
         vals = invoice._convert_to_write(invoice._cache)
         return super().create(vals)
 
-    @api.multi
     def write(self, vals):
-        if self._context.get('ignore_intercompany'):
+        if self._context.get("ignore_intercompany"):
             return super().write(vals)
         res = super().write(vals)
         for line in self:

@@ -18,25 +18,25 @@
 #
 ###############################################################################
 {
-    'name': 'Import template pricelist item',
-    'summary': '''
+    "name": "Import template pricelist item",
+    "summary": """
 Import product pricelist item product data from files Excel or CSV from
-templates''',
-    'category': 'Tools',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'account_invoice_cumulative_discount',
-        'import_template',
-        'product',
-        'product_pricelist_by_brand',
-        'product_pricelist_by_season',
-        'product_pricelist_purchase',
-        'product_pricelist_purchase_cumulative_discount',
+templates""",
+    "category": "Tools",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "account_invoice_cumulative_discount",
+        "import_template",
+        "product",
+        "product_pricelist_by_brand",
+        "product_pricelist_by_season",
+        "product_pricelist_purchase",
+        "product_pricelist_purchase_cumulative_discount",
     ],
-    'data': [
-        'data/data.xml',
+    "data": [
+        "data/data.xml",
     ],
 }

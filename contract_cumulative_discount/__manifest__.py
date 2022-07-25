@@ -18,19 +18,19 @@
 #
 ##############################################################################
 {
-    'name': 'Contract Cumulative Discount',
-    'summary': 'Add cumulative discount as mathematical expressions',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'account_invoice_cumulative_discount',
-        'product_contract',
-        'sale_order_cumulative_discount',
+    "name": "Contract Cumulative Discount",
+    "summary": "Add cumulative discount as mathematical expressions",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "account_invoice_cumulative_discount",
+        "product_contract",
+        "sale_order_cumulative_discount",
     ],
-    'data': [
-        'views/contract_line.xml',
+    "data": [
+        "views/contract_line.xml",
     ],
 }

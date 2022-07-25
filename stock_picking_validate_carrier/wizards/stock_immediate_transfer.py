@@ -5,17 +5,17 @@ from odoo import api, fields, models
 
 
 class StockImmediateTransfer(models.TransientModel):
-    _inherit = 'stock.immediate.transfer'
+    _inherit = "stock.immediate.transfer"
 
     carrier_id = fields.Many2one(
-        comodel_name='delivery.carrier',
-        compute='_compute_carrier',
+        comodel_name="delivery.carrier",
+        compute="_compute_carrier",
         readonly=False,
         store=True,
-        string='Carrier',
+        string="Carrier",
     )
 
-    @api.depends('pick_ids')
+    @api.depends("pick_ids")
     def _compute_carrier(self):
         for wizard in self:
             wizard.carrier_id = wizard.pick_ids[0].carrier_id.id

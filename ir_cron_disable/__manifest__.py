@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Ir cron disable',
-    'summary': 'Add new option to disable planned actions',
-    'category': 'Technical Settings',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'mail',
+    "name": "Ir cron disable",
+    "summary": "Add new option to disable planned actions",
+    "category": "Technical Settings",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "mail",
     ],
-    'data': [
-        'wizards/ir_cron_disable_actions.xml',
+    "data": [
+        "wizards/ir_cron_disable_actions.xml",
     ],
 }

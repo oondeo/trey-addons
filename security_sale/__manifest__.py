@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Security sale',
-    'summary': 'Security sale extend',
-    'category': 'Sale',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'account_payment_sale',
-        'sale',
+    "name": "Security sale",
+    "summary": "Security sale extend",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "account_payment_sale",
+        "sale",
     ],
-    'data': [
-        'security/security.xml',
-        'views/sale_order.xml',
+    "data": [
+        "security/security.xml",
+        "views/sale_order.xml",
     ],
 }

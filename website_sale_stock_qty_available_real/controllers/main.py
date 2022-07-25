@@ -9,5 +9,6 @@ class WebsiteSale(WebsiteSale):
     @route()
     def payment_transaction(self, *args, **kwargs):
         request.website = request.website.with_context(
-            website_sale_stock_available_real=True)
+            website_sale_stock_available_real=True
+        )
         return super().payment_transaction(*args, **kwargs)

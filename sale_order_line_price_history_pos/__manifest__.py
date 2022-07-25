@@ -18,17 +18,17 @@
 #
 ##############################################################################
 {
-    'name': 'Sale order line price history POS',
-    'summary': 'Add POS orders information to sale line price history',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Product',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'sale_order_line_price_history',
+    "name": "Sale order line price history POS",
+    "summary": "Add POS orders information to sale line price history",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Product",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "sale_order_line_price_history",
     ],
-    'data': [
-        'wizards/sale_order_line_price_history.xml',
+    "data": [
+        "wizards/sale_order_line_price_history.xml",
     ],
 }

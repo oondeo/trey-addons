@@ -18,20 +18,20 @@
 #
 ###############################################################################
 {
-    'name': 'Notifications settings stock',
-    'summary': 'Stock notifications by mail',
-    'category': 'Stock',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'notifications_settings',
-        'website_sale_stock',
+    "name": "Notifications settings stock",
+    "summary": "Stock notifications by mail",
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "notifications_settings",
+        "website_sale_stock",
     ],
-    'data': [
-        'data/notifications_settings_stock_email.xml',
-        'views/res_config_settings_views.xml',
+    "data": [
+        "data/notifications_settings_stock_email.xml",
+        "views/res_config_settings_views.xml",
     ],
 }

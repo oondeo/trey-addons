@@ -40,7 +40,6 @@
         <field name="name">Pricelists conditions</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">product.pricelist.purchase</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,kanban,form</field>
         <field name="search_view_id" ref="product_pricelist_purchase.product_pricelist_view_search"/>
         <field name="context">{'default_base': 'purchase_price'}</field>

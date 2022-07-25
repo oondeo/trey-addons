@@ -18,18 +18,18 @@
 #
 ##############################################################################
 {
-    'name': 'Stock partner',
-    'summary': 'Show stock partner options for Manager stock group',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Stock',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'base',
-        'stock',
+    "name": "Stock partner",
+    "summary": "Show stock partner options for Manager stock group",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "base",
+        "stock",
     ],
-    'data': [
-        'views/res_partner_views.xml',
+    "data": [
+        "views/res_partner_views.xml",
     ],
 }

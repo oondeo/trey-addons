@@ -5,7 +5,7 @@ from odoo import fields, models
 
 
 class ProductProduct(models.Model):
-    _inherit = 'product.product'
+    _inherit = "product.product"
 
     sales_count = fields.Float(
         store=True,

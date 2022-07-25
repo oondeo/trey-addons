@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Notifications settings',
-    'summary': 'Base module for partner notifications by mail',
-    'category': 'Website',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base_setup',
+    "name": "Notifications settings",
+    "summary": "Base module for partner notifications by mail",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base_setup",
     ],
-    'data': [
-        'views/res_config_settings_views.xml',
+    "data": [
+        "views/res_config_settings_views.xml",
     ],
 }

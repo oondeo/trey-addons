@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Security pos',
-    'summary': 'Security pos extend',
-    'category': 'Point of Sale',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'point_of_sale',
+    "name": "Security pos",
+    "summary": "Security pos extend",
+    "category": "Point of Sale",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "point_of_sale",
     ],
-    'data': [
-        'security/security.xml',
-        'views/res_users.xml',
+    "data": [
+        "security/security.xml",
+        "views/res_users.xml",
     ],
 }

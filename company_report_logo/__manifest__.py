@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Company Report Logo',
-    'summary': 'Base company report logo',
-    'category': 'Tools',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': ['base', 'web'],
-    'data': [
-        'views/res_partner_view.xml',
-        'report/report_templates.xml',
+    "name": "Company Report Logo",
+    "summary": "Base company report logo",
+    "category": "Tools",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": ["base", "web"],
+    "data": [
+        "views/res_partner_view.xml",
+        "report/report_templates.xml",
     ],
-    'installable': True,
+    "installable": True,
 }

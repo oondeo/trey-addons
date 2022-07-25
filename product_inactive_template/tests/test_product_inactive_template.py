@@ -7,33 +7,45 @@ from odoo.tests.common import TransactionCase
 class TestProductInactiveTemplate(TransactionCase):
     def setUp(self):
         super().setUp()
-        self.product_1 = self.env['product.product'].create({
-            'type': 'service',
-            'company_id': False,
-            'name': 'Test product 1',
-            'standard_price': 10,
-            'list_price': 100,
-        })
+        self.product_1 = self.env["product.product"].create(
+            {
+                "type": "service",
+                "company_id": False,
+                "name": "Test product 1",
+                "standard_price": 10,
+                "list_price": 100,
+            }
+        )
 
-        attr = self.env['product.attribute'].create({
-            'name': 'Attribute test',
-        })
-        for value in ['A', 'B', 'C']:
-            self.env['product.attribute.value'].create({
-                'attribute_id': attr.id,
-                'name': value,
-            })
-        self.product_tmpl_2 = self.env['product.template'].create({
-            'name': 'Test product 2',
-            'type': 'service',
-            'standard_price': 10.00,
-            'attribute_line_ids': [
-                (0, 0, {
-                    'attribute_id': attr.id,
-                    'value_ids': [(6, 0, attr.value_ids.ids)],
-                }),
-            ],
-        })
+        attr = self.env["product.attribute"].create(
+            {
+                "name": "Attribute test",
+            }
+        )
+        for value in ["A", "B", "C"]:
+            self.env["product.attribute.value"].create(
+                {
+                    "attribute_id": attr.id,
+                    "name": value,
+                }
+            )
+        self.product_tmpl_2 = self.env["product.template"].create(
+            {
+                "name": "Test product 2",
+                "type": "service",
+                "standard_price": 10.00,
+                "attribute_line_ids": [
+                    (
+                        0,
+                        0,
+                        {
+                            "attribute_id": attr.id,
+                            "value_ids": [(6, 0, attr.value_ids.ids)],
+                        },
+                    ),
+                ],
+            }
+        )
         self.assertEquals(len(self.product_tmpl_2.product_variant_ids), 3)
 
     def test_write_default_behavior_without_variants(self):

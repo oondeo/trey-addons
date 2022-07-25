@@ -5,12 +5,12 @@ from odoo import fields, models
 
 
 class SaleOrderLine(models.Model):
-    _inherit = 'sale.order.line'
+    _inherit = "sale.order.line"
 
     generate_task = fields.Boolean(
-        string='Generate Task',
+        string="Generate Task",
     )
     history_line_id = fields.Many2one(
-        comodel_name='simulation.cost.history.line',
-        string='Simulation Line',
+        comodel_name="simulation.cost.history.line",
+        string="Simulation Line",
     )

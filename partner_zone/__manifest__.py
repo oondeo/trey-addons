@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Partner Zone',
-    'summary': 'Partner zone',
-    'category': 'Extra Tools',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'contacts',
+    "name": "Partner Zone",
+    "summary": "Partner zone",
+    "category": "Extra Tools",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "contacts",
     ],
-    'data': [
-        'security/ir.model.access.csv',
-        'security/ir_rule.xml',
-        'views/res_partner_views.xml',
-        'views/res_partner_zone_views.xml',
-        'views/res_users_views.xml',
+    "data": [
+        "security/ir.model.access.csv",
+        "security/ir_rule.xml",
+        "views/res_partner_views.xml",
+        "views/res_partner_zone_views.xml",
+        "views/res_users_views.xml",
     ],
 }

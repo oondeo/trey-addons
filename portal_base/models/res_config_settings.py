@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class ResConfigSettings(models.TransientModel):
-    _inherit = 'res.config.settings'
+    _inherit = "res.config.settings"
 
     edit_portal_details = fields.Boolean(
-        string='Edit Portal Details',
-        config_parameter='portal_base.edit_portal_details',
+        string="Edit Portal Details",
+        config_parameter="portal_base.edit_portal_details",
     )

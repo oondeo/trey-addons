@@ -18,20 +18,20 @@
 #
 ##############################################################################
 {
-    'name': 'Contract business unit',
-    'summary': 'Add business unit and area to contracts',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'product_business_unit',
-        'product_contract',
+    "name": "Contract business unit",
+    "summary": "Add business unit and area to contracts",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "product_business_unit",
+        "product_contract",
     ],
-    'data': [
-        'views/contract_contract.xml',
-        'views/contract_template.xml',
-        'views/product_template.xml',
+    "data": [
+        "views/contract_contract.xml",
+        "views/contract_template.xml",
+        "views/product_template.xml",
     ],
 }

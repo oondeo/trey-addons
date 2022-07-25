@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Purchase order repair',
-    'summary': 'Purchase order repair',
-    'category': 'Purchases',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'purchase',
-        'purchase_stock',
-        'stock',
+    "name": "Purchase order repair",
+    "summary": "Purchase order repair",
+    "category": "Purchases",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "purchase",
+        "purchase_stock",
+        "stock",
     ],
-    'data': [
-        'data/data.xml',
-        'views/stock_picking_type_views.xml',
+    "data": [
+        "data/data.xml",
+        "views/stock_picking_type_views.xml",
     ],
 }

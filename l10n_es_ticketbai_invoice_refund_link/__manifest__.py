@@ -18,19 +18,19 @@
 #
 ##############################################################################
 {
-    'name': 'TicketBAI - Invoice refund link',
-    'version': '12.0.1.0.0',
-    'summary': 'Relate refund invoice to the original invoice',
-    'license': 'AGPL-3',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'category': 'Accounting & Finance',
-    'depends': [
-        'account_invoice_link_refund',
-        'account_invoice_refund_link',
-        'l10n_es',
-        'l10n_es_aeat',
-        'l10n_es_ticketbai',
-        'sale',
+    "name": "TicketBAI - Invoice refund link",
+    "version": "13.0.1.0.0",
+    "summary": "Relate refund invoice to the original invoice",
+    "license": "AGPL-3",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "category": "Accounting & Finance",
+    "depends": [
+        "account_invoice_link_refund",
+        "account_invoice_refund_link",
+        "l10n_es",
+        "l10n_es_aeat",
+        "l10n_es_ticketbai",
+        "sale",
     ],
 }

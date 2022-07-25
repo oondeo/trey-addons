@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class ResCompany(models.Model):
-    _inherit = 'res.company'
+    _inherit = "res.company"
 
     default_return_days = fields.Integer(
         default=730,
-        string='Default max return days',
+        string="Default max return days",
     )

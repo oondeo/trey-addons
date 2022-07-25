@@ -18,23 +18,23 @@
 #
 ##############################################################################
 {
-    'name': 'Product business unit',
-    'summary': 'Add business unit to product template',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Product',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'product',
-        'sale',
+    "name": "Product business unit",
+    "summary": "Add business unit to product template",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Product",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "product",
+        "sale",
     ],
-    'data': [
-        'security/security.xml',
-        'security/ir.model.access.csv',
-        'views/product_product.xml',
-        'views/product_template.xml',
-        'views/product_business_area.xml',
-        'views/product_business_unit.xml',
+    "data": [
+        "security/security.xml",
+        "security/ir.model.access.csv",
+        "views/product_product.xml",
+        "views/product_template.xml",
+        "views/product_business_area.xml",
+        "views/product_business_unit.xml",
     ],
 }

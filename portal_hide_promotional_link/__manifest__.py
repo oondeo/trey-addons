@@ -18,16 +18,14 @@
 #
 ###############################################################################
 {
-    'name': 'Portal Hide Promotional Link',
-    'summary': 'Hide Odoo promotional link in website sale orders',
-    'category': 'Website',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': ['portal', 'website_sale'],
-    'data': [
-        'views/portal_template.xml'
-    ],
-    'installable': True,
+    "name": "Portal Hide Promotional Link",
+    "summary": "Hide Odoo promotional link in website sale orders",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": ["portal", "website_sale"],
+    "data": ["views/portal_template.xml"],
+    "installable": True,
 }

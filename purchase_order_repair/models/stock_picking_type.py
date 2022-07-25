@@ -5,8 +5,8 @@ from odoo import fields, models
 
 
 class StockPickingType(models.Model):
-    _inherit = 'stock.picking.type'
+    _inherit = "stock.picking.type"
 
     auto_return_picking = fields.Boolean(
-        string='Create automatic return picking',
+        string="Create automatic return picking",
     )

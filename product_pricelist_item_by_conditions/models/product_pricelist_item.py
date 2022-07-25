@@ -5,13 +5,13 @@ from odoo import fields, models
 
 
 class ProductPricelistItem(models.Model):
-    _inherit = 'product.pricelist.item'
+    _inherit = "product.pricelist.item"
 
     compute_price = fields.Selection(
-        selection_add=[('condition', 'By conditions')],
+        selection_add=[("condition", "By conditions")],
     )
     condition_ids = fields.One2many(
-        comodel_name='product.pricelist.item.condition',
-        inverse_name='pricelist_item_id',
-        string='Increments/decrements by ranges (%)',
+        comodel_name="product.pricelist.item.condition",
+        inverse_name="pricelist_item_id",
+        string="Increments/decrements by ranges (%)",
     )

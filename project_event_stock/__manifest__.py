@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Project event stock',
-    'summary': 'Add stock control of products in project and event',
-    'category': 'Project',
-    'version': '12.0.1.2.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'project_event',
-        'stock',
+    "name": "Project event stock",
+    "summary": "Add stock control of products in project and event",
+    "category": "Project",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "project_event",
+        "stock",
     ],
-    'data': [
-        'views/event_event_views.xml',
-        'views/stock_move_views.xml',
+    "data": [
+        "views/event_event_views.xml",
+        "views/stock_move_views.xml",
     ],
 }

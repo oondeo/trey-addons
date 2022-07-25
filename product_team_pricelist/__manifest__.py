@@ -18,22 +18,22 @@
 #
 ###############################################################################
 {
-    'name': 'Product Team Pricelist',
-    'summary': 'Adds a table in Sales/Purchases tab for products where profit'
-               'can be calculated',
-    'category': 'Sale',
-    'version': '12.0.1.2.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'crm',
-        'delivery',
-        'product',
-        'stock',
+    "name": "Product Team Pricelist",
+    "summary": "Adds a table in Sales/Purchases tab for products where profit"
+    "can be calculated",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "crm",
+        "delivery",
+        "product",
+        "stock",
     ],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/product_template_views.xml',
+    "data": [
+        "security/ir.model.access.csv",
+        "views/product_template_views.xml",
     ],
 }

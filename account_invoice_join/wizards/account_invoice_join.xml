@@ -22,7 +22,6 @@
         <field name="name">Join invoices</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">account.invoice.join</field>
-        <field name="view_type">form</field>
         <field name="view_mode">form</field>
         <field name="target">new</field>
         <field name="binding_model_id" ref="account.model_account_invoice"/>

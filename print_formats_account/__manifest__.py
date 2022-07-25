@@ -18,23 +18,23 @@
 #
 ###############################################################################
 {
-    'name': 'Print Formats Account',
-    'summary': 'Invoicing print formats',
-    'category': 'Accounting & Finance',
-    'version': '12.0.1.12.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'account',
-        'account_banking_mandate',
-        'account_payment_partner',
-        'print_formats_base',
-        'stock_picking_invoice_link',
+    "name": "Print Formats Account",
+    "summary": "Invoicing print formats",
+    "category": "Accounting & Finance",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "account",
+        "account_banking_mandate",
+        "account_payment_partner",
+        "print_formats_base",
+        "stock_picking_invoice_link",
     ],
-    'data': [
-        'views/report_account_invoice.xml',
-        'views/res_company_views.xml',
-        'views/res_config_settings_views.xml',
+    "data": [
+        "views/report_account_invoice.xml",
+        "views/res_company_views.xml",
+        "views/res_config_settings_views.xml",
     ],
 }

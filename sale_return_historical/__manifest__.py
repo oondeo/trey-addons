@@ -18,26 +18,26 @@
 #
 ###############################################################################
 {
-    'name': 'Sale Return Historical',
-    'summary': 'Allow returns of orders',
-    'category': 'Sale',
-    'version': '12.0.2.5.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'portal',
-        'sale_management',
+    "name": "Sale Return Historical",
+    "summary": "Allow returns of orders",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "portal",
+        "sale_management",
     ],
-    'data': [
-        'security/ir.model.access.csv',
-        'data/report_paperformat.xml',
-        'data/sale_return_historical_email.xml',
-        'views/report_print_return_label.xml',
-        'views/sale_order_historical_line_views.xml',
-        'views/sale_order_historical_views.xml',
-        'views/sale_order_template.xml',
-        'views/sale_return_historical_template.xml',
+    "data": [
+        "security/ir.model.access.csv",
+        "data/report_paperformat.xml",
+        "data/sale_return_historical_email.xml",
+        "views/report_print_return_label.xml",
+        "views/sale_order_historical_line_views.xml",
+        "views/sale_order_historical_views.xml",
+        "views/sale_order_template.xml",
+        "views/sale_return_historical_template.xml",
     ],
 }

@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Print Formats Account Ticket',
-    'summary': 'Ticket Report from Invoice',
-    'version': '12.0.1.0.0',
-    'category': 'Tools',
-    'website': 'https://www.trey.es',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': [
-        'account',
+    "name": "Print Formats Account Ticket",
+    "summary": "Ticket Report from Invoice",
+    "version": "13.0.1.0.0",
+    "category": "Tools",
+    "website": "https://www.trey.es",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": [
+        "account",
     ],
-    'data': [
-        'data/report_paperformat.xml',
-        'views/report_account_invoice_ticket.xml',
+    "data": [
+        "data/report_paperformat.xml",
+        "views/report_account_invoice_ticket.xml",
     ],
-    'application': True,
+    "application": True,
 }

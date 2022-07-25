@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Sale Order Line Qty Available Real',
-    'summary': 'Add stock information in sale order lines with qty available '
-               'less outgoing',
-    'category': 'Sale',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale',
-        'sale_order_line_qty_available',
+    "name": "Sale Order Line Qty Available Real",
+    "summary": "Add stock information in sale order lines with qty available "
+    "less outgoing",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "sale",
+        "sale_order_line_qty_available",
     ],
-    'data': [
-        'views/product_product_views.xml',
-        'views/product_template_views.xml',
-        'views/sale_order_views.xml',
+    "data": [
+        "views/product_product_views.xml",
+        "views/product_template_views.xml",
+        "views/sale_order_views.xml",
     ],
 }

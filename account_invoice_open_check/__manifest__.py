@@ -18,15 +18,15 @@
 #
 ##############################################################################
 {
-    'name': 'Account invoice open check',
-    'summary': 'Check invoice data before opening it',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Account',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'account',
-        'sale',
+    "name": "Account invoice open check",
+    "summary": "Check invoice data before opening it",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Account",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "account",
+        "sale",
     ],
 }

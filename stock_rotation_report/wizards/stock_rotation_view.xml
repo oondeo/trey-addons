@@ -23,7 +23,6 @@
     <record id="wiz_stock_rotation_action" model="ir.actions.act_window">
         <field name="name">Stock Rotation</field>
         <field name="res_model">wiz.stock.rotation</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
         <field name="view_id" ref="wiz_stock_rotation_form"/>
         <field name="target">new</field>

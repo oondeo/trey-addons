@@ -18,24 +18,24 @@
 #
 ##############################################################################
 {
-    'name': 'Account intercompany',
-    'summary': 'Check and prepare account for create intercompany invoices',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'account',
-        'account_payment_partner',
+    "name": "Account intercompany",
+    "summary": "Check and prepare account for create intercompany invoices",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "account",
+        "account_payment_partner",
     ],
-    'data': [
-        'security/ir_rule.xml',
-        'security/res_groups.xml',
-        'views/account_account.xml',
-        'views/account_journal.xml',
-        'views/account_payment_mode.xml',
-        'views/account_payment_term.xml',
-        'views/account_tax.xml',
-    ]
+    "data": [
+        "security/ir_rule.xml",
+        "security/res_groups.xml",
+        "views/account_account.xml",
+        "views/account_journal.xml",
+        "views/account_payment_mode.xml",
+        "views/account_payment_term.xml",
+        "views/account_tax.xml",
+    ],
 }

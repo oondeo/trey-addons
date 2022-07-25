@@ -18,25 +18,25 @@
 #
 ##############################################################################
 {
-    'name': 'Model dynamic restriction',
-    'summary': 'Add dynamic restrictions to models',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Tools',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'base',
-        'web',
+    "name": "Model dynamic restriction",
+    "summary": "Add dynamic restrictions to models",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Tools",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "base",
+        "web",
     ],
-    'data': [
-        'security/security.xml',
-        'security/ir.model.access.csv',
-        'views/ir_model_restriction.xml',
-        'views/res_groups.xml',
-        'views/webclient_templates.xml',
+    "data": [
+        "security/security.xml",
+        "security/ir.model.access.csv",
+        "views/ir_model_restriction.xml",
+        "views/res_groups.xml",
+        "views/webclient_templates.xml",
     ],
-    'qweb': [
-        'static/src/xml/base.xml',
+    "qweb": [
+        "static/src/xml/base.xml",
     ],
 }

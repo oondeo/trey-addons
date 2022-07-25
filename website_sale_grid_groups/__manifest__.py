@@ -18,22 +18,22 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Grid Groups',
-    'summary': 'Sell grouped products by grid',
-    'category': 'website',
-    'version': '12.0.1.3.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'website_sale',
-        'website_sale_product_grid',
+    "name": "Website Sale Grid Groups",
+    "summary": "Sell grouped products by grid",
+    "category": "website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "website_sale",
+        "website_sale_product_grid",
     ],
-    'data': [
-        'data/website_menu.xml',
-        'security/ir.model.access.csv',
-        'views/grid_group_views.xml',
-        'views/website_sale_grid_groups.xml',
-        'views/website_sale_product_grid.xml',
+    "data": [
+        "data/website_menu.xml",
+        "security/ir.model.access.csv",
+        "views/grid_group_views.xml",
+        "views/website_sale_grid_groups.xml",
+        "views/website_sale_product_grid.xml",
     ],
 }

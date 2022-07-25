@@ -18,20 +18,20 @@
 #
 ###############################################################################
 {
-    'name': 'Vertical Website Blog',
-    'category': 'Vertical',
-    'summary': 'Addons dependencies for Website Blog',
-    'version': '12.0.1.3.0',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'author': 'Trey (www.trey.es)',
-    'depends': [
-        'vertical_website',
-        'website_blog',
-        'website_blog_content',
+    "name": "Vertical Website Blog",
+    "category": "Vertical",
+    "summary": "Addons dependencies for Website Blog",
+    "version": "13.0.1.0.0",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "author": "Trey (www.trey.es)",
+    "depends": [
+        "vertical_website",
+        "website_blog",
+        "website_blog_content",
     ],
-    'data': [
-        'views/website_blog_template.xml',
+    "data": [
+        "views/website_blog_template.xml",
     ],
-    'application': True,
+    "application": True,
 }

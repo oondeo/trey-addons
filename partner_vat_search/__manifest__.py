@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Partner VAT Search',
-    'summary': 'Allows searching by VAT in Contacts views',
-    'version': '12.0.1.0.0',
-    'category': 'Tools',
-    'website': 'https://www.trey.es',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
+    "name": "Partner VAT Search",
+    "summary": "Allows searching by VAT in Contacts views",
+    "version": "13.0.1.0.0",
+    "category": "Tools",
+    "website": "https://www.trey.es",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
     ],
-    'data': [
-        'views/res_partner_views.xml',
+    "data": [
+        "views/res_partner_views.xml",
     ],
 }

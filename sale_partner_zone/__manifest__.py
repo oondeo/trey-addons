@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Sale Partner Zone',
-    'summary': 'Sale partner zone',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'partner_zone',
-        'sale',
+    "name": "Sale Partner Zone",
+    "summary": "Sale partner zone",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "partner_zone",
+        "sale",
     ],
-    'data': [
-        'views/sale_order_views.xml',
+    "data": [
+        "views/sale_order_views.xml",
     ],
 }

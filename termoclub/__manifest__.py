@@ -18,33 +18,33 @@
 #
 ##############################################################################
 {
-    'name': 'TermoClub',
-    'version': '12.0.1.1.0',
-    'summary': 'TermoClub Supplier Webservice Connector',
-    'license': 'AGPL-3',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'category': 'customize',
-    'depends': [
-        'purchase',
-        'purchase_stock',
-        'sale',
-        'sale_stock',
+    "name": "TermoClub",
+    "version": "13.0.1.0.0",
+    "summary": "TermoClub Supplier Webservice Connector",
+    "license": "AGPL-3",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "category": "customize",
+    "depends": [
+        "purchase",
+        "purchase_stock",
+        "sale",
+        "sale_stock",
     ],
-    'data': [
-        'views/product_template_views.xml',
-        'views/purchase_order_views.xml',
-        'views/res_company_views.xml',
-        'views/sale_order_views.xml',
-        'views/stock_warehouse_views.xml',
+    "data": [
+        "views/product_template_views.xml",
+        "views/purchase_order_views.xml",
+        "views/res_company_views.xml",
+        "views/sale_order_views.xml",
+        "views/stock_warehouse_views.xml",
     ],
-    'demo': [
-        'data/termoclub_demo.xml',
+    "demo": [
+        "data/termoclub_demo.xml",
     ],
-    'external_dependencies': {
-        'python': [
-            'zeep',
-            'dict2xml',
+    "external_dependencies": {
+        "python": [
+            "zeep",
+            "dict2xml",
         ],
     },
 }

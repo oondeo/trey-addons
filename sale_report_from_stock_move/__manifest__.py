@@ -18,18 +18,18 @@
 #
 ##############################################################################
 {
-    'name': 'Sale report from stock move',
-    'summary': 'Sale report usign stock move information',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.1.0',
-    'depends': [
-        'sale_stock',
+    "name": "Sale report from stock move",
+    "summary": "Sale report usign stock move information",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "sale_stock",
     ],
-    'data': [
-        'security/ir.model.access.csv',
-        'reports/sale_report_from_stock_move.xml',
+    "data": [
+        "security/ir.model.access.csv",
+        "reports/sale_report_from_stock_move.xml",
     ],
 }

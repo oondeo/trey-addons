@@ -18,18 +18,18 @@
 #
 ################################################################################
 {
-    'name': 'Account invoice report stock quant',
-    'summary': 'Add stock from quants in account invoice report',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Purchases',
-    'version': '12.0.1.1.0',
-    'depends': [
-        'account',
-        'stock',
+    "name": "Account invoice report stock quant",
+    "summary": "Add stock from quants in account invoice report",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Purchases",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "account",
+        "stock",
     ],
-    'data': [
-        'reports/account_invoice_report.xml',
+    "data": [
+        "reports/account_invoice_report.xml",
     ],
 }

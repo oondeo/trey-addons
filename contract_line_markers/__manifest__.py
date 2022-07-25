@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Contract Line Markers',
-    'summary': 'Add useful markers for contract lines descriptions',
-    'category': 'Contract Management',
-    'version': '12.0.1.0.2',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'contract',
+    "name": "Contract Line Markers",
+    "summary": "Add useful markers for contract lines descriptions",
+    "category": "Contract Management",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "contract",
     ],
-    'data': [
-        'templates/contract_contract.xml',
-        'views/contract_contract_view.xml',
+    "data": [
+        "templates/contract_contract.xml",
+        "views/contract_contract_view.xml",
     ],
 }

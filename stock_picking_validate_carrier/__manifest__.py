@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Stock picking validate carrier',
-    'summary': 'Wizard in validate picking for set carrier info',
-    'category': 'Product',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'delivery_package_number',
-        'stock',
+    "name": "Stock picking validate carrier",
+    "summary": "Wizard in validate picking for set carrier info",
+    "category": "Product",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "delivery_package_number",
+        "stock",
     ],
-    'data': [
-        'wizards/stock_immediate_transfer.xml',
+    "data": [
+        "wizards/stock_immediate_transfer.xml",
     ],
 }

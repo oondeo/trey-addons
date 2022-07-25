@@ -18,22 +18,22 @@
 #
 ###############################################################################
 {
-    'name': 'Res partner bank acl',
-    'summary': '''
+    "name": "Res partner bank acl",
+    "summary": """
 Add read, write, create and delete permissions for the "Res partner bank"
 object for users belonging to the group "Contact Creation".
-''',
-    'category': 'Tools',
-    'version': '12.0.1.0.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'account',
-        'account_payment_order',
-        'base',
+""",
+    "category": "Tools",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "account",
+        "account_payment_order",
+        "base",
     ],
-    'data': [
-        'security/ir.model.access.csv',
+    "data": [
+        "security/ir.model.access.csv",
     ],
 }

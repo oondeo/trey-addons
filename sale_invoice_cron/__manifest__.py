@@ -18,17 +18,17 @@
 #
 ##############################################################################
 {
-    'name': 'Sale invoice cron',
-    'summary': 'Cron for automatize the creation of invoices from sale orders',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'sale',
+    "name": "Sale invoice cron",
+    "summary": "Cron for automatize the creation of invoices from sale orders",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "sale",
     ],
-    'data': [
-        'data/ir_cron.xml',
+    "data": [
+        "data/ir_cron.xml",
     ],
 }

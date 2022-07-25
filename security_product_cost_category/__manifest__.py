@@ -18,22 +18,22 @@
 #
 ###############################################################################
 {
-    'name': 'Security Product Category Price',
-    'summary': 'Security Product Category Cost',
-    'category': 'Sale',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product',
-        'product_cost_category',
-        'purchase',
-        'sale',
-        'sales_team',
+    "name": "Security Product Category Price",
+    "summary": "Security Product Category Cost",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product",
+        "product_cost_category",
+        "purchase",
+        "sale",
+        "sales_team",
     ],
-    'data': [
-        'views/product_product.xml',
-        'views/product_template.xml',
+    "data": [
+        "views/product_product.xml",
+        "views/product_template.xml",
     ],
 }

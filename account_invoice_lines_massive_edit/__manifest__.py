@@ -19,18 +19,18 @@
 ###############################################################################
 
 {
-    'name': 'Account Invoice Lines Massive Edit',
-    'category': 'Account',
-    'summary': 'Wizard for edit faster invoice lines',
-    'version': '12.0.1.0.0',
-    'description': 'Print Invoice with another lines',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': [
-        'account',
+    "name": "Account Invoice Lines Massive Edit",
+    "category": "Account",
+    "summary": "Wizard for edit faster invoice lines",
+    "version": "13.0.1.0.0",
+    "description": "Print Invoice with another lines",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": [
+        "account",
     ],
-    'data': [
-        'wizards/invoice_lines_edit_views.xml',
-        'views/account_invoice_views.xml',
+    "data": [
+        "wizards/invoice_lines_edit_views.xml",
+        "views/account_invoice_views.xml",
     ],
 }

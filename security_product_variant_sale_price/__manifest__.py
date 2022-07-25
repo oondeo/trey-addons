@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Security Product Variant Sale Price',
-    'summary': 'Security base extend for addons product variant sale price',
-    'category': 'Sale',
-    'version': '12.0.1.0.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product_variant_sale_price',
-        'sales_team',
-        'security',
+    "name": "Security Product Variant Sale Price",
+    "summary": "Security base extend for addons product variant sale price",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product_variant_sale_price",
+        "sales_team",
+        "security",
     ],
-    'data': [
-        'views/product_product.xml',
+    "data": [
+        "views/product_product.xml",
     ],
 }

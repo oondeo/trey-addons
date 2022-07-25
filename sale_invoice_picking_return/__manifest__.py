@@ -18,16 +18,16 @@
 #
 ##############################################################################
 {
-    'name': 'Sale invoice picking return',
-    'summary': '''It allows generating the refund invoice after returning a
-stock picking when the invoice policy is quantities ordered.''',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'sale',
-        'sale_stock',
+    "name": "Sale invoice picking return",
+    "summary": """It allows generating the refund invoice after returning a
+stock picking when the invoice policy is quantities ordered.""",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "sale",
+        "sale_stock",
     ],
 }

@@ -18,20 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Stock picking prepare user wizard',
-    'summary': (
-        'Show a wizard when print output picking for assign a user to '
-        'prepare it'),
-    'category': 'Stock',
-    'version': '12.0.1.0.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'stock',
+    "name": "Stock picking prepare user wizard",
+    "summary": (
+        "Show a wizard when print output picking for assign a user to "
+        "prepare it"
+    ),
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "stock",
     ],
-    'data': [
-        'views/stock_picking_view.xml',
-        'wizards/stock_picking_prepare_user_views.xml',
+    "data": [
+        "views/stock_picking_view.xml",
+        "wizards/stock_picking_prepare_user_views.xml",
     ],
 }

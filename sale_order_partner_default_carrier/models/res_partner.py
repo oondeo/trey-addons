@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class ResPartner(models.Model):
-    _inherit = 'res.partner'
+    _inherit = "res.partner"
 
     default_carrier_id = fields.Many2one(
-        comodel_name='delivery.carrier',
-        string='Default carrier',
+        comodel_name="delivery.carrier",
+        string="Default carrier",
     )

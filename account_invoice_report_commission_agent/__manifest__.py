@@ -18,18 +18,18 @@
 #
 ##############################################################################
 {
-    'name': 'Account invoice report commission agent',
-    'summary': 'Adds possibility of grouping by agents in invoice report.',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Invoicing & Payments',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'account',
-        'sale_commission_group',
+    "name": "Account invoice report commission agent",
+    "summary": "Adds possibility of grouping by agents in invoice report.",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Invoicing & Payments",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "account",
+        "sale_commission_group",
     ],
-    'data': [
-        'report/account_invoice_report.xml',
+    "data": [
+        "report/account_invoice_report.xml",
     ],
 }

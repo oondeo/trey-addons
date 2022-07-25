@@ -5,13 +5,13 @@ from odoo import api, fields, models
 
 
 class SaleOrderLine(models.Model):
-    _inherit = 'sale.order.line'
+    _inherit = "sale.order.line"
 
     product_state = fields.Char(
-        string='Product State',
+        string="Product State",
     )
 
-    @api.onchange('product_id')
+    @api.onchange("product_id")
     def product_id_change(self):
         res = super().product_id_change()
         if not self.product_id:

@@ -5,24 +5,24 @@ from odoo import api, fields, models, tools
 
 
 class ProductIcon(models.Model):
-    _name = 'product.icon'
-    _description = 'Product icon'
+    _name = "product.icon"
+    _description = "Product icon"
 
     name = fields.Char(
-        string='Name',
+        string="Name",
         required=True,
     )
     image = fields.Binary(
-        string='Image',
+        string="Image",
         attachment=True,
         required=True,
     )
     image_medium = fields.Binary(
-        string='Medium-sized image',
+        string="Medium-sized image",
         attachment=True,
     )
     image_small = fields.Binary(
-        string='Small-sized image',
+        string="Small-sized image",
         attachment=True,
     )
 

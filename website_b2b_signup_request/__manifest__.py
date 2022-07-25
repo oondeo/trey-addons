@@ -18,23 +18,23 @@
 #
 ##############################################################################
 {
-    'name': 'Website B2B Signup Request',
-    'category': 'website',
-    'summary': 'Manage access of B2B users to shop',
-    'version': '12.0.1.5.0',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'website': 'https://www.trey.es',
-    'depends': [
-        'crm_lead_vat',
-        'website_crm',
-        'website_crm_privacy_policy',
-        'website_form',
-        'website_sale',
+    "name": "Website B2B Signup Request",
+    "category": "website",
+    "summary": "Manage access of B2B users to shop",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "website": "https://www.trey.es",
+    "depends": [
+        "crm_lead_vat",
+        "website_crm",
+        "website_crm_privacy_policy",
+        "website_form",
+        "website_sale",
     ],
-    'data': [
-        'templates/website_signup.xml',
-        'views/auth_signup_login_templates.xml',
-        'views/portal_templates.xml',
+    "data": [
+        "templates/website_signup.xml",
+        "views/auth_signup_login_templates.xml",
+        "views/portal_templates.xml",
     ],
 }

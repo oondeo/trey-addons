@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Sale order recreate picking dropshipping',
-    'summary': 'Recreate purchase from sale order',
-    'category': 'Sale',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'purchase',
-        'sale_order_purchase_order_link',
-        'sale_order_recreate_picking',
-        'sale_stock',
-        'stock_dropshipping',
+    "name": "Sale order recreate picking dropshipping",
+    "summary": "Recreate purchase from sale order",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "purchase",
+        "sale_order_purchase_order_link",
+        "sale_order_recreate_picking",
+        "sale_stock",
+        "stock_dropshipping",
     ],
 }

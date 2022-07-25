@@ -5,10 +5,10 @@ from odoo import fields, models
 
 
 class EventProduct(models.Model):
-    _inherit = 'event.product'
+    _inherit = "event.product"
 
     stock_move_ids = fields.One2many(
-        comodel_name='stock.move',
-        inverse_name='event_product_id',
-        string='Stock move',
+        comodel_name="stock.move",
+        inverse_name="event_product_id",
+        string="Stock move",
     )

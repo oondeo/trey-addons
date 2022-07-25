@@ -18,20 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Print Formats Product Label',
-    'summary': 'Product label report',
-    'category': 'Sales Management',
-    'version': '12.0.2.3.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product',
-        'stock'
-    ],
-    'data': [
-        'data/report_paperformat.xml',
-        'views/report_product_label.xml',
-        'wizard/wizard_report.xml',
+    "name": "Print Formats Product Label",
+    "summary": "Product label report",
+    "category": "Sales Management",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": ["product", "stock"],
+    "data": [
+        "data/report_paperformat.xml",
+        "views/report_product_label.xml",
+        "wizard/wizard_report.xml",
     ],
 }

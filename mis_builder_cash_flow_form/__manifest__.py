@@ -18,19 +18,19 @@
 #
 ##############################################################################
 {
-    'name': 'Mis builder cash flow form',
-    'summary': '''
+    "name": "Mis builder cash flow form",
+    "summary": """
 Inactive editable tree view to show form view in MIS cash flow forecast
-line''',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Reporting',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'mis_builder_cash_flow',
+line""",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Reporting",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "mis_builder_cash_flow",
     ],
-    'data': [
-        'views/mis_cash_flow_forecast_line_views.xml',
+    "data": [
+        "views/mis_cash_flow_forecast_line_views.xml",
     ],
 }

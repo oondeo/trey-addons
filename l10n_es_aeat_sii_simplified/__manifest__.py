@@ -18,15 +18,15 @@
 #
 ##############################################################################
 {
-    'name': 'SII facturas simplificadas',
-    'summary': 'Factura simplificada si el cliente no tiene NIF',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Accounting & Finance',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'account_invoice_simplified',
-        'l10n_es_aeat_sii',
+    "name": "SII facturas simplificadas",
+    "summary": "Factura simplificada si el cliente no tiene NIF",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Accounting & Finance",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "account_invoice_simplified",
+        "l10n_es_aeat_sii",
     ],
 }

@@ -18,20 +18,20 @@
 #
 ###############################################################################
 {
-    'name': 'Print Options Sale Cost Simulator',
-    'category': 'Tools',
-    'summary': 'Print options sale cost simulator',
-    'version': '12.0.1.0.0',
-    'description': '''
+    "name": "Print Options Sale Cost Simulator",
+    "category": "Tools",
+    "summary": "Print options sale cost simulator",
+    "version": "13.0.1.0.0",
+    "description": """
      Add a button in sale cost simulator order to call a wizard that print a
-     report or another depending on the options selected.''',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale_cost_simulator',
+     report or another depending on the options selected.""",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": [
+        "sale_cost_simulator",
     ],
-    'data': [
-        'views/sale_cost_simulator_views.xml',
-        'wizards/print_options_sale_cost_simulator_views.xml',
+    "data": [
+        "views/sale_cost_simulator_views.xml",
+        "wizards/print_options_sale_cost_simulator_views.xml",
     ],
 }

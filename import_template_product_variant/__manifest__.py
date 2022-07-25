@@ -18,24 +18,24 @@
 #
 ###############################################################################
 {
-    'name': 'Import template product variant',
-    'summary': '''
-Import product variant data from files Excel or CSV from templates''',
-    'category': 'Tools',
-    'version': '12.0.1.2.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'import_template',
-        'product',
-        'product_brand',
-        'product_code_unique',
-        'sale',
-        'website_sale',
+    "name": "Import template product variant",
+    "summary": """
+Import product variant data from files Excel or CSV from templates""",
+    "category": "Tools",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "import_template",
+        "product",
+        "product_brand",
+        "product_code_unique",
+        "sale",
+        "website_sale",
     ],
-    'data': [
-        'data/data.xml',
-        'views/product_template_views.xml',
+    "data": [
+        "data/data.xml",
+        "views/product_template_views.xml",
     ],
 }

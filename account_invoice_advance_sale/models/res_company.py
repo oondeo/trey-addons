@@ -5,14 +5,14 @@ from odoo import fields, models
 
 
 class ResCompany(models.Model):
-    _inherit = 'res.company'
+    _inherit = "res.company"
 
     account_invoice_advance_sale_method = fields.Selection(
         selection=[
-            ('formula', 'Formula (ej: "50+30+20")'),
-            ('grid', 'Grid lines with name, percent and date'),
+            ("formula", 'Formula (ej: "50+30+20")'),
+            ("grid", "Grid lines with name, percent and date"),
         ],
         required=True,
-        string='Invoice advance method',
-        default='formula',
+        string="Invoice advance method",
+        default="formula",
     )

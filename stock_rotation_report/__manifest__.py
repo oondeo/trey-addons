@@ -18,26 +18,26 @@
 #
 ##############################################################################
 {
-    'name': 'Stock rotation report',
-    'summary': 'Stock rotation report',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'website': 'https://www.trey.es',
-    'category': 'Stock',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'purchase',
-        'sale',
-        'stock_account',
+    "name": "Stock rotation report",
+    "summary": "Stock rotation report",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "website": "https://www.trey.es",
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "purchase",
+        "sale",
+        "stock_account",
     ],
-    'data': [
-        'data/stock_rotation_cron_data.xml',
-        'security/ir.model.access.csv',
-        'security/security.xml',
-        'reports/stock_rotation_report_view.xml',
-        'views/product_product_views.xml',
-        'views/res_company_views.xml',
-        'wizards/stock_rotation_view.xml'
+    "data": [
+        "data/stock_rotation_cron_data.xml",
+        "security/ir.model.access.csv",
+        "security/security.xml",
+        "reports/stock_rotation_report_view.xml",
+        "views/product_product_views.xml",
+        "views/res_company_views.xml",
+        "wizards/stock_rotation_view.xml",
     ],
-    'installable': True,
+    "installable": True,
 }

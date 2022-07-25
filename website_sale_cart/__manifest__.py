@@ -18,22 +18,22 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Carts',
-    'summary': 'List all carts and allow to recover them as current cart',
-    'category': 'Website',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'portal',
-        'sale',
-        'website_sale',
+    "name": "Website Sale Carts",
+    "summary": "List all carts and allow to recover them as current cart",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "portal",
+        "sale",
+        "website_sale",
     ],
-    'data': [
-        'views/portal.xml',
-        'views/portal_breadcrumbs.xml',
-        'views/portal_my_carts.xml',
+    "data": [
+        "views/portal.xml",
+        "views/portal_breadcrumbs.xml",
+        "views/portal_my_carts.xml",
     ],
-    'installable': True,
+    "installable": True,
 }

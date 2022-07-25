@@ -18,20 +18,20 @@
 #
 ##############################################################################
 {
-    'name': 'Import template sale menu',
-    'summary': 'Add access to the file importer for sales.',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Tools',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'import_template',
-        'sale',
-        'sales_team',
+    "name": "Import template sale menu",
+    "summary": "Add access to the file importer for sales.",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Tools",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "import_template",
+        "sale",
+        "sales_team",
     ],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/menu.xml',
+    "data": [
+        "security/ir.model.access.csv",
+        "views/menu.xml",
     ],
 }

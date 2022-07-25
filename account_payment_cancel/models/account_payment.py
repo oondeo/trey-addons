@@ -5,11 +5,10 @@ from odoo import api, models
 
 
 class AccountPayment(models.Model):
-    _inherit = 'account.payment'
+    _inherit = "account.payment"
 
-    @api.multi
     def cancel(self):
         res = super().cancel()
         for rec in self:
-            rec.move_name = ''
+            rec.move_name = ""
         return res

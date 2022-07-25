@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Stock picking validate cron',
-    'summary': 'Planned action to validate stock picking',
-    'category': 'Warehouse',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale',
-        'stock',
+    "name": "Stock picking validate cron",
+    "summary": "Planned action to validate stock picking",
+    "category": "Warehouse",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "sale",
+        "stock",
     ],
-    'data': [
-        'data/ir_cron.xml',
+    "data": [
+        "data/ir_cron.xml",
     ],
 }

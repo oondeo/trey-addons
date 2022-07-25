@@ -5,9 +5,9 @@ from odoo import api, models
 
 
 class ProductSupplierinfo(models.Model):
-    _inherit = 'product.supplierinfo'
+    _inherit = "product.supplierinfo"
 
-    @api.onchange('name')
+    @api.onchange("name")
     def onchange_name(self):
         if not self.name:
             return

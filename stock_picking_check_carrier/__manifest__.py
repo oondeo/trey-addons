@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Stock picking check carrier',
-    'summary': 'Check if picking has a carrier assigned before validation',
-    'category': 'Stock',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'delivery',
-        'sale',
-        'stock',
+    "name": "Stock picking check carrier",
+    "summary": "Check if picking has a carrier assigned before validation",
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "delivery",
+        "sale",
+        "stock",
     ],
-    'data': [
-        'views/stock_picking_type_views.xml',
+    "data": [
+        "views/stock_picking_type_views.xml",
     ],
 }

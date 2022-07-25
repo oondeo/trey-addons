@@ -5,11 +5,11 @@ from odoo import fields, models
 
 
 class ProjectProject(models.Model):
-    _inherit = 'project.project'
+    _inherit = "project.project"
 
     event_ticket_ids = fields.One2many(
-        comodel_name='event.event.ticket',
-        inverse_name='project_id',
-        string='Event Ticket',
+        comodel_name="event.event.ticket",
+        inverse_name="project_id",
+        string="Event Ticket",
         copy=True,
     )

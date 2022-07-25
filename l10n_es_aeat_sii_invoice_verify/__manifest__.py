@@ -18,19 +18,19 @@
 #
 ##############################################################################
 {
-    'name': 'Verify SII invoice status',
-    'version': '12.0.1.0.0',
-    'summary': 'Verify in the SII the status of an invoice',
-    'license': 'AGPL-3',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'category': 'Accounting & Finance',
-    'depends': [
-        'l10n_es',
-        'l10n_es_aeat_sii',
+    "name": "Verify SII invoice status",
+    "version": "13.0.1.0.0",
+    "summary": "Verify in the SII the status of an invoice",
+    "license": "AGPL-3",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "category": "Accounting & Finance",
+    "depends": [
+        "l10n_es",
+        "l10n_es_aeat_sii",
     ],
-    'data': [
-        'data/ir_action_server.xml',
-        'views/account_invoice_views.xml',
+    "data": [
+        "data/ir_action_server.xml",
+        "views/account_invoice_views.xml",
     ],
 }

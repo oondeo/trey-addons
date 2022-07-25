@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Product supplierinfo for customer copy',
-    'summary': 'Wizard to copy information about a product customer info for '
-               'to other partner',
-    'category': 'Sales Management',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product',
-        'product_supplierinfo_for_customer',
-        'product_supplierinfo_for_customer_menu',
-        'sale_management',
+    "name": "Product supplierinfo for customer copy",
+    "summary": "Wizard to copy information about a product customer info for "
+    "to other partner",
+    "category": "Sales Management",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product",
+        "product_supplierinfo_for_customer",
+        "product_supplierinfo_for_customer_menu",
+        "sale_management",
     ],
-    'data': [
-        'wizards/product_supplierinfo_for_customer_copy.xml',
+    "data": [
+        "wizards/product_supplierinfo_for_customer_copy.xml",
     ],
 }

@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Print Formats Picking Sorted',
-    'summary': 'Sorting stock reports lines by product attributes sequences',
-    'version': '12.0.1.0.0',
-    'category': 'Stock',
-    'website': 'https://www.trey.es',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': [
-        'print_formats_picking',
-        'stock',
+    "name": "Print Formats Picking Sorted",
+    "summary": "Sorting stock reports lines by product attributes sequences",
+    "version": "13.0.1.0.0",
+    "category": "Stock",
+    "website": "https://www.trey.es",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": [
+        "print_formats_picking",
+        "stock",
     ],
-    'data': [
-        'views/report_stock_picking.xml',
-        'views/report_stock_picking_deliveryslip.xml',
+    "data": [
+        "views/report_stock_picking.xml",
+        "views/report_stock_picking_deliveryslip.xml",
     ],
 }

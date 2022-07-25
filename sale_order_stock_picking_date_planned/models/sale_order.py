@@ -5,19 +5,18 @@ from odoo import api, fields, models
 
 
 class SaleOrder(models.Model):
-    _inherit = 'sale.order'
+    _inherit = "sale.order"
 
     date_planned = fields.Datetime(
-        string='Custom Date Planned',
+        string="Custom Date Planned",
         readonly=True,
         states={
-            'draft': [('readonly', False)],
-            'sent': [('readonly', False)],
+            "draft": [("readonly", False)],
+            "sent": [("readonly", False)],
         },
-        help='Force delivery expected date before quotation were confirmed.',
+        help="Force delivery expected date before quotation were confirmed.",
     )
 
-    @api.multi
     def action_confirm(self):
         res = super().action_confirm()
         for order in self:
@@ -26,7 +25,7 @@ class SaleOrder(models.Model):
             for picking in order.picking_ids:
                 picking.scheduled_date = order.date_planned
                 if picking.move_lines:
-                    picking.move_lines.write({
-                        'scheduled_date': order.date_planned
-                    })
+                    picking.move_lines.write(
+                        {"scheduled_date": order.date_planned}
+                    )
         return res

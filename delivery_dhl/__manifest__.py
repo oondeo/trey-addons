@@ -18,26 +18,26 @@
 #
 ###############################################################################
 {
-    'name': 'Delivery DHL',
-    'summary': 'Integrate DHL webservice',
-    'category': 'Delivery',
-    'version': '12.0.1.2.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'delivery',
-        'delivery_package_number',
-        'delivery_price_method',
-        'delivery_state',
+    "name": "Delivery DHL",
+    "summary": "Integrate DHL webservice",
+    "category": "Delivery",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "delivery",
+        "delivery_package_number",
+        "delivery_price_method",
+        "delivery_state",
     ],
-    'external_dependencies': {
-        'python': [
-            'zeep',
+    "external_dependencies": {
+        "python": [
+            "zeep",
         ],
     },
-    'data': [
-        'views/delivery_carrier_views.xml',
-        'views/stock_picking_views.xml',
+    "data": [
+        "views/delivery_carrier_views.xml",
+        "views/stock_picking_views.xml",
     ],
 }

@@ -5,10 +5,8 @@ from odoo import fields, models
 
 
 class Company(models.Model):
-    _inherit = ['res.company']
+    _inherit = ["res.company"]
 
     report_logo = fields.Binary(
-        string='Logo',
-        attachment=True,
-        help='Adds logo for reports'
+        string="Logo", attachment=True, help="Adds logo for reports"
     )

@@ -5,12 +5,12 @@ from odoo import fields, models
 
 
 class PurchaseOrder(models.Model):
-    _inherit = 'purchase.order'
+    _inherit = "purchase.order"
 
     is_season = fields.Boolean(
-        string='Is season',
+        string="Is season",
     )
     sale_order_id = fields.Many2one(
-        comodel_name='sale.order',
-        string='Sale Order',
+        comodel_name="sale.order",
+        string="Sale Order",
     )

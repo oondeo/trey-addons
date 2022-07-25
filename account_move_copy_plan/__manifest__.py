@@ -18,17 +18,17 @@
 #
 ##############################################################################
 {
-    'name': 'Account move copy plan',
-    'summary': 'Copy account move with a plan for days, months or years',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Accounting',
-    'version': '12.0.1.0.2',
-    'depends': [
-        'account',
+    "name": "Account move copy plan",
+    "summary": "Copy account move with a plan for days, months or years",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Accounting",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "account",
     ],
-    'data': [
-        'wizards/account_move_copy_plan.xml',
+    "data": [
+        "wizards/account_move_copy_plan.xml",
     ],
 }

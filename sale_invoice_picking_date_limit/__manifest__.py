@@ -18,22 +18,21 @@
 #
 ##############################################################################
 {
-    'name': 'Sale invoice picking date limit',
-    'summary': (
-        'Invoice sales orders with picking transfered until a date '
-        'limit'
+    "name": "Sale invoice picking date limit",
+    "summary": (
+        "Invoice sales orders with picking transfered until a date " "limit"
     ),
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.1.2',
-    'depends': [
-        'sale',
-        'sale_stock',
-        'stock_picking_invoice_link',
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "sale",
+        "sale_stock",
+        "stock_picking_invoice_link",
     ],
-    'data': [
-        'wizards/sale_advance_payment_inv.xml',
+    "data": [
+        "wizards/sale_advance_payment_inv.xml",
     ],
 }

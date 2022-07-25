@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Sale order line business unit',
-    'summary': 'Sale order line business unit',
-    'category': 'Sale',
-    'version': '12.0.1.0.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product_business_unit',
-        'sale',
+    "name": "Sale order line business unit",
+    "summary": "Sale order line business unit",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product_business_unit",
+        "sale",
     ],
-    'data': [
-        'views/sale_order_line.xml',
+    "data": [
+        "views/sale_order_line.xml",
     ],
 }

@@ -10,11 +10,12 @@ class WebsiteSale(WebsiteSale):
         values = super()._get_shop_payment_values(order=order, **kwargs)
         acquirers = []
         partner = request.env.user.partner_id
-        for acquirer in values['acquirers']:
+        for acquirer in values["acquirers"]:
             account_payment_modes = acquirer.sudo().payment_mode_ids
             allowed_payment = (
-                partner.customer_payment_mode_id in account_payment_modes)
+                partner.customer_payment_mode_id in account_payment_modes
+            )
             if not account_payment_modes or allowed_payment:
                 acquirers.append(acquirer)
-        values['acquirers'] = acquirers
+        values["acquirers"] = acquirers
         return values

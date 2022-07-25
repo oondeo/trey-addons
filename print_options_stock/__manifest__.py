@@ -18,20 +18,20 @@
 #
 ###############################################################################
 {
-    'name': 'Print Options stock',
-    'category': 'Tools',
-    'summary': 'Print options stock',
-    'version': '12.0.1.0.0',
-    'description': '''
+    "name": "Print Options stock",
+    "category": "Tools",
+    "summary": "Print options stock",
+    "version": "13.0.1.0.0",
+    "description": """
 Add a button in stock picking to call a wizard that print a report or another
-depending on the options selected.''',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': [
-        'stock',
+depending on the options selected.""",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": [
+        "stock",
     ],
-    'data': [
-        'views/stock_views.xml',
-        'wizards/print_options_stock_views.xml',
+    "data": [
+        "views/stock_views.xml",
+        "wizards/print_options_stock_views.xml",
     ],
 }

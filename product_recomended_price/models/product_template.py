@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class ProductTemplate(models.Model):
-    _inherit = 'product.template'
+    _inherit = "product.template"
 
     recomended_price = fields.Monetary(
-        string='Recomended price',
-        track_visibility='always',
+        string="Recomended price",
+        track_visibility="always",
     )

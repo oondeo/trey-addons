@@ -18,17 +18,17 @@
 #
 ##############################################################################
 {
-    'name': 'Poject Task Main Technician',
-    'summary': 'Allows assign default technician to projects and tasks',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Project',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'project',
+    "name": "Poject Task Main Technician",
+    "summary": "Allows assign default technician to projects and tasks",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Project",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "project",
     ],
-    'data': [
-        'views/project_project_views.xml',
+    "data": [
+        "views/project_project_views.xml",
     ],
 }

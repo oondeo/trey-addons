@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class ProductTemplate(models.Model):
-    _inherit = 'product.template'
+    _inherit = "product.template"
 
     export_to_beezup = fields.Boolean(
-        related='product_variant_id.export_to_beezup',
+        related="product_variant_id.export_to_beezup",
         readonly=False,
     )

@@ -9,17 +9,18 @@ class WebsiteSale(WebsiteSale):
     def _get_search_domain(self, search, category, attrib_values):
         if not search:
             return super()._get_search_domain(
-                search=search, category=category, attrib_values=attrib_values)
+                search=search, category=category, attrib_values=attrib_values
+            )
         domain = request.website.sale_product_domain()
         if search[0] == '"' and search[-1] == '"':
-            domain += [('searchable_text', 'ilike', search[1:-1])]
+            domain += [("searchable_text", "ilike", search[1:-1])]
         else:
-            search_terms = search.split(' ')
-            domain += ['|'] * (len(search_terms) - 1)
+            search_terms = search.split(" ")
+            domain += ["|"] * (len(search_terms) - 1)
             for search_term in search_terms:
-                domain += [('searchable_text', 'ilike', search_term)]
+                domain += [("searchable_text", "ilike", search_term)]
         if category:
-            domain += [('public_categ_ids', 'child_of', int(category))]
+            domain += [("public_categ_ids", "child_of", int(category))]
         if attrib_values:
             attrib = None
             ids = []
@@ -30,9 +31,9 @@ class WebsiteSale(WebsiteSale):
                 elif value[0] == attrib:
                     ids.append(value[1])
                 else:
-                    domain += [('attribute_line_ids.value_ids', 'in', ids)]
+                    domain += [("attribute_line_ids.value_ids", "in", ids)]
                     attrib = value[0]
                     ids = [value[1]]
             if attrib:
-                domain += [('attribute_line_ids.value_ids', 'in', ids)]
+                domain += [("attribute_line_ids.value_ids", "in", ids)]
         return domain

@@ -18,20 +18,20 @@
 #
 ###############################################################################
 {
-    'name': 'Vertical Event',
-    'summary': 'Some improvements for event system',
-    'category': 'vertical',
-    'version': '12.0.1.2.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'event',
-        'website_event',
-        'website_protocol',
+    "name": "Vertical Event",
+    "summary": "Some improvements for event system",
+    "category": "vertical",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "event",
+        "website_event",
+        "website_protocol",
     ],
-    'data': [
-        'views/event_views.xml',
-        'views/website_event_template.xml',
+    "data": [
+        "views/event_views.xml",
+        "views/website_event_template.xml",
     ],
 }

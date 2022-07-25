@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Stock move price',
-    'summary': 'Add sale and purchase price in stock move views',
-    'category': 'Product',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'purchase_stock',
-        'sale_stock',
-        'stock',
+    "name": "Stock move price",
+    "summary": "Add sale and purchase price in stock move views",
+    "category": "Product",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "purchase_stock",
+        "sale_stock",
+        "stock",
     ],
-    'data': [
-        'views/stock_move_views.xml',
+    "data": [
+        "views/stock_move_views.xml",
     ],
 }

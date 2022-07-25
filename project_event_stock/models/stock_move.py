@@ -5,13 +5,13 @@ from odoo import fields, models
 
 
 class StockMove(models.Model):
-    _inherit = 'stock.move'
+    _inherit = "stock.move"
 
     event_id = fields.Many2one(
-        comodel_name='event.event',
-        string='Event',
+        comodel_name="event.event",
+        string="Event",
     )
     event_product_id = fields.Many2one(
-        comodel_name='event.product',
-        string='Event product',
+        comodel_name="event.product",
+        string="Event product",
     )

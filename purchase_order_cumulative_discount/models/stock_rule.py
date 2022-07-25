@@ -4,14 +4,16 @@ from odoo import api, models
 
 
 class StockRule(models.Model):
-    _inherit = 'stock.rule'
+    _inherit = "stock.rule"
 
     @api.model
     def _prepare_purchase_order_line_from_seller(self, seller):
         res = super()._prepare_purchase_order_line_from_seller(seller)
         if not res:
             return res
-        res.update({
-            'multiple_discount': seller.multiple_discount,
-        })
+        res.update(
+            {
+                "multiple_discount": seller.multiple_discount,
+            }
+        )
         return res

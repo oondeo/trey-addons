@@ -18,17 +18,17 @@
 #
 ##############################################################################
 {
-    'name': 'Purchase line update price',
-    'summary': 'Wizard to update purchase order line price.',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Purchase Management',
-    'version': '12.0.1.0.1',
-    'depends': [
-        'purchase_stock',
+    "name": "Purchase line update price",
+    "summary": "Wizard to update purchase order line price.",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Purchase Management",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "purchase_stock",
     ],
-    'data': [
-        'wizards/purchase_line_update_price_views.xml',
+    "data": [
+        "wizards/purchase_line_update_price_views.xml",
     ],
 }

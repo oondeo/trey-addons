@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Purchase Stock Season',
-    'summary': 'Seasonal sale order only generate purchase order',
-    'category': 'Purchases',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'purchase_order_season',
-        'purchase_stock',
-        'sale_order_type_season',
-        'sale_stock',
-        'stock_location_route_season',
+    "name": "Purchase Stock Season",
+    "summary": "Seasonal sale order only generate purchase order",
+    "category": "Purchases",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "purchase_order_season",
+        "purchase_stock",
+        "sale_order_type_season",
+        "sale_stock",
+        "stock_location_route_season",
     ],
 }

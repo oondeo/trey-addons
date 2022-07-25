@@ -18,17 +18,17 @@
 #
 ##############################################################################
 {
-    'name': 'Mail Activity User Internal',
-    'summary': 'Restrict user assignment in activities to external users.',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Project',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'mail',
+    "name": "Mail Activity User Internal",
+    "summary": "Restrict user assignment in activities to external users.",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Project",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "mail",
     ],
-    'data': [
-        'views/mail_activity_views.xml',
+    "data": [
+        "views/mail_activity_views.xml",
     ],
 }

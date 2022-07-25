@@ -9,46 +9,46 @@ _log = logging.getLogger(__name__)
 
 
 class AccountInvoiceEdeLogLine(models.Model):
-    _name = 'account.invoice.ede.log.line'
-    _description = 'Ede invoice process log line'
-    _rec_name = 'ede_invoice_number'
+    _name = "account.invoice.ede.log.line"
+    _description = "Ede invoice process log line"
+    _rec_name = "ede_invoice_number"
 
     log_id = fields.Many2one(
-        comodel_name='account.invoice.ede.log',
-        string='Log',
+        comodel_name="account.invoice.ede.log",
+        string="Log",
         required=True,
-        ondelete='cascade',
+        ondelete="cascade",
         index=True,
     )
     ede_date_invoice = fields.Date(
-        string='Date invoice',
+        string="Date invoice",
     )
     ede_invoice_number = fields.Char(
-        string='Invoice',
+        string="Invoice",
         required=True,
     )
     ede_xml_name = fields.Char(
-        string='File name',
+        string="File name",
         required=True,
     )
     ede_xml_data = fields.Text(
-        string='XML',
+        string="XML",
         required=True,
     )
     state = fields.Selection(
         selection=[
-            ('fail', 'Fail'),
-            ('warning', 'Warning'),
-            ('done', 'Done'),
+            ("fail", "Fail"),
+            ("warning", "Warning"),
+            ("done", "Done"),
         ],
-        string='State',
-        default='done',
+        string="State",
+        default="done",
         required=True,
     )
     log = fields.Text(
-        string='Log description',
+        string="Log description",
     )
     supplier_invoice_id = fields.Many2one(
-        comodel_name='account.invoice',
-        string='Supplier invoice',
+        comodel_name="account.invoice",
+        string="Supplier invoice",
     )

@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Portal Human Resources',
-    'summary': 'Manage human resources in portal',
-    'category': 'Website',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'hr',
-        'portal',
-        'website',
+    "name": "Portal Human Resources",
+    "summary": "Manage human resources in portal",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "hr",
+        "portal",
+        "website",
     ],
-    'data': [
-        'views/portal.xml',
-        'views/website_templates.xml',
+    "data": [
+        "views/portal.xml",
+        "views/website_templates.xml",
         # 'templates/website.xml',
         # 'templates/website_myaccount.xml',
         # 'templates/website_myaccount_hr.xml',

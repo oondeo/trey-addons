@@ -18,23 +18,23 @@
 #
 ###############################################################################
 {
-    'name': 'Agreement Acceptance',
-    'summary': 'Allow to register agreements that contact users will accept',
-    'category': 'Document Signatures',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'sale',
-        'sale_management',
+    "name": "Agreement Acceptance",
+    "summary": "Allow to register agreements that contact users will accept",
+    "category": "Document Signatures",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "sale",
+        "sale_management",
     ],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/agreement_template_views.xml',
-        'views/agreement_acceptance_views.xml',
-        'views/res_partner.xml',
-        'wizards/wizard_agreement_state.xml',
+    "data": [
+        "security/ir.model.access.csv",
+        "views/agreement_template_views.xml",
+        "views/agreement_acceptance_views.xml",
+        "views/res_partner.xml",
+        "wizards/wizard_agreement_state.xml",
     ],
 }

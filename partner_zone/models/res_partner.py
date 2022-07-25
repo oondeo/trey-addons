@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class ResPartner(models.Model):
-    _inherit = 'res.partner'
+    _inherit = "res.partner"
 
     zone_id = fields.Many2one(
-        comodel_name='res.partner.zone',
-        string='Zone',
+        comodel_name="res.partner.zone",
+        string="Zone",
     )

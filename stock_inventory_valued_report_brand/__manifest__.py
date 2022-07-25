@@ -18,22 +18,22 @@
 #
 ##############################################################################
 {
-    'name': 'Stock Inventory Valued Report Brand',
-    'summary': 'Adds possibility of grouping by brands in valued inventory '
-               'report.',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Inventory',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'product_brand',
-        'purchase',
-        'sale',
-        'stock',
-        'stock_inventory_valued_report',
+    "name": "Stock Inventory Valued Report Brand",
+    "summary": "Adds possibility of grouping by brands in valued inventory "
+    "report.",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Inventory",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "product_brand",
+        "purchase",
+        "sale",
+        "stock",
+        "stock_inventory_valued_report",
     ],
-    'data': [
-        'report/stock_inventory_valued_report.xml',
+    "data": [
+        "report/stock_inventory_valued_report.xml",
     ],
 }

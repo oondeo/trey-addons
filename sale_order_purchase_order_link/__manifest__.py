@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Sale Order Purchase Order Link',
-    'summary': 'Add button on sale order to access purchase orders related to '
-               'that sale order',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'purchase_stock',
-        'sale_purchase',
+    "name": "Sale Order Purchase Order Link",
+    "summary": "Add button on sale order to access purchase orders related to "
+    "that sale order",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "purchase_stock",
+        "sale_purchase",
     ],
-    'data': [
-        'views/sale_order_views.xml',
+    "data": [
+        "views/sale_order_views.xml",
     ],
 }

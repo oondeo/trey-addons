@@ -5,24 +5,24 @@ from odoo import fields, models
 
 
 class ProductBusinessArea(models.Model):
-    _name = 'product.business.area'
-    _description = 'Product Business Area'
+    _name = "product.business.area"
+    _description = "Product Business Area"
 
     name = fields.Char(
-        string='Name',
+        string="Name",
         required=True,
     )
     company_id = fields.Many2one(
-        comodel_name='res.company',
-        related='unit_id.company_id',
-        string='Company',
+        comodel_name="res.company",
+        related="unit_id.company_id",
+        string="Company",
     )
     unit_id = fields.Many2one(
-        comodel_name='product.business.unit',
+        comodel_name="product.business.unit",
         required=True,
-        string='Unit Id',
+        string="Unit Id",
     )
     user_id = fields.Many2one(
-        comodel_name='res.users',
-        string='User',
+        comodel_name="res.users",
+        string="User",
     )

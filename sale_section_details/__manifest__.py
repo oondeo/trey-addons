@@ -18,20 +18,20 @@
 #
 ###############################################################################
 {
-    'name': 'Sale Section Details',
-    'summary': 'Show/Hide section details on sale order print format',
-    'version': '12.0.1.1.0',
-    'category': 'Sales',
-    'website': 'https://www.trey.es',
-    'author': 'Trey (www.trey.es)',
-    'license': 'LGPL-3',
-    'depends': [
-        'sale',
-        'sale_management',
+    "name": "Sale Section Details",
+    "summary": "Show/Hide section details on sale order print format",
+    "version": "13.0.1.0.0",
+    "category": "Sales",
+    "website": "https://www.trey.es",
+    "author": "Trey (www.trey.es)",
+    "license": "LGPL-3",
+    "depends": [
+        "sale",
+        "sale_management",
     ],
-    'data': [
-        'views/sale_order_views.xml',
-        'views/sale_portal_templates.xml',
-        'views/sale_report_templates.xml',
+    "data": [
+        "views/sale_order_views.xml",
+        "views/sale_portal_templates.xml",
+        "views/sale_report_templates.xml",
     ],
 }

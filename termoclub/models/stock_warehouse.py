@@ -5,10 +5,10 @@ from odoo import fields, models
 
 
 class StockWarehouse(models.Model):
-    _inherit = 'stock.warehouse'
+    _inherit = "stock.warehouse"
 
     termoclub_address_id = fields.Integer(
-        string='TermoClub address ID',
+        string="TermoClub address ID",
         required=True,
         default=1,
     )

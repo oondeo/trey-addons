@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class Website(models.Model):
-    _inherit = 'website'
+    _inherit = "website"
 
     raiz_ferretera_apikey = fields.Char(
-        string='Raíz Ferretera API Key',
-        help='Type here your Raíz Ferretera API Key',
+        string="Raíz Ferretera API Key",
+        help="Type here your Raíz Ferretera API Key",
     )

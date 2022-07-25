@@ -4,7 +4,6 @@
         <record id="sale_cost_simulator_action_email_templates" model="ir.actions.act_window">
             <field name="name">Email Templates</field>
             <field name="res_model">mail.template</field>
-            <field name="view_type">form</field>
             <field name="view_mode">form,tree</field>
             <field name="view_id" ref="mail.email_template_tree"/>
             <field name="search_view_id" ref="mail.view_email_template_search"/>

@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Print Formats Account Ticket TicketBai',
-    'summary': 'Simplified invoice customization for TicketBai integration',
-    'version': '12.0.1.0.0',
-    'category': 'Tools',
-    'website': 'https://www.trey.es',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': [
-        'l10n_es_ticketbai',
-        'print_formats_account_ticket',
+    "name": "Print Formats Account Ticket TicketBai",
+    "summary": "Simplified invoice customization for TicketBai integration",
+    "version": "13.0.1.0.0",
+    "category": "Tools",
+    "website": "https://www.trey.es",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": [
+        "l10n_es_ticketbai",
+        "print_formats_account_ticket",
     ],
-    'data': [
-        'views/report_account_invoice_ticket.xml',
+    "data": [
+        "views/report_account_invoice_ticket.xml",
     ],
-    'application': True,
+    "application": True,
 }

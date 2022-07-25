@@ -50,7 +50,6 @@
     <record id="agreements_acceptance_action" model="ir.actions.act_window">
         <field name="name">Agreements Acceptance</field>
         <field name="res_model">agreement.acceptance</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
     <menuitem id="menu_sale_agreements"

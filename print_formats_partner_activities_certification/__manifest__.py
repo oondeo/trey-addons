@@ -18,20 +18,20 @@
 #
 ###############################################################################
 {
-    'name': 'Print Formats Activities Certification',
-    'summary': 'Add a new report to certificate activities',
-    'category': 'Document Signatures',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'crm',
-        'web',
+    "name": "Print Formats Activities Certification",
+    "summary": "Add a new report to certificate activities",
+    "category": "Document Signatures",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "crm",
+        "web",
     ],
-    'data': [
-        'data/report_paperformat.xml',
-        'views/report_print_formats_partner_activities_certification.xml',
+    "data": [
+        "data/report_paperformat.xml",
+        "views/report_print_formats_partner_activities_certification.xml",
     ],
 }

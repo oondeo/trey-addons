@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class ProjectTask(models.Model):
-    _inherit = 'project.task'
+    _inherit = "project.task"
 
     partner_rating = fields.Selection(
-        string='Partner rating',
-        related='partner_id.commercial_partner_id.evaluation',
+        string="Partner rating",
+        related="partner_id.commercial_partner_id.evaluation",
     )

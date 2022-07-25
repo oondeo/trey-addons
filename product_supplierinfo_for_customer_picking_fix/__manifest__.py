@@ -18,15 +18,15 @@
 #
 ###############################################################################
 {
-    'name': 'Product Supplierinfo For Customer Picking Fix',
-    'summary': 'Fix wrong customer code in move line',
-    'category': 'Stock',
-    'version': '12.0.1.0.2',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product_supplierinfo_for_customer_picking',
-        'stock',
+    "name": "Product Supplierinfo For Customer Picking Fix",
+    "summary": "Fix wrong customer code in move line",
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product_supplierinfo_for_customer_picking",
+        "stock",
     ],
 }

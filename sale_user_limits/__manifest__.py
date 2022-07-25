@@ -18,19 +18,19 @@
 #
 ##############################################################################
 {
-    'name': 'Sale user limits',
-    'version': '12.0.1.1.0',
-    'summary': 'Limits in sale order total and discount by user.',
-    'category': 'sale',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale_management',
+    "name": "Sale user limits",
+    "version": "13.0.1.0.0",
+    "summary": "Limits in sale order total and discount by user.",
+    "category": "sale",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "sale_management",
     ],
-    'data': [
-        'views/res_users.xml',
-        'views/sale_order.xml',
-        'views/report_sale_order.xml',
+    "data": [
+        "views/res_users.xml",
+        "views/sale_order.xml",
+        "views/report_sale_order.xml",
     ],
 }

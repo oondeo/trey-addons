@@ -18,22 +18,22 @@
 #
 ###############################################################################
 {
-    'name': 'Project Groups',
-    'summary': 'This module allows to create project groups',
-    'category': 'Project',
-    'version': '12.0.1.4.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'mail',
-        'project',
-        'project_status',
-        'project_tag',
+    "name": "Project Groups",
+    "summary": "This module allows to create project groups",
+    "category": "Project",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "mail",
+        "project",
+        "project_status",
+        "project_tag",
     ],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/project_group_views.xml',
-        'views/project_project_views.xml',
+    "data": [
+        "security/ir.model.access.csv",
+        "views/project_group_views.xml",
+        "views/project_project_views.xml",
     ],
 }

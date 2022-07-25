@@ -18,18 +18,18 @@
 #
 ##############################################################################
 {
-    'name': 'Sale manual payment draft picking',
-    'summary': 'Draft picking if sale order manual picking',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'payment',
-        'sale_stock',
+    "name": "Sale manual payment draft picking",
+    "summary": "Draft picking if sale order manual picking",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "payment",
+        "sale_stock",
     ],
-    'data': [
-        'views/res_company_views.xml',
+    "data": [
+        "views/res_company_views.xml",
     ],
 }

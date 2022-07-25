@@ -18,21 +18,21 @@
 #
 ##############################################################################
 {
-    'name': 'Account invoice advance sale',
-    'summary': 'Create advanced invoices from sale order',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Account',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'account_invoice_advance',
-        'sale',
+    "name": "Account invoice advance sale",
+    "summary": "Create advanced invoices from sale order",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Account",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "account_invoice_advance",
+        "sale",
     ],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/account_invoice.xml',
-        'views/res_config_settings.xml',
-        'views/sale_order.xml',
+    "data": [
+        "security/ir.model.access.csv",
+        "views/account_invoice.xml",
+        "views/res_config_settings.xml",
+        "views/sale_order.xml",
     ],
 }

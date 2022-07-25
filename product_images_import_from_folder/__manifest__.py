@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Product images import from folder',
-    'summary': 'Import product images from a folder in server with a cron.',
-    'category': 'Product',
-    'version': '12.0.1.0.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product',
-        'stock',
+    "name": "Product images import from folder",
+    "summary": "Import product images from a folder in server with a cron.",
+    "category": "Product",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product",
+        "stock",
         # 'website_sale',  # For testing porpouses
     ],
-    'data': [
-        'data/ir_cron_data.xml',
+    "data": [
+        "data/ir_cron_data.xml",
     ],
 }

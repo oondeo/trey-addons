@@ -18,17 +18,17 @@
 #
 ##############################################################################
 {
-    'name': 'Sale purchase service group type',
-    'summary': 'Type of grouping for the purchase services',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'sale_purchase',
+    "name": "Sale purchase service group type",
+    "summary": "Type of grouping for the purchase services",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "sale_purchase",
     ],
-    'data': [
-        'views/product_template_views.xml',
+    "data": [
+        "views/product_template_views.xml",
     ],
 }

@@ -18,17 +18,17 @@
 #
 ##############################################################################
 {
-    'name': 'Payment transaction confirm picking',
-    'summary': 'Confirm payment transaction confirm picking draft',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Invoicing & Payments',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'sale_manual_payment_draft_picking',
+    "name": "Payment transaction confirm picking",
+    "summary": "Confirm payment transaction confirm picking draft",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Invoicing & Payments",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "sale_manual_payment_draft_picking",
     ],
-    'data': [
-        'wizards/payment_transaction_confirm_picking.xml',
+    "data": [
+        "wizards/payment_transaction_confirm_picking.xml",
     ],
 }

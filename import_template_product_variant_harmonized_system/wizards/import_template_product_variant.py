@@ -5,7 +5,7 @@ from odoo import _, models
 
 
 class ImportTemplateProductVariant(models.TransientModel):
-    _inherit = 'import.template.product.variant'
+    _inherit = "import.template.product.variant"
 
     def parse_float(self, value):
         try:
@@ -18,16 +18,19 @@ class ImportTemplateProductVariant(models.TransientModel):
         if not name:
             return None, errors
         name = self.parse_float(name)
-        hs_codes = self.env['hs.code'].search([
-            ('local_code', '=', name)
-        ])
+        hs_codes = self.env["hs.code"].search([("local_code", "=", name)])
         if len(hs_codes) > 1:
-            errors.append(_(
-                'More than one HS code found for local code %s.') % name)
+            errors.append(
+                _("More than one HS code found for local code %s.") % name
+            )
         if not hs_codes:
-            errors.append(_(
-                'The HS code with local code \'%s\' does not exist, select '
-                'one of the available ones.') % name)
+            errors.append(
+                _(
+                    "The HS code with local code '%s' does not exist, select "
+                    "one of the available ones."
+                )
+                % name
+            )
             return None, errors
         return hs_codes[0].id, errors
 
@@ -35,15 +38,16 @@ class ImportTemplateProductVariant(models.TransientModel):
         errors = []
         if not name:
             return None, errors
-        countries = self.env['res.country'].search([
-            ('name', '=', name)
-        ])
+        countries = self.env["res.country"].search([("name", "=", name)])
         if len(countries) > 1:
-            errors.append(_(
-                'More than one country found for %s.') % name)
+            errors.append(_("More than one country found for %s.") % name)
         if not countries:
-            errors.append(_(
-                'The country \'%s\' does not exist, select one of the '
-                'available ones.') % name)
+            errors.append(
+                _(
+                    "The country '%s' does not exist, select one of the "
+                    "available ones."
+                )
+                % name
+            )
             return None, errors
         return countries[0].id, errors

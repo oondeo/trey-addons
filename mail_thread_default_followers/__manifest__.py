@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Mail Thread Default Followers',
-    'summary': 'Allow modify defaults mail thread followers',
-    'category': 'Project',
-    'version': '12.0.1.0.4',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'mail',
+    "name": "Mail Thread Default Followers",
+    "summary": "Allow modify defaults mail thread followers",
+    "category": "Project",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "mail",
     ],
-    'data': [
-        'views/ir_model_views.xml',
-    ]
+    "data": [
+        "views/ir_model_views.xml",
+    ],
 }

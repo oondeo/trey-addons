@@ -18,16 +18,14 @@
 #
 ###############################################################################
 {
-    'name': 'Sale Oder Line Qty Available',
-    'summary': 'Add stock information in sale order lines',
-    'category': 'Sale',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': ['sale_stock'],
-    'data': [
-        'views/sale_order_views.xml'
-    ],
-    'installable': True
+    "name": "Sale Oder Line Qty Available",
+    "summary": "Add stock information in sale order lines",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": ["sale_stock"],
+    "data": ["views/sale_order_views.xml"],
+    "installable": True,
 }

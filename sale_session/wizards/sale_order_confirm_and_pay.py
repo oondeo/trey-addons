@@ -5,61 +5,61 @@ from odoo import api, fields, models
 
 
 class SaleOrderConfirmAndPay(models.TransientModel):
-    _name = 'sale.order.confirm_and_pay'
-    _description = 'Wizard to confirm and pay a sale order'
+    _name = "sale.order.confirm_and_pay"
+    _description = "Wizard to confirm and pay a sale order"
 
     sale_id = fields.Many2one(
-        comodel_name='sale.order',
-        string='Sale order',
+        comodel_name="sale.order",
+        string="Sale order",
         required=True,
     )
     session_id = fields.Many2one(
-        related='sale_id.session_id',
+        related="sale_id.session_id",
     )
     invoice_ids = fields.Many2many(
-        related='sale_id.invoice_ids',
+        related="sale_id.invoice_ids",
     )
     partner_id = fields.Many2one(
-        related='sale_id.partner_id',
+        related="sale_id.partner_id",
     )
     risk_exception = fields.Boolean(
-        related='partner_id.risk_exception',
+        related="partner_id.risk_exception",
     )
     payment_journal_ids = fields.Many2many(
-        related='session_id.team_id.payment_journal_ids',
+        related="session_id.team_id.payment_journal_ids",
     )
     journal_id = fields.Many2one(
-        comodel_name='account.journal',
+        comodel_name="account.journal",
         domain='[("id", "in", payment_journal_ids)]',
-        string='Payment journal',
+        string="Payment journal",
     )
     company_currency_id = fields.Many2one(
-        comodel_name='res.currency',
-        related='sale_id.company_id.currency_id',
+        comodel_name="res.currency",
+        related="sale_id.company_id.currency_id",
         readonly=True,
     )
     amount = fields.Monetary(
-        string='Amount paid',
-        currency_field='company_currency_id',
+        string="Amount paid",
+        currency_field="company_currency_id",
     )
     amount_total = fields.Monetary(
-        string='Total',
-        compute='_compute_amount',
-        currency_field='company_currency_id',
+        string="Total",
+        compute="_compute_amount",
+        currency_field="company_currency_id",
     )
     amount_change = fields.Monetary(
-        string='Change',
-        compute='_compute_amount',
-        currency_field='company_currency_id',
+        string="Change",
+        compute="_compute_amount",
+        currency_field="company_currency_id",
     )
     step = fields.Integer(
-        string='step',
+        string="step",
     )
     show_print_invoice = fields.Boolean(
-        string='Show print invoice button',
+        string="Show print invoice button",
     )
 
-    @api.depends('sale_id', 'amount')
+    @api.depends("sale_id", "amount")
     def _compute_amount(self):
         for wizard in self:
             if not wizard.sale_id:
@@ -83,11 +83,11 @@ class SaleOrderConfirmAndPay(models.TransientModel):
     def action_confirm(self):
         self.ensure_one()
         self.sale_id.with_context(open_wizard=False).action_confirm()
-        return {'type': 'ir.actions.act_window_close'}
+        return {"type": "ir.actions.act_window_close"}
 
     def action_print_picking(self):
-        if not hasattr(self.sale_id.picking_ids, 'do_print_picking_valued'):
-            report = self.env.ref('stock.action_report_delivery')
+        if not hasattr(self.sale_id.picking_ids, "do_print_picking_valued"):
+            report = self.env.ref("stock.action_report_delivery")
             return report.report_action(self.sale_id.picking_ids)
         # For compatibility print_formats_picking_valued
         return self.sale_id.picking_ids.do_print_picking_valued()
@@ -96,8 +96,9 @@ class SaleOrderConfirmAndPay(models.TransientModel):
         team_journal = self.session_id.team_id.simplified_journal_id
         if team_journal == self.sale_id.invoice_ids.journal_id:
             report = self.env.ref(
-                'print_formats_account_ticket.'
-                'report_account_invoice_ticket_create')
+                "print_formats_account_ticket."
+                "report_account_invoice_ticket_create"
+            )
             return report.report_action(self.sale_id.invoice_ids)
-        report = self.env.ref('account.account_invoices')
+        report = self.env.ref("account.account_invoices")
         return report.report_action(self.sale_id.invoice_ids)

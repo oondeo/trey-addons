@@ -5,25 +5,25 @@ from odoo import api, fields, models
 
 
 class ProductSetupOption(models.Model):
-    _name = 'product.setup.option'
-    _description = 'Product setup option'
+    _name = "product.setup.option"
+    _description = "Product setup option"
 
     name = fields.Char(
-        string='Name',
+        string="Name",
     )
     product_tmpl_id = fields.Many2one(
-        comodel_name='product.template',
-        string='Product template',
+        comodel_name="product.template",
+        string="Product template",
     )
     product_id = fields.Many2one(
-        comodel_name='product.product',
-        string='Product',
+        comodel_name="product.product",
+        string="Product",
     )
     quantity = fields.Float(
-        string='Quantity',
+        string="Quantity",
     )
 
-    @api.onchange('product_id')
+    @api.onchange("product_id")
     def onchange_product_id(self):
         for line in self:
             if line.name:

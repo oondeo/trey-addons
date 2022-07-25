@@ -18,18 +18,16 @@
 #
 ###############################################################################
 {
-    'name': 'Account Invoice Agent Assignment',
-    'summary': 'Wizard for assigning agents to account invoice lines.',
-    'category': 'Sale',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale_commission',
-        'account',
+    "name": "Account Invoice Agent Assignment",
+    "summary": "Wizard for assigning agents to account invoice lines.",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "sale_commission",
+        "account",
     ],
-    'data': [
-        'wizards/account_invoice_agent_assignment.xml'
-    ],
+    "data": ["wizards/account_invoice_agent_assignment.xml"],
 }

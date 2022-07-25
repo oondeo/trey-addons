@@ -18,23 +18,23 @@
 #
 ##############################################################################
 {
-    'name': 'Project Task Real Time',
-    'summary': 'Real time applied to an task.',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Project',
-    'version': '12.0.1.2.0',
-    'depends': [
-        'account',
-        'hr_timesheet',
-        'portal',
-        'portal_project',
-        'project',
+    "name": "Project Task Real Time",
+    "summary": "Real time applied to an task.",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Project",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "account",
+        "hr_timesheet",
+        "portal",
+        "portal_project",
+        "project",
     ],
-    'data': [
-        'views/hr_timesheet_views.xml',
-        'views/project_portal_templates.xml',
-        'views/project_task_views.xml',
+    "data": [
+        "views/hr_timesheet_views.xml",
+        "views/project_portal_templates.xml",
+        "views/project_task_views.xml",
     ],
 }

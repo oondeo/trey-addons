@@ -18,17 +18,17 @@
 #
 ##############################################################################
 {
-    'name': 'Purchase order join quotations',
-    'summary': 'Join purchase quotations',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Purchases',
-    'version': '12.0.1.0.1',
-    'depends': [
-        'purchase',
+    "name": "Purchase order join quotations",
+    "summary": "Join purchase quotations",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Purchases",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "purchase",
     ],
-    'data': [
-        'wizards/purchase_order_join.xml',
+    "data": [
+        "wizards/purchase_order_join.xml",
     ],
 }

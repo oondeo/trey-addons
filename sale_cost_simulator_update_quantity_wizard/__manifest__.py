@@ -18,20 +18,20 @@
 #
 ##############################################################################
 {
-    'name': 'Sale Cost Simulator Update Quantity Wizard',
-    'summary': 'Wizard to update quantities',
-    'description': 'Wizart to import BoM to a simulator cost',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'website': 'https://www.trey.es',
-    'category': 'Sale',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'sale_cost_simulator',
+    "name": "Sale Cost Simulator Update Quantity Wizard",
+    "summary": "Wizard to update quantities",
+    "description": "Wizart to import BoM to a simulator cost",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "website": "https://www.trey.es",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "sale_cost_simulator",
     ],
-    'data': [
-        'wizards/update_quantity_views.xml',
-        'views/sale_cost_line_views.xml',
-        'views/sale_cost_simulator_views.xml'
+    "data": [
+        "wizards/update_quantity_views.xml",
+        "views/sale_cost_line_views.xml",
+        "views/sale_cost_simulator_views.xml",
     ],
 }

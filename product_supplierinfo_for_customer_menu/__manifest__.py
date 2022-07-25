@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Product supplierinfo for customer menu',
-    'summary': 'Menu option for view supplierinfo for customer',
-    'category': 'Product',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product_supplierinfo_for_customer',
-        'sale',
+    "name": "Product supplierinfo for customer menu",
+    "summary": "Menu option for view supplierinfo for customer",
+    "category": "Product",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product_supplierinfo_for_customer",
+        "sale",
     ],
-    'data': [
-        'views/product_supplierinfo_view.xml',
+    "data": [
+        "views/product_supplierinfo_view.xml",
     ],
 }

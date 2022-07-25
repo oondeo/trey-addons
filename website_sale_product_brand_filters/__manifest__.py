@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Product Brand Filters',
-    'summary': 'Allow to filter products by brand',
-    'category': 'Website',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'website',
-        'website_sale',
-        'website_sale_product_brand',
+    "name": "Website Sale Product Brand Filters",
+    "summary": "Allow to filter products by brand",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "website",
+        "website_sale",
+        "website_sale_product_brand",
     ],
-    'data': [
-        'views/website.xml',
-        'views/website_sale.xml',
+    "data": [
+        "views/website.xml",
+        "views/website_sale.xml",
     ],
-    'installable': True,
+    "installable": True,
 }

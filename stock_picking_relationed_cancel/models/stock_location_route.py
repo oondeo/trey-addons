@@ -5,10 +5,10 @@ from odoo import fields, models
 
 
 class StockLocationRoute(models.Model):
-    _inherit = 'stock.location.route'
+    _inherit = "stock.location.route"
 
     allow_cancel_picking_relationed = fields.Boolean(
-        string='Allow cancel picking relationated',
-        help='When you check this option, you can cancel a stock picking '
-             'related to another without canceling the latter.',
+        string="Allow cancel picking relationated",
+        help="When you check this option, you can cancel a stock picking "
+        "related to another without canceling the latter.",
     )

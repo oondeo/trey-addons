@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Purchase Product Multi Add',
-    'summary': 'Add an button in purchase order for product multi add wizard',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'website': 'https://www.trey.es',
-    'category': 'Purchase',
-    'version': '12.0.1.1.0',
-    'depends': [
-        'purchase',
+    "name": "Purchase Product Multi Add",
+    "summary": "Add an button in purchase order for product multi add wizard",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "website": "https://www.trey.es",
+    "category": "Purchase",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "purchase",
     ],
-    'data': [
-        'wizards/purchase_import_products_view.xml',
-        'views/purchase_order_views.xml',
+    "data": [
+        "wizards/purchase_import_products_view.xml",
+        "views/purchase_order_views.xml",
     ],
 }

@@ -5,13 +5,15 @@ from odoo import api, models
 
 
 class AccountInvoice(models.Model):
-    _inherit = 'account.invoice'
+    _inherit = "account.invoice"
 
-    @api.onchange('partner_id', 'company_id')
+    @api.onchange("partner_id", "company_id")
     def _onchange_partner_id(self):
         payment_mode = self.payment_mode_id
         res = super(AccountInvoice, self)._onchange_partner_id()
-        if (payment_mode
-                and self.env.context.get('active_model') == 'sale.order'):
+        if (
+            payment_mode
+            and self.env.context.get("active_model") == "sale.order"
+        ):
             self.payment_mode_id = payment_mode.id
         return res

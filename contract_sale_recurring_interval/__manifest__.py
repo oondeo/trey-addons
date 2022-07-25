@@ -18,17 +18,17 @@
 #
 ##############################################################################
 {
-    'name': 'Contract sale recurring interval',
-    'summary': 'Add recurring interval invoice to sale order line',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'product_contract',
+    "name": "Contract sale recurring interval",
+    "summary": "Add recurring interval invoice to sale order line",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "product_contract",
     ],
-    'data': [
-        'views/sale_order.xml',
+    "data": [
+        "views/sale_order.xml",
     ],
 }

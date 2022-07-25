@@ -18,16 +18,15 @@
 #
 ##############################################################################
 {
-    'name': 'Sale Order Report Delivered',
-    'summary': 'Add measure on sale report with delivery price total',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'sale',
+    "name": "Sale Order Report Delivered",
+    "summary": "Add measure on sale report with delivery price total",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "sale",
     ],
-    'data': [
-    ],
+    "data": [],
 }

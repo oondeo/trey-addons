@@ -5,9 +5,8 @@ from odoo import _, api, exceptions, models
 
 
 class SaleOrderLine(models.Model):
-    _inherit = 'sale.order.line'
+    _inherit = "sale.order.line"
 
-    @api.multi
     def action_termoclub_check_stock(self):
         self.ensure_one()
         if not self.product_id or not self.product_id.is_termoclub:

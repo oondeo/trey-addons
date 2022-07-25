@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class ProjectProject(models.Model):
-    _inherit = 'project.project'
+    _inherit = "project.project"
 
     project_group_id = fields.Many2one(
-        string='Project group',
-        comodel_name='project.group',
+        string="Project group",
+        comodel_name="project.group",
     )

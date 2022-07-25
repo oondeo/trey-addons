@@ -26,7 +26,6 @@
     <record id="agreements_template_action" model="ir.actions.act_window">
         <field name="name">Agreements</field>
         <field name="res_model">agreement.template</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
     </record>
     <menuitem id="sale_menu_agreement"

@@ -5,18 +5,18 @@ from odoo import fields, models
 
 
 class MaintenanceEquipmentCertificate(models.Model):
-    _name = 'maintenance.equipment.certificate'
-    _description = 'Maintenance equipment certificate'
+    _name = "maintenance.equipment.certificate"
+    _description = "Maintenance equipment certificate"
 
     name = fields.Char()
     notes = fields.Text()
     certificate_file = fields.Binary(
-        string='Certificate',
+        string="Certificate",
         attachment=True,
     )
     certificate_filename = fields.Char(
-        string='Certificate file name',
+        string="Certificate file name",
     )
     equipment_id = fields.Many2one(
-        comodel_name='maintenance.equipment',
+        comodel_name="maintenance.equipment",
     )

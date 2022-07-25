@@ -140,7 +140,6 @@
         <field name="name">Sale session</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">sale.session</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
         <field name="search_view_id" ref="sale_session_search"/>
         <field name="context">{'search_default_state_open': 1}</field>

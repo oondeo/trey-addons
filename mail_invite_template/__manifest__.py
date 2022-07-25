@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Mail Invite Template',
-    'summary': 'Modify follower invite wizard and mail template',
-    'category': 'Social Network',
-    'version': '12.0.1.0.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'mail',
+    "name": "Mail Invite Template",
+    "summary": "Modify follower invite wizard and mail template",
+    "category": "Social Network",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "mail",
     ],
-    'data': [
-        'data/mail_invite_template.xml',
+    "data": [
+        "data/mail_invite_template.xml",
     ],
 }

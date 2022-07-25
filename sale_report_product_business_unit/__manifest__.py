@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Sale report product business unit',
-    'summary': 'Sale report product business unit',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'product_business_unit',
-        'sale',
+    "name": "Sale report product business unit",
+    "summary": "Sale report product business unit",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "product_business_unit",
+        "sale",
     ],
-    'data': [
-        'reports/sale_report.xml',
+    "data": [
+        "reports/sale_report.xml",
     ],
-    'installable': True,
+    "installable": True,
 }

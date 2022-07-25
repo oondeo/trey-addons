@@ -18,18 +18,18 @@
 #
 ##############################################################################
 {
-    'name': 'Purchase Order Line Stock Moves',
-    'summary': 'Show stock moves from an existing purchase order line',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Purchases',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'purchase',
-        'stock',
+    "name": "Purchase Order Line Stock Moves",
+    "summary": "Show stock moves from an existing purchase order line",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Purchases",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "purchase",
+        "stock",
     ],
-    'data': [
-        'views/purchase_order_views.xml',
+    "data": [
+        "views/purchase_order_views.xml",
     ],
 }

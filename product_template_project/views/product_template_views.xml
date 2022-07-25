@@ -3,7 +3,6 @@
     <record id="act_product_project_view" model="ir.actions.act_window">
         <field name="name">Projects</field>
         <field name="res_model">project.project</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form,graph</field>
     </record>
     <record id="product_template_form_view" model="ir.ui.view">

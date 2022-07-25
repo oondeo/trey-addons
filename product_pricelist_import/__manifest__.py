@@ -18,22 +18,20 @@
 #
 ###############################################################################
 {
-    'name': 'Product Pricelist Import',
-    'summary': 'Import pricelist from Excel file',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product',
-        'sale',
+    "name": "Product Pricelist Import",
+    "summary": "Import pricelist from Excel file",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product",
+        "sale",
     ],
-    'external_dependencies': {
-        'python': ['pandas']
-    },
-    'data': [
-        'views/product_pricelist.xml',
-        'wizards/product_pricelist_import.xml'
+    "external_dependencies": {"python": ["pandas"]},
+    "data": [
+        "views/product_pricelist.xml",
+        "wizards/product_pricelist_import.xml",
     ],
 }

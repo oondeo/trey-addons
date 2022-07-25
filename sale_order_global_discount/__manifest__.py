@@ -18,25 +18,25 @@
 #
 ##############################################################################
 {
-    'name': 'Sale order global discount',
-    'summary': 'Global discounts to sale order.',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.4.0',
-    'depends': [
-        'account',
-        'contacts',
-        'sale',
+    "name": "Sale order global discount",
+    "summary": "Global discounts to sale order.",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "account",
+        "contacts",
+        "sale",
     ],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/account_invoice_views.xml',
-        'views/sale_order_views.xml',
-        'views/report_sale_order.xml',
-        'views/res_partner_views.xml',
-        'views/res_partner_global_discount_views.xml',
-        'views/web_template.xml',
+    "data": [
+        "security/ir.model.access.csv",
+        "views/account_invoice_views.xml",
+        "views/sale_order_views.xml",
+        "views/report_sale_order.xml",
+        "views/res_partner_views.xml",
+        "views/res_partner_global_discount_views.xml",
+        "views/web_template.xml",
     ],
 }

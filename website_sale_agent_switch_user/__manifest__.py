@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Agent Switch User',
-    'summary': 'Allow to change the session of an agent and a customer '
-               'related to that agent.',
-    'category': 'Website',
-    'version': '12.0.1.2.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale_commission',
-        'website',
-        'website_sale',
+    "name": "Website Sale Agent Switch User",
+    "summary": "Allow to change the session of an agent and a customer "
+    "related to that agent.",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "sale_commission",
+        "website",
+        "website_sale",
     ],
-    'data': [
-        'views/portal_templates.xml',
-        'views/website_templates.xml',
+    "data": [
+        "views/portal_templates.xml",
+        "views/website_templates.xml",
     ],
 }

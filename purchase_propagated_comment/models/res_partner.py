@@ -5,8 +5,8 @@ from odoo import fields, models
 
 
 class ResPartner(models.Model):
-    _inherit = 'res.partner'
+    _inherit = "res.partner"
 
     purchase_propagated_comment = fields.Text(
-        string='Purchase Propagated Comment',
+        string="Purchase Propagated Comment",
     )

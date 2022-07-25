@@ -18,25 +18,25 @@
 #
 ###############################################################################
 {
-    'name': 'Fieldservice pending material',
-    'category': 'Warehouse Management',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'fieldservice',
-        'fieldservice_sale',
-        'fieldservice_sale_purchase_stock',
-        'fieldservice_sale_stock',
-        'fieldservice_stage_validation',
-        'fieldservice_stock',
-        'fieldservice_stock_extend',
-        'purchase_stock',
-        'sale',
+    "name": "Fieldservice pending material",
+    "category": "Warehouse Management",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "fieldservice",
+        "fieldservice_sale",
+        "fieldservice_sale_purchase_stock",
+        "fieldservice_sale_stock",
+        "fieldservice_stage_validation",
+        "fieldservice_stock",
+        "fieldservice_stock_extend",
+        "purchase_stock",
+        "sale",
     ],
-    'data': [
-        'views/fsm_order_views.xml',
-        'views/fsm_team_views.xml',
+    "data": [
+        "views/fsm_order_views.xml",
+        "views/fsm_team_views.xml",
     ],
 }

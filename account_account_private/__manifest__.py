@@ -18,21 +18,21 @@
 #
 ##############################################################################
 {
-    'name': 'Account account private',
-    'summary': 'Account only visible for some users',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sale',
-    'version': '12.0.2.0.0',
-    'depends': [
-        'account',
-        'account_payment_mode',
-        'account_payment_order',
+    "name": "Account account private",
+    "summary": "Account only visible for some users",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "account",
+        "account_payment_mode",
+        "account_payment_order",
     ],
-    'data': [
-        'security/security.xml',
-        'views/account_account_views.xml',
-        'views/account_payment_mode_views.xml',
+    "data": [
+        "security/security.xml",
+        "views/account_account_views.xml",
+        "views/account_payment_mode_views.xml",
     ],
 }

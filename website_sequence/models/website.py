@@ -5,10 +5,10 @@ from odoo import fields, models
 
 
 class Website(models.Model):
-    _inherit = 'website'
-    _order = 'sequence'
+    _inherit = "website"
+    _order = "sequence"
 
     sequence = fields.Integer(
-        string='Sequence',
+        string="Sequence",
         default=10,
     )

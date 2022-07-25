@@ -81,7 +81,6 @@
         <field name="name">Subventions</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">account.subvention</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
         <field name="search_view_id" ref="account_subvention_search"/>
     </record>

@@ -18,17 +18,17 @@
 #
 ##############################################################################
 {
-    'name': 'Project Task User Internal',
-    'summary': 'Restrict user assignment in tasks to external users.',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Project',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'project',
+    "name": "Project Task User Internal",
+    "summary": "Restrict user assignment in tasks to external users.",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Project",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "project",
     ],
-    'data': [
-        'views/project_task_views.xml',
+    "data": [
+        "views/project_task_views.xml",
     ],
 }

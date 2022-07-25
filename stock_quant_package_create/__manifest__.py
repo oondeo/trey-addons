@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Stock quant package create',
-    'summary': 'Wizard to create packages.',
-    'category': 'Stock',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'stock',
+    "name": "Stock quant package create",
+    "summary": "Wizard to create packages.",
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "stock",
     ],
-    'data': [
-        'views/stock_quant_package_views.xml',
-        'wizards/stock_quant_package_create.xml',
+    "data": [
+        "views/stock_quant_package_views.xml",
+        "wizards/stock_quant_package_create.xml",
     ],
 }

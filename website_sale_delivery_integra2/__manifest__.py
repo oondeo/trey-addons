@@ -18,22 +18,22 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Delivery Integra2',
-    'summary': 'Tracking info in portal sale orders',
-    'category': 'Website',
-    'version': '12.0.1.0.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'delivery_carrier_tracking_integra2',
-        'website_sale_delivery',
+    "name": "Website Sale Delivery Integra2",
+    "summary": "Tracking info in portal sale orders",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "delivery_carrier_tracking_integra2",
+        "website_sale_delivery",
     ],
-    'data': [
-        'views/website_templates.xml',
-        'views/website_sale_delivery_templates.xml',
+    "data": [
+        "views/website_templates.xml",
+        "views/website_sale_delivery_templates.xml",
     ],
-    'external_dependencies': {
-        'python': ['requests'],
+    "external_dependencies": {
+        "python": ["requests"],
     },
 }

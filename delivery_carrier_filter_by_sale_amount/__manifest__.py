@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Delivery carrier filter by sale amount',
-    'summary': 'Allow to filter carrier by sales order amount',
-    'category': 'Delivery',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'delivery',
+    "name": "Delivery carrier filter by sale amount",
+    "summary": "Allow to filter carrier by sales order amount",
+    "category": "Delivery",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "delivery",
     ],
-    'data': [
-        'views/delivery_carrier_views.xml',
+    "data": [
+        "views/delivery_carrier_views.xml",
     ],
 }

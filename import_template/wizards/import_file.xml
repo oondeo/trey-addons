@@ -91,7 +91,6 @@
         <field name="name">Import file</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">import.file</field>
-        <field name="view_type">form</field>
         <field name="view_mode">form</field>
         <field name="target">new</field>
         <field name="view_id" ref="import_file_view"/>

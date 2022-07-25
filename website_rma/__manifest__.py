@@ -18,28 +18,28 @@
 #
 ###############################################################################
 {
-    'name': 'Website RMA',
-    'category': 'Website',
-    'summary': 'Return Merchandise Authorizations for website',
-    'version': '12.0.1.10.0',
-    'website': 'https://www.trey.es',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': [
-        'portal',
-        'product',
-        'sale',
-        'sale_return',
-        'website_sale',
+    "name": "Website RMA",
+    "category": "Website",
+    "summary": "Return Merchandise Authorizations for website",
+    "version": "13.0.1.0.0",
+    "website": "https://www.trey.es",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": [
+        "portal",
+        "product",
+        "sale",
+        "sale_return",
+        "website_sale",
     ],
-    'data': [
-        'data/report_paperformat.xml',
-        'data/website_rma_email.xml',
-        'reports/address_label_report.xml',
-        'views/portal_template.xml',
-        'views/sale_portal_template.xml',
-        'views/website_rma_template.xml',
-        'views/website_template.xml',
+    "data": [
+        "data/report_paperformat.xml",
+        "data/website_rma_email.xml",
+        "reports/address_label_report.xml",
+        "views/portal_template.xml",
+        "views/sale_portal_template.xml",
+        "views/website_rma_template.xml",
+        "views/website_template.xml",
     ],
-    'installable': True
+    "installable": True,
 }

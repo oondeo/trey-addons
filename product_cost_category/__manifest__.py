@@ -18,24 +18,24 @@
 #
 ###############################################################################
 {
-    'name': 'Product Cost Category',
-    'summary': 'Calculate Sale Price based on Cost Category',
-    'category': 'Product',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'product',
-        'sale',
+    "name": "Product Cost Category",
+    "summary": "Calculate Sale Price based on Cost Category",
+    "category": "Product",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "product",
+        "sale",
     ],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/product_cost_category_view.xml',
-        'views/product_product_view.xml',
-        'views/product_template_view.xml',
-        'views/res_config_settings_views.xml',
-        'wizard/recalculate_cost_category_price.xml',
+    "data": [
+        "security/ir.model.access.csv",
+        "views/product_cost_category_view.xml",
+        "views/product_product_view.xml",
+        "views/product_template_view.xml",
+        "views/res_config_settings_views.xml",
+        "wizard/recalculate_cost_category_price.xml",
     ],
 }

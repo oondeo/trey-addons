@@ -5,7 +5,7 @@ from odoo import _, models
 
 
 class SaleOrderLine(models.Model):
-    _inherit = 'sale.order.line'
+    _inherit = "sale.order.line"
 
     def is_limit_ok(self):
         res = super().is_limit_ok()
@@ -18,6 +18,7 @@ class SaleOrderLine(models.Model):
             return res
         self.order_id.exception_limit_reason = _(
             'The product "%s" is selling below its minimum sale price '
-            'unit %s' % (
-                self.product_id.name, self.product_id.margin_price_limit))
+            "unit %s"
+            % (self.product_id.name, self.product_id.margin_price_limit)
+        )
         return False

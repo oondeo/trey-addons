@@ -5,10 +5,10 @@ from odoo import fields, models
 
 
 class ProductProduct(models.Model):
-    _inherit = 'product.product'
+    _inherit = "product.product"
 
     alert_ids = fields.One2many(
-        comodel_name='product.stock.alert',
-        inverse_name='product_id',
-        string='Stock Alerts',
+        comodel_name="product.stock.alert",
+        inverse_name="product_id",
+        string="Stock Alerts",
     )

@@ -5,7 +5,7 @@ from odoo import models
 
 
 class AccountInvoice(models.Model):
-    _inherit = 'account.invoice'
+    _inherit = "account.invoice"
 
     def _is_sii_simplified_invoice(self):
         res = super()._is_sii_simplified_invoice()

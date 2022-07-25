@@ -18,18 +18,18 @@
 #
 ##############################################################################
 {
-    'name': 'Product Pricelist By Brand',
-    'version': '12.0.1.0.0',
-    'summary': 'Support brands for pricelist filters',
-    'category': 'Sales',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product_brand',
-        'product_pricelist_base',
+    "name": "Product Pricelist By Brand",
+    "version": "13.0.1.0.0",
+    "summary": "Support brands for pricelist filters",
+    "category": "Sales",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product_brand",
+        "product_pricelist_base",
     ],
-    'data': [
-        'views/product_pricelist_views.xml',
+    "data": [
+        "views/product_pricelist_views.xml",
     ],
 }

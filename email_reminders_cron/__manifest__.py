@@ -18,21 +18,21 @@
 #
 ##############################################################################
 {
-    'name': 'Email Reminders Cron',
-    'summary': 'Send email reminders to all followers',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Mail message',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'mail',
+    "name": "Email Reminders Cron",
+    "summary": "Send email reminders to all followers",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Mail message",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "mail",
     ],
-    'data': [
-        'data/cron_data.xml',
-        'data/email_reminder_template.xml',
-        'views/mail_reminders_views.xml',
-        'views/res_config_settings_views.xml',
+    "data": [
+        "data/cron_data.xml",
+        "data/email_reminder_template.xml",
+        "views/mail_reminders_views.xml",
+        "views/res_config_settings_views.xml",
     ],
-    'installable': True,
+    "installable": True,
 }

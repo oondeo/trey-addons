@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Product Update Location Quantity',
-    'summary': 'Show wizard on products to adjust stock for selected location',
-    'category': 'Stock',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product',
-        'stock',
+    "name": "Product Update Location Quantity",
+    "summary": "Show wizard on products to adjust stock for selected location",
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product",
+        "stock",
     ],
-    'data': [
-        'views/product_template_views.xml',
-        'views/product_product_views.xml',
+    "data": [
+        "views/product_template_views.xml",
+        "views/product_product_views.xml",
     ],
 }

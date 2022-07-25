@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Product Standard Price from SupplierInfo',
-    'summary': 'Standard price based on priority supplierinfo',
-    'category': 'Product',
-    'version': '12.0.1.0.2',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product',
-        'purchase_discount',
+    "name": "Product Standard Price from SupplierInfo",
+    "summary": "Standard price based on priority supplierinfo",
+    "category": "Product",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product",
+        "purchase_discount",
     ],
-    'data': [
-        'views/product_template_views.xml',
+    "data": [
+        "views/product_template_views.xml",
     ],
 }

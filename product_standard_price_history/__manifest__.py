@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Product Standard Price History',
-    'summary': 'Creates a historical record of cost price changes',
-    'category': 'Product',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product',
-        'sale',
+    "name": "Product Standard Price History",
+    "summary": "Creates a historical record of cost price changes",
+    "category": "Product",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product",
+        "sale",
     ],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/product_product_views.xml',
-        'views/product_standard_price_history_view.xml',
-        'views/product_template_views.xml',
+    "data": [
+        "security/ir.model.access.csv",
+        "views/product_product_views.xml",
+        "views/product_standard_price_history_view.xml",
+        "views/product_template_views.xml",
     ],
 }

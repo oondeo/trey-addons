@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class CrmTeam(models.Model):
-    _inherit = 'crm.team'
+    _inherit = "crm.team"
 
     partner_id = fields.Many2one(
-        comodel_name='res.partner',
-        string='Partner',
+        comodel_name="res.partner",
+        string="Partner",
     )

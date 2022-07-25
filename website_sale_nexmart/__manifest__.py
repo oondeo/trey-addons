@@ -18,23 +18,23 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Nexmart',
-    'summary': 'Show Nexmart dataview in website product page',
-    'category': 'Website',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product',
-        'website',
-        'website_sale',
+    "name": "Website Sale Nexmart",
+    "summary": "Show Nexmart dataview in website product page",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product",
+        "website",
+        "website_sale",
     ],
-    'data': [
-        'views/portal_template.xml',
-        'views/product_template_views.xml',
-        'views/res_config_settings_views.xml',
-        'views/website_template.xml',
-        'views/website_sale_template.xml',
+    "data": [
+        "views/portal_template.xml",
+        "views/product_template_views.xml",
+        "views/res_config_settings_views.xml",
+        "views/website_template.xml",
+        "views/website_sale_template.xml",
     ],
 }

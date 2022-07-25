@@ -5,17 +5,17 @@ from odoo import api, fields, models
 
 
 class AccountInvoice(models.Model):
-    _inherit = 'account.invoice'
+    _inherit = "account.invoice"
 
     agents_name = fields.Char(
-        string='Agents',
-        compute='_compute_agents_name',
-        store=True)
+        string="Agents", compute="_compute_agents_name", store=True
+    )
 
-    @api.one
-    @api.depends('invoice_line_ids.agents')
+    @api.depends("invoice_line_ids.agents")
     def _compute_agents_name(self):
         agent_list = [
-            ag.agent.name for line in self.invoice_line_ids
-            for ag in line.agents]
-        self.agents_name = ', '.join(list(set(agent_list)))
+            ag.agent.name
+            for line in self.invoice_line_ids
+            for ag in line.agents
+        ]
+        self.agents_name = ", ".join(list(set(agent_list)))

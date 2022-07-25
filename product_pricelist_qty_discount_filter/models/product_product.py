@@ -5,17 +5,16 @@ from odoo import api, fields, models
 
 
 class ProductProduct(models.Model):
-    _inherit = 'product.product'
+    _inherit = "product.product"
 
     qty_discount = fields.Boolean(
-        string='Quantity discount',
-        help='Indicates if the product has a discount for minimun quantity',
-        compute='_compute_qty_discount',
+        string="Quantity discount",
+        help="Indicates if the product has a discount for minimun quantity",
+        compute="_compute_qty_discount",
         store=True,
     )
 
-    @api.multi
-    @api.depends('item_ids')
+    @api.depends("item_ids")
     def _compute_qty_discount(self):
         for product in self:
             product.qty_discount = False

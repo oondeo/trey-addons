@@ -18,20 +18,20 @@
 #
 ###############################################################################
 {
-    'name': 'Product standard price history team',
-    'summary': 'Add team how markets in standard price history',
-    'category': 'CRM',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'delivery',
-        'product_standard_price_history',
-        'sales_team',
+    "name": "Product standard price history team",
+    "summary": "Add team how markets in standard price history",
+    "category": "CRM",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "delivery",
+        "product_standard_price_history",
+        "sales_team",
     ],
-    'data': [
-        'views/crm_team_views.xml',
-        'views/product_standard_price_history.xml',
+    "data": [
+        "views/crm_team_views.xml",
+        "views/product_standard_price_history.xml",
     ],
 }

@@ -5,11 +5,11 @@ from odoo import fields, models
 
 
 class Website(models.Model):
-    _inherit = 'website'
+    _inherit = "website"
 
     notify_invoice_open = fields.Boolean(
-        string='Notify open invoice',
+        string="Notify open invoice",
     )
     notify_invoice_paid = fields.Boolean(
-        string='Notify paid invoice',
+        string="Notify paid invoice",
     )

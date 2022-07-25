@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Stock inventory wizard',
-    'summary': 'Wizard to create stock inventory',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale',
-        'stock',
+    "name": "Stock inventory wizard",
+    "summary": "Wizard to create stock inventory",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "sale",
+        "stock",
     ],
-    'data': [
-        'wizards/stock_inventory_product.xml',
+    "data": [
+        "wizards/stock_inventory_product.xml",
     ],
 }

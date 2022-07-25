@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Stock picking assign',
-    'summary': 'Add button that when clicked saves the user who clicked',
-    'category': 'Stock',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale',
-        'stock',
+    "name": "Stock picking assign",
+    "summary": "Add button that when clicked saves the user who clicked",
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "sale",
+        "stock",
     ],
-    'data': [
-        'views/stock_picking_views.xml',
+    "data": [
+        "views/stock_picking_views.xml",
     ],
 }

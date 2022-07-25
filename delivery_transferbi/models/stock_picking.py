@@ -4,6 +4,6 @@ from odoo import fields, models
 
 
 class StockPicking(models.Model):
-    _inherit = 'stock.picking'
+    _inherit = "stock.picking"
 
     transferbi_barcodes = fields.Text()

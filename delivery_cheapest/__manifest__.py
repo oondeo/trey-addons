@@ -18,23 +18,23 @@
 #
 ###############################################################################
 {
-    'name': 'Delivery cheapest',
-    'summary': 'Add button on sales orders and stock picking to assign '
-               'cheapest shipping method for customer',
-    'category': 'Sale',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'delivery',
-        'delivery_carrier_filter_by_sale_amount',
-        'delivery_cost_to_sale_order',
-        'sale',
+    "name": "Delivery cheapest",
+    "summary": "Add button on sales orders and stock picking to assign "
+    "cheapest shipping method for customer",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "delivery",
+        "delivery_carrier_filter_by_sale_amount",
+        "delivery_cost_to_sale_order",
+        "sale",
     ],
-    'data': [
-        'views/delivery_carrier_views.xml',
-        'views/sale_order_views.xml',
-        'views/stock_picking_views.xml',
+    "data": [
+        "views/delivery_carrier_views.xml",
+        "views/sale_order_views.xml",
+        "views/stock_picking_views.xml",
     ],
 }

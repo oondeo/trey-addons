@@ -5,8 +5,8 @@ from odoo import fields, models
 
 
 class SaleOrderType(models.Model):
-    _inherit = 'sale.order.type'
+    _inherit = "sale.order.type"
 
     is_season = fields.Boolean(
-        string='Is season',
+        string="Is season",
     )

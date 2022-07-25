@@ -18,15 +18,15 @@
 #
 ###############################################################################
 {
-    'name': 'Website Fix Protocol Language Links',
-    'summary': 'Fix SSL protocol in website',
-    'category': 'Website',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'website',
-        'website_protocol',
+    "name": "Website Fix Protocol Language Links",
+    "summary": "Fix SSL protocol in website",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "website",
+        "website_protocol",
     ],
 }

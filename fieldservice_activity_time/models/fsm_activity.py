@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class FSMActivity(models.Model):
-    _inherit = 'fsm.activity'
+    _inherit = "fsm.activity"
 
     time = fields.Float(
-        string='Time spent',
+        string="Time spent",
         copy=False,
     )

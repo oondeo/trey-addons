@@ -18,15 +18,15 @@
 #
 ##############################################################################
 {
-    'name': 'Sale Order Line Standard Price',
-    'summary': 'Save the standard price in the sales order line when a '
-               'product is selected for analysis',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'sale',
+    "name": "Sale Order Line Standard Price",
+    "summary": "Save the standard price in the sales order line when a "
+    "product is selected for analysis",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "sale",
     ],
 }

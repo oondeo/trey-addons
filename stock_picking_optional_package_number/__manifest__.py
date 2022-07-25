@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Stock picking optional package number',
-    'summary': 'Allows the user to display or not the number of packages in '
-               'wizard according to stock picking type',
-    'category': 'Stock',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'delivery_package_number',
-        'sale',
-        'stock',
+    "name": "Stock picking optional package number",
+    "summary": "Allows the user to display or not the number of packages in "
+    "wizard according to stock picking type",
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "delivery_package_number",
+        "sale",
+        "stock",
     ],
-    'data': [
-        'views/stock_picking_type_views.xml',
-        'wizards/stock_immediate_transfer.xml',
+    "data": [
+        "views/stock_picking_type_views.xml",
+        "wizards/stock_immediate_transfer.xml",
     ],
 }

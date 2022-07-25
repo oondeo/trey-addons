@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Catalog Export',
-    'summary': 'Export products of actual category from website',
-    'category': 'Website',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product_catalog_report',
-        'website_sale',
+    "name": "Website Sale Catalog Export",
+    "summary": "Export products of actual category from website",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product_catalog_report",
+        "website_sale",
     ],
-    'data': [
-        'views/website_sale.xml',
+    "data": [
+        "views/website_sale.xml",
     ],
-    'installable': True,
+    "installable": True,
 }

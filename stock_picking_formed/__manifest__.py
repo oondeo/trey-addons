@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Stock picking formed',
-    'summary': (
-        'Add boolean to know if picking is formed and track changes in'
-        ' field value'
+    "name": "Stock picking formed",
+    "summary": (
+        "Add boolean to know if picking is formed and track changes in"
+        " field value"
     ),
-    'category': 'Stock',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale',
-        'stock',
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "sale",
+        "stock",
     ],
-    'data': [
-        'views/stock_picking_views.xml',
+    "data": [
+        "views/stock_picking_views.xml",
     ],
 }

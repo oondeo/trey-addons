@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class SaleOrder(models.Model):
-    _inherit = 'sale.order.line'
+    _inherit = "sale.order.line"
 
     qty_return = fields.Float(
-        comodel_name='sale.order.line',
-        string='Returned Quantity',
+        comodel_name="sale.order.line",
+        string="Returned Quantity",
     )

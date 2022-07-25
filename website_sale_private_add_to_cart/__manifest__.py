@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Private Add To Cart',
-    'summary': 'Hide add to cart button from public users',
-    'category': 'website',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'website_sale',
+    "name": "Website Sale Private Add To Cart",
+    "summary": "Hide add to cart button from public users",
+    "category": "website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "website_sale",
     ],
-    'data': [
-        'views/website_sale_templates.xml',
+    "data": [
+        "views/website_sale_templates.xml",
     ],
 }

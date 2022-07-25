@@ -5,37 +5,37 @@ from odoo import api, fields, models
 
 
 class ResConfigSettings(models.TransientModel):
-    _inherit = 'res.config.settings'
+    _inherit = "res.config.settings"
 
     notify_quotation = fields.Boolean(
-        string='Notify quotation',
-        related='website_id.notify_quotation',
+        string="Notify quotation",
+        related="website_id.notify_quotation",
         readonly=False,
     )
     notify_sale = fields.Boolean(
-        string='Notify sale',
-        related='website_id.notify_sale',
+        string="Notify sale",
+        related="website_id.notify_sale",
         readonly=False,
     )
     notify_done = fields.Boolean(
-        string='Notify blocked order',
-        related='website_id.notify_done',
+        string="Notify blocked order",
+        related="website_id.notify_done",
         readonly=False,
     )
     notify_cancel = fields.Boolean(
-        string='Notify cancel',
-        related='website_id.notify_cancel',
+        string="Notify cancel",
+        related="website_id.notify_cancel",
         readonly=False,
     )
 
     @api.model
     def get_values(self):
         res = super().get_values()
-        config_parameter = self.env['ir.config_parameter'].sudo()
-        quotation = config_parameter.get_param('website.notify_quotation')
-        sale = config_parameter.get_param('website.notify_sale')
-        done = config_parameter.get_param('website.notify_done')
-        cancel = config_parameter.get_param('website.notify_cancel')
+        config_parameter = self.env["ir.config_parameter"].sudo()
+        quotation = config_parameter.get_param("website.notify_quotation")
+        sale = config_parameter.get_param("website.notify_sale")
+        done = config_parameter.get_param("website.notify_done")
+        cancel = config_parameter.get_param("website.notify_cancel")
         res.update(
             notify_quotation=quotation,
             notify_sale=sale,
@@ -46,8 +46,8 @@ class ResConfigSettings(models.TransientModel):
 
     def set_values(self):
         super().set_values()
-        set_param = self.env['ir.config_parameter'].sudo().set_param
-        set_param('website.notify_quotation', self.notify_quotation)
-        set_param('website.notify_sale', self.notify_sale)
-        set_param('website.notify_done', self.notify_done)
-        set_param('website.notify_cancel', self.notify_cancel)
+        set_param = self.env["ir.config_parameter"].sudo().set_param
+        set_param("website.notify_quotation", self.notify_quotation)
+        set_param("website.notify_sale", self.notify_sale)
+        set_param("website.notify_done", self.notify_done)
+        set_param("website.notify_cancel", self.notify_cancel)

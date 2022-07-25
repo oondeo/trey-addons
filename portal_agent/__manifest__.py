@@ -18,23 +18,23 @@
 #
 ###############################################################################
 {
-    'name': 'Portal Agent',
-    'summary': 'Agents portal funcionalities',
-    'category': 'Website',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'portal',
-        'portal_base',
-        'portal_sale',
-        'sale',
-        'sale_commission',
-        'website',
+    "name": "Portal Agent",
+    "summary": "Agents portal funcionalities",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "portal",
+        "portal_base",
+        "portal_sale",
+        "sale",
+        "sale_commission",
+        "website",
     ],
-    'data': [
-        'views/portal_agent_views.xml',
-        'views/sale_views.xml',
+    "data": [
+        "views/portal_agent_views.xml",
+        "views/sale_views.xml",
     ],
 }

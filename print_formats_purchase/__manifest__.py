@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Print Formats Purchase',
-    'summary': 'Purchase print formats',
-    'category': 'Purchases Management',
-    'version': '12.0.1.1.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'print_formats_base',
-        'purchase',
+    "name": "Print Formats Purchase",
+    "summary": "Purchase print formats",
+    "category": "Purchases Management",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "print_formats_base",
+        "purchase",
     ],
-    'data': [
-        'views/report_purchase_order.xml',
-        'views/report_purchase_quotation.xml',
+    "data": [
+        "views/report_purchase_order.xml",
+        "views/report_purchase_quotation.xml",
     ],
 }

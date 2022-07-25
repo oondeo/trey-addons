@@ -5,10 +5,11 @@ from odoo import fields, models
 
 
 class ResCompany(models.Model):
-    _inherit = 'res.company'
+    _inherit = "res.company"
 
     discount_product_id = fields.Many2one(
-        comodel_name='product.product',
-        string='Early Payment Discount Product',
+        comodel_name="product.product",
+        string="Early Payment Discount Product",
         required=False,
-        domain=[('type', '=', 'service')])
+        domain=[("type", "=", "service")],
+    )

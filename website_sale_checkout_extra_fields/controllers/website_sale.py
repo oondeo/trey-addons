@@ -7,7 +7,12 @@ from odoo.addons.website_sale.controllers.main import WebsiteSale
 
 class WebsiteSale(WebsiteSale):
     @http.route(
-        ['/shop/cart/validation'], type='json', auth='public',
-        methods=['POST'], website=True, csrf=False)
+        ["/shop/cart/validation"],
+        type="json",
+        auth="public",
+        methods=["POST"],
+        website=True,
+        csrf=False,
+    )
     def check_field_validations(self, values):
-        return {'error': []}
+        return {"error": []}

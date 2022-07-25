@@ -18,24 +18,24 @@
 #
 ##############################################################################
 {
-    'name': 'Product Pricelist Purchase',
-    'version': '12.0.1.0.0',
-    'summary': 'Support pricelist for puchase',
-    'category': 'Purchases',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product',
-        'product_pricelist_base',
-        'purchase',
+    "name": "Product Pricelist Purchase",
+    "version": "13.0.1.0.0",
+    "summary": "Support pricelist for puchase",
+    "category": "Purchases",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product",
+        "product_pricelist_base",
+        "purchase",
     ],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/product_supplierinfo.xml',
-        'views/product_pricelist.xml',
-        'views/res_partner.xml',
+    "data": [
+        "security/ir.model.access.csv",
+        "views/product_supplierinfo.xml",
+        "views/product_pricelist.xml",
+        "views/res_partner.xml",
     ],
-    'post_init_hook': 'post_init_hook',
-    'uninstall_hook': 'uninstall_hook',
+    "post_init_hook": "post_init_hook",
+    "uninstall_hook": "uninstall_hook",
 }

@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Default Code',
-    'summary': 'Add customize options to show product default code',
-    'category': 'Website',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': ['website_sale'],
-    'data': [
-        'views/website_sale.xml',
-        'views/website_sale_default_code.xml',
+    "name": "Website Sale Default Code",
+    "summary": "Add customize options to show product default code",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": ["website_sale"],
+    "data": [
+        "views/website_sale.xml",
+        "views/website_sale_default_code.xml",
     ],
-    'installable': True,
+    "installable": True,
 }

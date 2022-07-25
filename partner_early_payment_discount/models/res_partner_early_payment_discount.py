@@ -5,15 +5,15 @@ from odoo import fields, models
 
 
 class PartnerEarlyPaymentDiscount(models.Model):
-    _name = 'partner.early.payment.discount'
-    _description = 'Partner early payment discount'
+    _name = "partner.early.payment.discount"
+    _description = "Partner early payment discount"
 
     name = fields.Char(
-        string='Name',
+        string="Name",
         required=True,
     )
     discount = fields.Float(
-        string='% Discount',
+        string="% Discount",
         required=True,
-        help='Early Payment Discount in %.',
+        help="Early Payment Discount in %.",
     )

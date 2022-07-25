@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class ResPartner(models.Model):
-    _inherit = 'res.partner'
+    _inherit = "res.partner"
 
     supplier_pricelist_id = fields.Many2one(
-        comodel_name='product.pricelist.purchase',
-        string='Supplier pricelist',
+        comodel_name="product.pricelist.purchase",
+        string="Supplier pricelist",
     )

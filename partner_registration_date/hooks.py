@@ -4,5 +4,4 @@
 
 
 def post_init_hook(cr, registry):
-    cr.execute(
-        'update res_partner set registration_date = create_date')
+    cr.execute("update res_partner set registration_date = create_date")

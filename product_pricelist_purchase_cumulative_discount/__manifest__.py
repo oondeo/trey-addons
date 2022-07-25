@@ -18,15 +18,15 @@
 #
 ##############################################################################
 {
-    'name': 'Product Pricelist Purchase Cumulative Discount',
-    'version': '12.0.1.0.0',
-    'summary': 'Support cumulative discount for purchase pricelist',
-    'category': 'Purchases',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product_pricelist_purchase',
-        'purchase_order_cumulative_discount',
+    "name": "Product Pricelist Purchase Cumulative Discount",
+    "version": "13.0.1.0.0",
+    "summary": "Support cumulative discount for purchase pricelist",
+    "category": "Purchases",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product_pricelist_purchase",
+        "purchase_order_cumulative_discount",
     ],
 }

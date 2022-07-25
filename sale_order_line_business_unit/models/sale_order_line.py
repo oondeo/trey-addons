@@ -5,11 +5,11 @@ from odoo import fields, models
 
 
 class SaleOrderLine(models.Model):
-    _inherit = 'sale.order.line'
+    _inherit = "sale.order.line"
 
     product_unit_id = fields.Many2one(
-        comodel_name='product.business.unit',
-        related='product_id.unit_id',
-        string='Business unit',
+        comodel_name="product.business.unit",
+        related="product_id.unit_id",
+        string="Business unit",
         readonly=True,
     )

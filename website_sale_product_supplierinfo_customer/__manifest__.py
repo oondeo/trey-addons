@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Website sale product supplierinfo customer',
-    'summary': '''
+    "name": "Website sale product supplierinfo customer",
+    "summary": """
         Add ecommerce funcionalities to Product supplierinfo for customer
-        sale module''',
-    'category': 'Website',
-    'version': '12.0.1.1.2',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'product_supplierinfo_for_customer',
-        'purchase_discount',
-        'website_sale',
+        sale module""",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "product_supplierinfo_for_customer",
+        "purchase_discount",
+        "website_sale",
     ],
 }

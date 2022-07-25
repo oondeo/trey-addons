@@ -5,10 +5,10 @@ from odoo import fields, models
 
 
 class ResPartner(models.Model):
-    _inherit = 'res.partner'
+    _inherit = "res.partner"
 
     goods_free_ids = fields.One2many(
-        comodel_name='res.partner.goods_free',
-        inverse_name='partner_id',
-        string='Goods free',
+        comodel_name="res.partner.goods_free",
+        inverse_name="partner_id",
+        string="Goods free",
     )

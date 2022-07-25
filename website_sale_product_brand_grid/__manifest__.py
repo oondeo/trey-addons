@@ -18,22 +18,22 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Product Brand Grid',
-    'summary': 'Sell brand products by grid',
-    'category': 'website',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product_brand',
-        'website_fancybox',
+    "name": "Website Sale Product Brand Grid",
+    "summary": "Sell brand products by grid",
+    "category": "website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product_brand",
+        "website_fancybox",
         # 'website_sale_discount_badge',  # dejar comentario por el momento
-        'website_sale_product_brand',
-        'website_sale_product_grid',
+        "website_sale_product_brand",
+        "website_sale_product_grid",
     ],
-    'data': [
-        'views/product_brand_views.xml',
+    "data": [
+        "views/product_brand_views.xml",
     ],
-    'installable': True,
+    "installable": True,
 }

@@ -6,31 +6,31 @@ from odoo.addons.termoclub.models.termoclub_api import TermoClubApi
 
 
 class ResCompany(models.Model):
-    _inherit = 'res.company'
+    _inherit = "res.company"
 
     termoclub_supplier_id = fields.Many2one(
-        comodel_name='res.partner',
-        string='Supplier',
-        domain=[('supplier', '=', True)],
+        comodel_name="res.partner",
+        string="Supplier",
+        domain=[("supplier", "=", True)],
     )
     termoclub_wsdl = fields.Char(
-        string='URL',
-        default='http://compras.termoclub.com:8001/WSPedidos/Gestion.asmx'
-                '?WSDL',
+        string="URL",
+        default="http://compras.termoclub.com:8001/WSPedidos/Gestion.asmx"
+        "?WSDL",
     )
     termoclub_user = fields.Char(
-        string='User',
+        string="User",
     )
     termoclub_password = fields.Char(
-        string='Password',
+        string="Password",
     )
     termoclub_order_sent_type = fields.Selection(
-        string='Sent type',
+        string="Sent type",
         selection=[
-            ('manual', 'Manual'),
-            ('automatic', 'automatic'),
+            ("manual", "Manual"),
+            ("automatic", "automatic"),
         ],
-        default='manual',
+        default="manual",
     )
 
     @api.model

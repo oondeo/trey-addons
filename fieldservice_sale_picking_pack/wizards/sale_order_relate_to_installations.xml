@@ -24,7 +24,6 @@
         <field name="name">Relate to installations</field>
         <field name="res_model">sale.order.relate_to_installations</field>
         <field name="type">ir.actions.act_window</field>
-        <field name="view_type">form</field>
         <field name="view_mode">form</field>
         <field name="view_id" ref="sale_order_relate_to_installations"/>
         <field name="target">new</field>

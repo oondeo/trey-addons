@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Sale Commission Group',
-    'summary': 'Allows grouping by agent in contacts, orders and invoices',
-    'category': 'Sales Management',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'account',
-        'sale_commission',
-        'sale_management',
+    "name": "Sale Commission Group",
+    "summary": "Allows grouping by agent in contacts, orders and invoices",
+    "category": "Sales Management",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "account",
+        "sale_commission",
+        "sale_management",
     ],
-    'data': [
-        'views/account_view.xml',
-        'views/res_partner_view.xml',
-        'views/sale_view.xml',
+    "data": [
+        "views/account_view.xml",
+        "views/res_partner_view.xml",
+        "views/sale_view.xml",
     ],
 }

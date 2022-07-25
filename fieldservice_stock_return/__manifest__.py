@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Fieldservice Stock Return',
-    'summary': 'Allow return to company stock warehouse spare materials of done'
-               ' fsm orders.',
-    'category': 'Warehouse Management',
-    'version': '12.0.1.3.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'fieldservice_add_material',
-        'fieldservice_sale_picking_pack',
-        'fieldservice_sale_stock',
-        'fieldservice_stock_extend',
+    "name": "Fieldservice Stock Return",
+    "summary": "Allow return to company stock warehouse spare materials of done"
+    " fsm orders.",
+    "category": "Warehouse Management",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "fieldservice_add_material",
+        "fieldservice_sale_picking_pack",
+        "fieldservice_sale_stock",
+        "fieldservice_stock_extend",
     ],
-    'data': [
-        'views/fsm_order_views.xml',
+    "data": [
+        "views/fsm_order_views.xml",
     ],
 }

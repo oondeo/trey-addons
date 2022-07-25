@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Product create orderpoint auto',
-    'summary': 'Product create orderpoint auto.',
-    'category': 'Product',
-    'version': '12.0.1.0.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product',
-        'stock',
+    "name": "Product create orderpoint auto",
+    "summary": "Product create orderpoint auto.",
+    "category": "Product",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product",
+        "stock",
     ],
-    'data': [
-        'views/res_company_views.xml',
+    "data": [
+        "views/res_company_views.xml",
     ],
 }

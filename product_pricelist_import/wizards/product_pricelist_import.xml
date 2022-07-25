@@ -19,7 +19,6 @@
         <field name="name">Import pricelist</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">product.pricelist.import</field>
-        <field name="view_type">form</field>
         <field name="view_mode">form</field>
         <field name="target">new</field>
         <field name="view_id" ref="pricelist_import_view"/>

@@ -6,19 +6,19 @@ from odoo import api, fields, models
 
 
 class ProductTemplate(models.Model):
-    _inherit = 'product.template'
+    _inherit = "product.template"
 
     margin_limit = fields.Float(
-        string='Margin limit (%)',
-        digits=dp.get_precision('Discount'),
+        string="Margin limit (%)",
+        digits=dp.get_precision("Discount"),
     )
     margin_price_limit = fields.Float(
-        string='Sales price min',
-        compute='_compute_margin_price_limit',
-        digits=dp.get_precision('Product Price'),
+        string="Sales price min",
+        compute="_compute_margin_price_limit",
+        digits=dp.get_precision("Product Price"),
     )
 
-    @api.depends('margin_limit', 'standard_price')
+    @api.depends("margin_limit", "standard_price")
     def _compute_margin_price_limit(self):
         for tmpl in self:
             if tmpl.margin_limit >= 100:

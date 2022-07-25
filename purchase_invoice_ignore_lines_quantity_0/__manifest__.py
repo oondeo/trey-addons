@@ -18,14 +18,14 @@
 #
 ##############################################################################
 {
-    'name': 'Purchase invoice ignore lines quantity 0',
-    'summary': 'Ignore invoice lines with quantity 0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Purchases',
-    'version': '12.0.1.0.2',
-    'depends': [
-        'purchase',
+    "name": "Purchase invoice ignore lines quantity 0",
+    "summary": "Ignore invoice lines with quantity 0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Purchases",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "purchase",
     ],
 }

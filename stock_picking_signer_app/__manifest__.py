@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Stock picking signer app',
-    'summary': 'Add the signature to packing list',
-    'category': 'Stock',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'iot_input',
-        'sale',
-        'stock',
+    "name": "Stock picking signer app",
+    "summary": "Add the signature to packing list",
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "iot_input",
+        "sale",
+        "stock",
     ],
-    'data': [
-        'views/res_users_views.xml',
-        'views/stock_picking_views.xml',
+    "data": [
+        "views/res_users_views.xml",
+        "views/stock_picking_views.xml",
     ],
 }

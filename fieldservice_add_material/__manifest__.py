@@ -18,20 +18,20 @@
 #
 ###############################################################################
 {
-    'name': 'Fieldservice add material',
-    'summary': 'Allow add material in fsm order and transfer to the customer '
-               'location',
-    'category': 'Warehouse Management',
-    'version': '12.0.1.6.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'fieldservice_sale_stock',
-        'fieldservice_stock_extend',
+    "name": "Fieldservice add material",
+    "summary": "Allow add material in fsm order and transfer to the customer "
+    "location",
+    "category": "Warehouse Management",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "fieldservice_sale_stock",
+        "fieldservice_stock_extend",
     ],
-    'data': [
-        'wizards/fieldservice_add_material.xml',
-        'views/fsm_order_views.xml',
+    "data": [
+        "wizards/fieldservice_add_material.xml",
+        "views/fsm_order_views.xml",
     ],
 }

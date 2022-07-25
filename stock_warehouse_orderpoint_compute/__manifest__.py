@@ -18,26 +18,26 @@
 #
 ##############################################################################
 {
-    'name': 'Stock warehouse orderpoint compute',
-    'summary': 'Modify min an max quantity of warehouse orderpoints.',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Warehouse Management',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'base',
-        'mail',
-        'product',
-        'purchase_stock',
-        'sale_stock',
-        'stock',
-        'stock_rotation_report',
+    "name": "Stock warehouse orderpoint compute",
+    "summary": "Modify min an max quantity of warehouse orderpoints.",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Warehouse Management",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "base",
+        "mail",
+        "product",
+        "purchase_stock",
+        "sale_stock",
+        "stock",
+        "stock_rotation_report",
     ],
-    'data': [
-        'data/data.xml',
-        'views/stock_warehouse_orderpoint_views.xml',
-        'views/res_company_views.xml',
-        'views/res_partner_views.xml',
+    "data": [
+        "data/data.xml",
+        "views/stock_warehouse_orderpoint_views.xml",
+        "views/res_company_views.xml",
+        "views/res_partner_views.xml",
     ],
 }

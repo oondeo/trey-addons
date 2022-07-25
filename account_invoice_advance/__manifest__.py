@@ -18,19 +18,19 @@
 #
 ##############################################################################
 {
-    'name': 'Account invoice advance',
-    'summary': 'Create advanced from invoices',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Account',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'account',
+    "name": "Account invoice advance",
+    "summary": "Create advanced from invoices",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Account",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "account",
     ],
-    'data': [
-        'data/product_product.xml',
-        'wizards/account_invoice_make_advance.xml',
-        'views/account_invoice.xml',
+    "data": [
+        "data/product_product.xml",
+        "wizards/account_invoice_make_advance.xml",
+        "views/account_invoice.xml",
     ],
 }

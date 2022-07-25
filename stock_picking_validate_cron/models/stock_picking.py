@@ -9,35 +9,45 @@ from odoo.exceptions import ValidationError
 
 
 class StockPicking(models.Model):
-    _inherit = 'stock.picking'
+    _inherit = "stock.picking"
 
     @api.model
     def cron_picking_validate(self, domain=None, days=None):
         if not domain or not days:
             raise ValidationError(
-                _('Error validating arguments in the function call: '
-                  'One or both parameters are not in the function call.'
-                  'Both parameters are required in the function call.'))
+                _(
+                    "Error validating arguments in the function call: "
+                    "One or both parameters are not in the function call."
+                    "Both parameters are required in the function call."
+                )
+            )
         if not isinstance(domain, list):
             raise ValidationError(
-                _('Error validating the domain: The domain has to be a list'))
+                _("Error validating the domain: The domain has to be a list")
+            )
         for condition in domain:
-            if 'state' in condition:
+            if "state" in condition:
                 raise ValidationError(
-                    _('Error validating the domain: State cannot be passed in'
-                      ' the domain'))
+                    _(
+                        "Error validating the domain: State cannot be passed in"
+                        " the domain"
+                    )
+                )
         limit_date = datetime.now() + relativedelta(days=int(days))
         domain += [
-            ('state', '=', 'assigned'),
-            ('scheduled_date', '<', limit_date.strftime('%Y-%m-%d')),
+            ("state", "=", "assigned"),
+            ("scheduled_date", "<", limit_date.strftime("%Y-%m-%d")),
         ]
-        pickings = self.env['stock.picking'].search(domain)
+        pickings = self.env["stock.picking"].search(domain)
         for picking in pickings:
             reserved_qty = sum(
                 picking.move_ids_without_package.mapped(
-                    'reserved_availability'))
+                    "reserved_availability"
+                )
+            )
             product_qty = sum(
-                picking.move_ids_without_package.mapped('product_uom_qty'))
+                picking.move_ids_without_package.mapped("product_uom_qty")
+            )
             if reserved_qty == product_qty:
                 for move in picking.move_lines:
                     move.quantity_done = move.product_uom_qty

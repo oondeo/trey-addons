@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Account Move Line Unreconciled Filter',
-    'summary': 'Allow filter unreconciled journal entry lines only by no '
-               'matching number',
-    'category': 'Accounting & Finance',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'account',
+    "name": "Account Move Line Unreconciled Filter",
+    "summary": "Allow filter unreconciled journal entry lines only by no "
+    "matching number",
+    "category": "Accounting & Finance",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "account",
     ],
-    'data': [
-        'views/account_move_line_views.xml',
+    "data": [
+        "views/account_move_line_views.xml",
     ],
 }

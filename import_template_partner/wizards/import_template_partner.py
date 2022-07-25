@@ -5,8 +5,8 @@ from odoo import _, models
 
 
 class ImportTemplatePartner(models.TransientModel):
-    _name = 'import.template.partner'
-    _description = 'Template for import partner file'
+    _name = "import.template.partner"
+    _description = "Template for import partner file"
 
     def parse_float(self, value):
         try:
@@ -19,167 +19,198 @@ class ImportTemplatePartner(models.TransientModel):
         model_name = self.env[model]._description
         if not name:
             if is_required:
-                errors.append(_('%s %s not found.') % (model_name, name))
+                errors.append(_("%s %s not found.") % (model_name, name))
             return None, errors
         model_obj = self.env[model]
-        records = model_obj.search([
-            (search_field, '=', name),
-        ])
+        records = model_obj.search(
+            [
+                (search_field, "=", name),
+            ]
+        )
         if len(records) > 1:
-            errors.append(_(
-                'More than one %s found for %s.') % (model_name, name))
+            errors.append(
+                _("More than one %s found for %s.") % (model_name, name)
+            )
         if not records:
             if is_required:
-                records = model_obj.create({
-                    search_field: name,
-                })
+                records = model_obj.create(
+                    {
+                        search_field: name,
+                    }
+                )
             else:
-                errors.append(_('%s %s not found.') % (model_name, name))
+                errors.append(_("%s %s not found.") % (model_name, name))
                 return None, errors
         return records[0].id, errors
 
     def parent_id_get_or_create(self, parent_name):
         return self.field_get_or_create(
-            'res.partner', parent_name, 'name', False)
+            "res.partner", parent_name, "name", False
+        )
 
     def city_id_get_or_create(self, name):
-        return self.field_get_or_create('res.city', name, 'name', False)
+        return self.field_get_or_create("res.city", name, "name", False)
 
     def state_id_get_or_create(self, name):
         return self.field_get_or_create(
-            'res.country.state', name, 'name', False)
+            "res.country.state", name, "name", False
+        )
 
     def zip_id_get_or_create(self, name):
         name = self.parse_float(name)
-        return self.field_get_or_create('res.city.zip', name, 'name', False)
+        return self.field_get_or_create("res.city.zip", name, "name", False)
 
     def country_id_get_or_create(self, name):
-        return self.field_get_or_create('res.country', name, 'name', False)
+        return self.field_get_or_create("res.country", name, "name", False)
 
     def commission_get_or_create(self, name):
-        return self.field_get_or_create('sale.commission', name, 'name', False)
+        return self.field_get_or_create("sale.commission", name, "name", False)
 
     def user_id_get_or_create(self, name):
-        return self.field_get_or_create('res.users', name, 'name', False)
+        return self.field_get_or_create("res.users", name, "name", False)
 
     def invoice_group_method_id_get_or_create(self, name):
         return self.field_get_or_create(
-            'sale.invoice.group.method', name, 'name', False)
+            "sale.invoice.group.method", name, "name", False
+        )
 
     def property_payment_term_id_get_or_create(self, name):
         return self.field_get_or_create(
-            'account.payment.term', name, 'name', False)
+            "account.payment.term", name, "name", False
+        )
 
     def property_supplier_payment_term_id_get_or_create(self, name):
         return self.field_get_or_create(
-            'account.payment.term', name, 'name', False)
+            "account.payment.term", name, "name", False
+        )
 
     def customer_payment_mode_id_get_or_create(self, name):
         return self.field_get_or_create(
-            'account.payment.mode', name, 'name', False)
+            "account.payment.mode", name, "name", False
+        )
 
     def supplier_payment_mode_id_get_or_create(self, name):
         return self.field_get_or_create(
-            'account.payment.mode', name, 'name', False)
+            "account.payment.mode", name, "name", False
+        )
 
     def property_product_pricelist_get_or_create(self, name):
         return self.field_get_or_create(
-            'product.pricelist', name, 'name', False)
+            "product.pricelist", name, "name", False
+        )
 
     def supplier_pricelist_id_get_or_create(self, name):
         return self.field_get_or_create(
-            'product.pricelist.purchase', name, 'name', False)
+            "product.pricelist.purchase", name, "name", False
+        )
 
     def property_account_position_id_get_or_create(self, name):
         return self.field_get_or_create(
-            'account.fiscal.position', name, 'name', False)
+            "account.fiscal.position", name, "name", False
+        )
 
     def credit_policy_id_get_or_create(self, name):
         return self.field_get_or_create(
-            'credit.control.policy', name, 'name', False)
+            "credit.control.policy", name, "name", False
+        )
 
     def payment_responsible_id_get_or_create(self, name):
-        return self.field_get_or_create('res.users', name, 'name', False)
+        return self.field_get_or_create("res.users", name, "name", False)
 
     def partner_group_id_get_or_create(self, name):
-        return self.field_get_or_create('res.partner', name, 'name', False)
+        return self.field_get_or_create("res.partner", name, "name", False)
 
     def check_vat(self, data, row):
         warns = []
-        country = self.env['res.country'].browse(data['country_id'])
+        country = self.env["res.country"].browse(data["country_id"])
         if not country:
-            return row['vat'], warns
+            return row["vat"], warns
         country_code = country.code.lower()
-        vat_check = self.env['res.partner'].simple_vat_check(
-            country_code, row['vat'])
+        vat_check = self.env["res.partner"].simple_vat_check(
+            country_code, row["vat"]
+        )
         if not vat_check:
-            warns.append(_(
-                'VAT [%s] not valid for partner %s') % (
-                row['vat'], row['name']))
+            warns.append(
+                _("VAT [%s] not valid for partner %s")
+                % (row["vat"], row["name"])
+            )
             return False, warns
-        return row['vat'], warns
+        return row["vat"], warns
 
     def agents_line_get(self, df, row):
         errors = []
-        cols = [c for c in df.columns if c.startswith('agents:')]
+        cols = [c for c in df.columns if c.startswith("agents:")]
         if not cols:
             return None, errors
         if len(cols) > 1:
-            errors.append(_(
-                'More than one column found with name \'agents:\'; there '
-                'should be only one.'))
+            errors.append(
+                _(
+                    "More than one column found with name 'agents:'; there "
+                    "should be only one."
+                )
+            )
             return None, errors
         if not row[cols[0]]:
             return None, errors
         res = []
-        name_agents = [v.strip() for v in row[cols[0]].split(';')]
+        name_agents = [v.strip() for v in row[cols[0]].split(";")]
         for name_agent in name_agents:
-            agents = self.env['res.partner'].search([
-                ('name', '=', name_agent),
-                ('agent', '=', True),
-                ('agent_type', '=', 'agent'),
-            ])
+            agents = self.env["res.partner"].search(
+                [
+                    ("name", "=", name_agent),
+                    ("agent", "=", True),
+                    ("agent_type", "=", "agent"),
+                ]
+            )
             if len(agents) == 1:
                 res.append(agents[0].id)
             if not agents:
-                errors.append(_('Agent with name %s not found') % name_agent)
+                errors.append(_("Agent with name %s not found") % name_agent)
             if len(agents) > 1:
-                errors.append(_(
-                    'Agents found with same name %s') % name_agent)
+                errors.append(_("Agents found with same name %s") % name_agent)
         return res, errors
 
     def category_line_get(self, df, row):
         errors = []
-        cols = [c for c in df.columns if c.startswith('category_id:')]
+        cols = [c for c in df.columns if c.startswith("category_id:")]
         if not cols:
             return None, None
         if len(cols) > 1:
-            errors.append(_(
-                'More than one column found with name \'category_id:\'; there '
-                'should be only one.'))
+            errors.append(
+                _(
+                    "More than one column found with name 'category_id:'; there "
+                    "should be only one."
+                )
+            )
             return None, errors
         if not row[cols[0]]:
             return None, errors
         res = []
-        name_categs = [v.strip() for v in row[cols[0]].split(';')]
+        name_categs = [v.strip() for v in row[cols[0]].split(";")]
         for name_categ in name_categs:
-            categs = self.env['res.partner.category'].search([
-                ('name', '=', name_categ),
-            ])
+            categs = self.env["res.partner.category"].search(
+                [
+                    ("name", "=", name_categ),
+                ]
+            )
             if categs:
                 res.append(categs[0].id)
             else:
-                errors.append(_(
-                    'Partner category (tag) %s not found.') % name_categ)
+                errors.append(
+                    _("Partner category (tag) %s not found.") % name_categ
+                )
         return res, errors
 
     def check_required_fields(self, required_fields, data):
         errors = []
-        msg = _('The \'%s\' field is required.')
+        msg = _("The '%s' field is required.")
         for field in required_fields:
             required_condition = (
-                field not in data or data[field] is None or data[field] == 0.0
-                or data[field] == '')
+                field not in data
+                or data[field] is None
+                or data[field] == 0.0
+                or data[field] == ""
+            )
             if required_condition:
                 errors.append(msg % field)
         return errors
@@ -189,29 +220,30 @@ class ImportTemplatePartner(models.TransientModel):
         errors = []
         for field in fields:
             error_msg = _(
-                'Option \'%s\' for \'%s\' does not exist. You must '
-                'choose a valid value.' % (data[field], field))
-            if field == 'name':
-                if data[field] == '':
-                    required_fields.append('name')
-            elif field == 'company_type':
+                "Option '%s' for '%s' does not exist. You must "
+                "choose a valid value." % (data[field], field)
+            )
+            if field == "name":
+                if data[field] == "":
+                    required_fields.append("name")
+            elif field == "company_type":
                 if data[field] is False:
-                    required_fields.append('company_type')
+                    required_fields.append("company_type")
                     errors.append(error_msg)
                 else:
                     continue
-            elif field == 'agent':
+            elif field == "agent":
                 if data[field] is True:
-                    required_fields.append('commission')
-                    required_fields.append('agent_type')
-                    required_fields.append('settlement')
+                    required_fields.append("commission")
+                    required_fields.append("agent_type")
+                    required_fields.append("settlement")
                 else:
                     continue
         errors += self.check_required_fields(required_fields, data)
         return errors
 
     def get_default_values(self, data, fields):
-        partner_obj = self.env['res.partner']
+        partner_obj = self.env["res.partner"]
         for field in fields:
             if data[field] is None:
                 data[field] = partner_obj._fields[field].default(self)
@@ -228,58 +260,69 @@ class ImportTemplatePartner(models.TransientModel):
                 if warn != [] and warn[1] != [] and warn[1] != [[]]:
                     wizard.warn(warn[0], warn[1][0])
 
-        wizard = self._context.get('wizard')
+        wizard = self._context.get("wizard")
         wizard.line_ids.unlink()
         df = wizard.dataframe_get()
-        wizard.dataframe_required_columns(df, ['company_type', 'name'])
+        wizard.dataframe_required_columns(df, ["company_type", "name"])
         wizard.total_rows = len(df)
-        partner_obj = self.env['res.partner']
+        partner_obj = self.env["res.partner"]
         all_errors = []
         all_warns = []
         orm_errors = False
         for index, row in df.iterrows():
-            wizard.savepoint('import_template_partner')
+            wizard.savepoint("import_template_partner")
             row_index = index + 2
-            wizard.step(index + 1, 'Import "%s".' % row['name'])
-            data, errors = wizard.get_data_row(self, 'res.partner', df, row)
+            wizard.step(index + 1, 'Import "%s".' % row["name"])
+            data, errors = wizard.get_data_row(self, "res.partner", df, row)
             for error in errors:
                 all_errors.append((row_index, [error]))
-            data = self.get_default_values(data, ['agent_type', 'settlement'])
-            data, errors = wizard.parser('res.partner', data)
+            data = self.get_default_values(data, ["agent_type", "settlement"])
+            data, errors = wizard.parser("res.partner", data)
             for error in errors:
                 all_errors.append((row_index, [error]))
             agents_lines, errors = self.agents_line_get(df, row)
             for error in errors:
                 all_errors.append((row_index, [error]))
-            data['agents'] = (
+            data["agents"] = (
                 agents_lines
-                and [(6, 0, [agent for agent in agents_lines])] or None)
-            data['vat'], warns = self.check_vat(data, row)
+                and [(6, 0, [agent for agent in agents_lines])]
+                or None
+            )
+            data["vat"], warns = self.check_vat(data, row)
             for warn in warns:
                 all_warns.append((row_index, [warn]))
             errors = self.check_relational_fields(
-                ['name', 'company_type'], data)
+                ["name", "company_type"], data
+            )
             for error in errors:
                 all_errors.append((row_index, [error]))
             category_lines, errors = self.category_line_get(df, row)
             for error in errors:
                 all_errors.append((row_index, [error]))
             if simulation:
-                wizard.rollback('import_template_partner')
+                wizard.rollback("import_template_partner")
                 continue
-            data['category_id'] = (
+            data["category_id"] = (
                 category_lines
-                and [(6, 0, [categ for categ in category_lines])] or None)
-            row_error = any([
-                e for e in all_errors if e[0] == row_index and e[1] != []
-                and e[1] != [[]]])
+                and [(6, 0, [categ for categ in category_lines])]
+                or None
+            )
+            row_error = any(
+                [
+                    e
+                    for e in all_errors
+                    if e[0] == row_index and e[1] != [] and e[1] != [[]]
+                ]
+            )
             if row_error:
-                wizard.rollback('import_template_partner')
+                wizard.rollback("import_template_partner")
                 continue
-            partners = partner_obj.search([
-                ('name', '=', data['name']),
-                ('parent_id', '=', data['parent_id']),
-            ])
+            partners = partner_obj.search(
+                [
+                    ("name", "=", data["name"]),
+                    ("parent_id", "=", data["parent_id"]),
+                ]
+            )
             try:
                 if partners:
                     partners.write(data)
@@ -287,11 +330,11 @@ class ImportTemplatePartner(models.TransientModel):
                 else:
                     partners = partners.create(data)
                     partners._onchange_zip_id()
-                wizard.release('import_template_partner')
+                wizard.release("import_template_partner")
             except Exception as e:
                 orm_errors = True
                 all_errors.append((row_index, [e]))
-                wizard.rollback('import_template_partner')
+                wizard.rollback("import_template_partner")
         _add_errors(all_errors)
         _add_warns(all_warns)
         return not orm_errors

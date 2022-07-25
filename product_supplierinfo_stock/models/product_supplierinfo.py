@@ -5,16 +5,16 @@ from odoo import api, fields, models
 
 
 class SupplierInfo(models.Model):
-    _inherit = 'product.supplierinfo'
+    _inherit = "product.supplierinfo"
 
     stock = fields.Float(
-        string='Stock',
+        string="Stock",
     )
     date_stock = fields.Date(
-        string='Stock Date',
+        string="Stock Date",
         readonly=True,
     )
 
-    @api.onchange('stock')
+    @api.onchange("stock")
     def onchange_stock(self):
         self.date_stock = fields.Date.today()

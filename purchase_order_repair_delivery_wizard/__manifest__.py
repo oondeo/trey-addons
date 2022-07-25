@@ -18,15 +18,15 @@
 #
 ###############################################################################
 {
-    'name': 'Purchase order repair delivery wizard',
-    'summary': 'Open delivery wizard in picking out repair',
-    'category': 'Purchases',
-    'version': '12.0.1.0.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'purchase_order_repair',
-        'stock_picking_delivery_wizard',
+    "name": "Purchase order repair delivery wizard",
+    "summary": "Open delivery wizard in picking out repair",
+    "category": "Purchases",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "purchase_order_repair",
+        "stock_picking_delivery_wizard",
     ],
 }

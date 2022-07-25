@@ -18,22 +18,22 @@
 #
 ###############################################################################
 {
-    'name': 'Stock picking relationed cancel',
-    'summary': '''
+    "name": "Stock picking relationed cancel",
+    "summary": """
 Allows you to mark stock routes so that the system allows you to cancel a
-stock picking related to another without canceling the first.''',
-    'category': 'Warehouse',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale_purchase',
-        'sale_stock',
-        'sales_team',
-        'stock',
+stock picking related to another without canceling the first.""",
+    "category": "Warehouse",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "sale_purchase",
+        "sale_stock",
+        "sales_team",
+        "stock",
     ],
-    'data': [
-        'views/stock_location_route_views.xml',
+    "data": [
+        "views/stock_location_route_views.xml",
     ],
 }

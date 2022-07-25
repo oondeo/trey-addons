@@ -18,22 +18,22 @@
 #
 ###############################################################################
 {
-    'name': 'Hr timesheet stats',
-    'summary': 'Add a cron that sends monthly job statistics',
-    'category': 'Timesheets',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'hr',
-        'hr_timesheet',
-        'project',
-        'project_task_real_time',
+    "name": "Hr timesheet stats",
+    "summary": "Add a cron that sends monthly job statistics",
+    "category": "Timesheets",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "hr",
+        "hr_timesheet",
+        "project",
+        "project_task_real_time",
     ],
-    'data': [
-        'data/cron_data.xml',
-        'data/email_reminder_template.xml',
+    "data": [
+        "data/cron_data.xml",
+        "data/email_reminder_template.xml",
     ],
 }

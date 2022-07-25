@@ -5,11 +5,11 @@ from odoo import fields, models
 
 
 class SaleCustomizationColor(models.Model):
-    _name = 'sale.customization.color'
-    _description = 'Sale customization color'
-    _order = 'name'
+    _name = "sale.customization.color"
+    _description = "Sale customization color"
+    _order = "name"
 
     name = fields.Char(
-        string='Color',
+        string="Color",
         required=True,
     )

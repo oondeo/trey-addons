@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Portal Account',
-    'summary': 'Customize account portal behaviour',
-    'category': 'Website',
-    'version': '12.0.1.4.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'account',
-        'portal',
-        'portal_base',
-        'website',
+    "name": "Portal Account",
+    "summary": "Customize account portal behaviour",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "account",
+        "portal",
+        "portal_base",
+        "website",
     ],
-    'data': [
-        'views/portal_account.xml',
-        'views/res_config_settings.xml',
+    "data": [
+        "views/portal_account.xml",
+        "views/res_config_settings.xml",
     ],
 }

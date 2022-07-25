@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Search All',
-    'summary': 'Search in all categories instead the current category',
-    'category': 'Website',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'website_sale',
-        'website_sale_breadcrumb',
+    "name": "Website Sale Search All",
+    "summary": "Search in all categories instead the current category",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "website_sale",
+        "website_sale_breadcrumb",
     ],
-    'data': [
-        'views/website_sale_template.xml',
-        'views/website_sale_breadcrumb_template.xml',
+    "data": [
+        "views/website_sale_template.xml",
+        "views/website_sale_breadcrumb_template.xml",
     ],
 }

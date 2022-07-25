@@ -18,22 +18,22 @@
 #
 ###############################################################################
 {
-    'name': 'Print Formats Picking Valued',
-    'summary': 'Stock picking valued print formats',
-    'category': 'Warehouse Management',
-    'version': '12.0.1.16.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'print_formats_base',
-        'print_formats_picking',
-        'sale_stock',
-        'stock',
-        'stock_account',
+    "name": "Print Formats Picking Valued",
+    "summary": "Stock picking valued print formats",
+    "category": "Warehouse Management",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "print_formats_base",
+        "print_formats_picking",
+        "sale_stock",
+        "stock",
+        "stock_account",
     ],
-    'data': [
-        'report/report_stock_deliveryslip_valued.xml',
-        'views/stock_picking_views.xml',
+    "data": [
+        "report/report_stock_deliveryslip_valued.xml",
+        "views/stock_picking_views.xml",
     ],
 }

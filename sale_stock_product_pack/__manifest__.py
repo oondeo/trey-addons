@@ -18,17 +18,17 @@
 #
 ##############################################################################
 {
-    'name': 'Sale stock product pack',
-    'summary': 'Does not take into account pack type products on the pickings',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.0.1',
-    'depends': [
-        'product_pack',
-        'sale',
-        'sale_product_pack',
-        'sale_stock',
+    "name": "Sale stock product pack",
+    "summary": "Does not take into account pack type products on the pickings",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "product_pack",
+        "sale",
+        "sale_product_pack",
+        "sale_stock",
     ],
 }

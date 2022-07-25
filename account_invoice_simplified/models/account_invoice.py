@@ -5,7 +5,7 @@ from odoo import models
 
 
 class AccountInvoice(models.Model):
-    _inherit = 'account.invoice'
+    _inherit = "account.invoice"
 
     def _onchange_journal_id(self):
         res = super()._onchange_journal_id()

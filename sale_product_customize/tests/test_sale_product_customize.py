@@ -5,7 +5,6 @@ from odoo.tests import common
 
 
 class TestSaleProductCustomize(common.TransactionCase):
-
     def setUp(self):
         super(TestSaleProductCustomize, self).setUp()
         # self.products = []

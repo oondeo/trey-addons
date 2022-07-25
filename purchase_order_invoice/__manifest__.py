@@ -18,20 +18,20 @@
 #
 ##############################################################################
 {
-    'name': 'Purchase order invoice',
-    'summary': 'Adds functionalities to the purchase order invoicing process',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Purchases',
-    'version': '12.0.1.2.3',
-    'depends': [
-        'account',
-        'purchase',
-        'purchase_stock',
+    "name": "Purchase order invoice",
+    "summary": "Adds functionalities to the purchase order invoicing process",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Purchases",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "account",
+        "purchase",
+        "purchase_stock",
     ],
-    'data': [
-        'wizards/purchase_order_invoice.xml',
-        'views/account_invoice_views.xml',
+    "data": [
+        "wizards/purchase_order_invoice.xml",
+        "views/account_invoice_views.xml",
     ],
 }

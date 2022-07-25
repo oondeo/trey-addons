@@ -18,21 +18,21 @@
 #
 ##############################################################################
 {
-    'name': 'Pos order to sale order',
-    'summary': 'Wizard to convert a pos order in a sale order.',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Point Of Sale',
-    'version': '12.0.1.1.0',
-    'depends': [
-        'point_of_sale',
-        'sale',
-        'sale_stock',
-        'stock_picking_invoice_link',
+    "name": "Pos order to sale order",
+    "summary": "Wizard to convert a pos order in a sale order.",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Point Of Sale",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "point_of_sale",
+        "sale",
+        "sale_stock",
+        "stock_picking_invoice_link",
     ],
-    'data': [
-        'views/pos_order_views.xml',
-        'wizards/pos_order_to_sale_order.xml',
+    "data": [
+        "views/pos_order_views.xml",
+        "wizards/pos_order_to_sale_order.xml",
     ],
 }

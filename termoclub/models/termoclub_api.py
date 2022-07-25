@@ -16,10 +16,10 @@ try:
     from zeep.transports import Transport
     from dict2xml import dict2xml
 except ImportError:
-    _log.debug('Can not `import zeep`.')
+    _log.debug("Can not `import zeep`.")
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-NS = {'soap': 'http://www.w3.org/2003/05/soap-envelope'}
+NS = {"soap": "http://www.w3.org/2003/05/soap-envelope"}
 
 
 class TermoClubApi(object):
@@ -37,10 +37,13 @@ class TermoClubApi(object):
             transport = Transport(session=session)
             pluging = HistoryPlugin()
             return Client(
-                self.wsdl, transport=transport, settings=settings,
-                plugins=[pluging])
+                self.wsdl,
+                transport=transport,
+                settings=settings,
+                plugins=[pluging],
+            )
         except RuntimeError as detail:
-            _log.critical('TermoClub Connector Critical Error', detail)
+            _log.critical("TermoClub Connector Critical Error", detail)
             raise
 
     def get_product(self, client, product=None):
@@ -51,20 +54,20 @@ class TermoClubApi(object):
                 pCODART=product,
             )
         except RuntimeError as detail:
-            _log.critical('TermoClub Connector Critical Error', detail)
+            _log.critical("TermoClub Connector Critical Error", detail)
             raise
         # return et.fromstring(get_product)
 
-        return et.fromstring('%s%s%s' % ('<root>', get_product, '</root>'))
+        return et.fromstring("%s%s%s" % ("<root>", get_product, "</root>"))
 
     def put_order(self, client, order=None):
         try:
             put_order = client.service.CapturaPedido(
                 pUsu=self.user,
                 pPas=self.password,
-                pPed=dict2xml(order, indent='  '),
+                pPed=dict2xml(order, indent="  "),
             )
         except RuntimeError as detail:
-            _log.critical('TermoClub Connector Critical Error', detail)
+            _log.critical("TermoClub Connector Critical Error", detail)
             raise
-        return et.fromstring('%s%s%s' % ('<root>', put_order, '</root>'))
+        return et.fromstring("%s%s%s" % ("<root>", put_order, "</root>"))

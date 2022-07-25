@@ -18,27 +18,27 @@
 #
 ###############################################################################
 {
-    'name': 'Sale return',
-    'summary': 'Create return stock from Sale Order',
-    'category': 'Sale',
-    'version': '12.0.1.12.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'account',
-        'base',
-        'sale',
-        'sale_management',
-        'sale_stock',
-        'web',
+    "name": "Sale return",
+    "summary": "Create return stock from Sale Order",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "account",
+        "base",
+        "sale",
+        "sale_management",
+        "sale_stock",
+        "web",
     ],
-    'data': [
-        'data/ir_sequence.xml',
-        'report/sale_return_report.xml',
-        'views/product_template.xml',
-        'views/res_config_settings.xml',
-        'views/res_partner_views.xml',
-        'views/sale_order_views.xml',
+    "data": [
+        "data/ir_sequence.xml",
+        "report/sale_return_report.xml",
+        "views/product_template.xml",
+        "views/res_config_settings.xml",
+        "views/res_partner_views.xml",
+        "views/sale_order_views.xml",
     ],
 }

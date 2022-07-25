@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Rating Popup',
-    'summary': 'Show rating popup info in top of product page',
-    'category': 'Website',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'portal',
-        'website_rating',
-        'website_sale',
+    "name": "Website Sale Rating Popup",
+    "summary": "Show rating popup info in top of product page",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "portal",
+        "website_rating",
+        "website_sale",
     ],
-    'data': [
-        'views/website_templates.xml',
+    "data": [
+        "views/website_templates.xml",
     ],
 }

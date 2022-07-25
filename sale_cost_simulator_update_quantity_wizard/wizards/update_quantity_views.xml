@@ -29,7 +29,6 @@
         <field name="name">Update Quantity</field>
         <field name="res_model">sale.cost.update_quantity</field>
         <field name="type">ir.actions.act_window</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
         <field name="view_id" ref="sale_cost_update_quantity_wizard"/>
         <field name="target">new</field>

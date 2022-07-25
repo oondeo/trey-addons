@@ -18,22 +18,23 @@
 #
 ##############################################################################
 {
-    'name': 'Sale business unit intercompany',
-    'summary': (
-        'Create a invoice per business unit in the company that '
-        'corresponds when sale order is invoiced.'),
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'account_intercompany',
-        'product_business_unit',
-        'sale',
-        'sale_management',
+    "name": "Sale business unit intercompany",
+    "summary": (
+        "Create a invoice per business unit in the company that "
+        "corresponds when sale order is invoiced."
+    ),
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "account_intercompany",
+        "product_business_unit",
+        "sale",
+        "sale_management",
     ],
-    'data': [
-        'security/ir_rule.xml',
-    ]
+    "data": [
+        "security/ir_rule.xml",
+    ],
 }

@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Event Multiple Addresses',
-    'summary': 'This module allows to select multiple locations in events.',
-    'category': 'Project',
-    'version': '12.0.1.2.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'event',
-        'project_event',
+    "name": "Event Multiple Addresses",
+    "summary": "This module allows to select multiple locations in events.",
+    "category": "Project",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "event",
+        "project_event",
     ],
-    'data': [
-        'views/event_event_views.xml',
-        'views/project_project_views.xml',
+    "data": [
+        "views/event_event_views.xml",
+        "views/project_project_views.xml",
     ],
 }

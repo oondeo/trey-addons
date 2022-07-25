@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Sale validity auto cancel',
-    'summary': 'Cron to cancel sales orders in state "sent"',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale',
+    "name": "Sale validity auto cancel",
+    "summary": 'Cron to cancel sales orders in state "sent"',
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "sale",
     ],
-    'data': [
-        'data/ir_cron_data.xml',
+    "data": [
+        "data/ir_cron_data.xml",
     ],
 }

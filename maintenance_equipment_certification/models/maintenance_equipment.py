@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class MaintenanceEquipment(models.Model):
-    _inherit = 'maintenance.equipment'
+    _inherit = "maintenance.equipment"
 
     certificate_ids = fields.One2many(
-        comodel_name='maintenance.equipment.certificate',
-        inverse_name='equipment_id',
+        comodel_name="maintenance.equipment.certificate",
+        inverse_name="equipment_id",
     )

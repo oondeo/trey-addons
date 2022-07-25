@@ -5,8 +5,8 @@ from odoo import fields, models
 
 
 class StockPickingType(models.Model):
-    _inherit = 'stock.picking.type'
+    _inherit = "stock.picking.type"
 
     carrier_required = fields.Boolean(
-        string='Not validate picking without carrier',
+        string="Not validate picking without carrier",
     )

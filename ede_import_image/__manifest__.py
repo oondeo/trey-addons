@@ -18,19 +18,19 @@
 #
 ##############################################################################
 {
-    'name': 'EDE import images',
-    'version': '12.0.1.5.0',
-    'summary': 'EDE import images Bmecat',
-    'license': 'AGPL-3',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'category': 'customize',
-    'depends': [
-        'ede',
-        'product_icon',
+    "name": "EDE import images",
+    "version": "13.0.1.0.0",
+    "summary": "EDE import images Bmecat",
+    "license": "AGPL-3",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "category": "customize",
+    "depends": [
+        "ede",
+        "product_icon",
     ],
-    'data': [
-        'data/ede_import_image_data.xml',
-        'views/res_partner_views.xml',
+    "data": [
+        "data/ede_import_image_data.xml",
+        "views/res_partner_views.xml",
     ],
 }

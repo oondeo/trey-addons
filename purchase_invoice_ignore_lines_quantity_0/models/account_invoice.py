@@ -5,12 +5,13 @@ from odoo import api, models
 
 
 class AccountInvoice(models.Model):
-    _inherit = 'account.invoice'
+    _inherit = "account.invoice"
 
-    @api.onchange('purchase_id')
+    @api.onchange("purchase_id")
     def purchase_order_change(self):
         res = super().purchase_order_change()
         if self.invoice_line_ids:
             self.invoice_line_ids = self.invoice_line_ids.filtered(
-                lambda ln: ln.quantity != 0)
+                lambda ln: ln.quantity != 0
+            )
         return res

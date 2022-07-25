@@ -18,27 +18,27 @@
 #
 ###############################################################################
 {
-    'name': 'Vertical Ecommerce B2B',
-    'category': 'Vertical',
-    'summary': 'Addons dependencies for ecommerce B2B',
-    'version': '12.0.1.3.0',
-    'website': 'https://www.trey.es',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': [
-        'portal_base',
-        'portal_hide_promotional_link',
-        'vertical_website',
-        'website_sale',
-        'website_sale_description_backend',
-        'website_sale_observations',
-        'website_sale_option_fixed_text',
-        'website_sale_products_per_page',
-        'website_sale_reset_styles',
+    "name": "Vertical Ecommerce B2B",
+    "category": "Vertical",
+    "summary": "Addons dependencies for ecommerce B2B",
+    "version": "13.0.1.0.0",
+    "website": "https://www.trey.es",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": [
+        "portal_base",
+        "portal_hide_promotional_link",
+        "vertical_website",
+        "website_sale",
+        "website_sale_description_backend",
+        "website_sale_observations",
+        "website_sale_option_fixed_text",
+        "website_sale_products_per_page",
+        "website_sale_reset_styles",
     ],
-    'data': [
-        'views/website_template.xml',
-        'views/website_sale_template.xml',
+    "data": [
+        "views/website_template.xml",
+        "views/website_sale_template.xml",
     ],
-    'application': True,
+    "application": True,
 }

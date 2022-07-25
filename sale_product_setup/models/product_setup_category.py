@@ -5,33 +5,33 @@ from odoo import api, fields, models
 
 
 class ProductSetupCategory(models.Model):
-    _name = 'product.setup.category'
-    _description = 'Product setup category'
+    _name = "product.setup.category"
+    _description = "Product setup category"
 
     name = fields.Char(
-        string='Name',
+        string="Name",
         translate=True,
         required=True,
     )
     description = fields.Html(
-        string='Description',
+        string="Description",
         translate=True,
     )
     product_tmpl_ids = fields.One2many(
-        comodel_name='product.template',
-        inverse_name='setup_categ_id',
-        string='Product templates',
+        comodel_name="product.template",
+        inverse_name="setup_categ_id",
+        string="Product templates",
     )
     product_template_count = fields.Integer(
-        string='Product template count',
-        compute='_compute_product_template_count',
+        string="Product template count",
+        compute="_compute_product_template_count",
     )
     product_tmpl_id = fields.Many2one(
-        comodel_name='product.template',
-        string='Product template',
+        comodel_name="product.template",
+        string="Product template",
     )
 
-    @api.depends('product_tmpl_ids')
+    @api.depends("product_tmpl_ids")
     def _compute_product_template_count(self):
         for category in self:
             category.product_template_count = len(category.product_tmpl_ids)

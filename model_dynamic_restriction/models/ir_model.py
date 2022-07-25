@@ -5,14 +5,14 @@ from odoo import fields, models
 
 
 class IrModel(models.Model):
-    _inherit = 'ir.model'
+    _inherit = "ir.model"
 
     is_restriction_create = fields.Boolean(
-        string='Subscribe create',
+        string="Subscribe create",
     )
     is_restriction_write = fields.Boolean(
-        string='Subscribe write',
+        string="Subscribe write",
     )
     is_restriction_unlink = fields.Boolean(
-        string='Subscribe unlink',
+        string="Subscribe unlink",
     )

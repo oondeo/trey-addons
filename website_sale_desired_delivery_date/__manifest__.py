@@ -18,22 +18,22 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Desired Delivery Date',
-    'summary': '''
+    "name": "Website Sale Desired Delivery Date",
+    "summary": """
         Add requested date field to website checkout to choose desired
-        delivery date.''',
-    'category': 'Website',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'website_sale',
-        'website_sale_checkout_extra_fields',
+        delivery date.""",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "website_sale",
+        "website_sale_checkout_extra_fields",
     ],
-    'data': [
-        'views/sale_order_views.xml',
-        'views/website_sale.xml',
+    "data": [
+        "views/sale_order_views.xml",
+        "views/website_sale.xml",
     ],
-    'installable': True,
+    "installable": True,
 }

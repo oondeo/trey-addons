@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class Website(models.Model):
-    _inherit = 'website'
+    _inherit = "website"
 
     nexmart_apikey = fields.Char(
-        string='Nexmart API Key',
-        help='Type here your Nexmart partner API Key',
+        string="Nexmart API Key",
+        help="Type here your Nexmart partner API Key",
     )

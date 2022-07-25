@@ -18,20 +18,20 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Attributes by Category',
-    'summary': 'Show only attributes assigned to each category',
-    'category': 'Website',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'mail',
-        'website',
-        'website_sale',
+    "name": "Website Sale Attributes by Category",
+    "summary": "Show only attributes assigned to each category",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "mail",
+        "website",
+        "website_sale",
     ],
-    'data': [
-        'views/product_public_category.xml',
+    "data": [
+        "views/product_public_category.xml",
     ],
-    'installable': True,
+    "installable": True,
 }

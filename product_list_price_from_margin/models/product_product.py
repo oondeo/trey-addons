@@ -6,28 +6,36 @@ from odoo import api, fields, models
 
 
 class ProductProduct(models.Model):
-    _inherit = 'product.product'
+    _inherit = "product.product"
 
     margin = fields.Float(
-        string='Margin (%)',
-        digits=dp.get_precision('Discount'),
+        string="Margin (%)",
+        digits=dp.get_precision("Discount"),
     )
 
     @api.model
     def create(self, vals):
-        if self._context.get('force_margin'):
-            vals['margin'] = self._context['force_margin']
+        if self._context.get("force_margin"):
+            vals["margin"] = self._context["force_margin"]
         res = super().create(vals)
         for product in res:
-            if (product.product_tmpl_id.product_variant_count == 1
-                    or product.margin):
+            if (
+                product.product_tmpl_id.product_variant_count == 1
+                or product.margin
+            ):
                 continue
-            product.margin = (
-                product.product_tmpl_id.product_variant_ids[0].margin)
+            product.margin = product.product_tmpl_id.product_variant_ids[
+                0
+            ].margin
         return res
 
-    @api.depends('list_price', 'price_extra', 'standard_price', 'margin',
-                 'product_tmpl_id.list_price')
+    @api.depends(
+        "list_price",
+        "price_extra",
+        "standard_price",
+        "margin",
+        "product_tmpl_id.list_price",
+    )
     def _compute_product_lst_price(self):
         super()._compute_product_lst_price()
         for product in self:
@@ -46,24 +54,26 @@ class ProductProduct(models.Model):
         margin = self.standard_price / (lst_price or 0.01)
         return (margin - 1) * -100
 
-    @api.onchange('lst_price')
+    @api.onchange("lst_price")
     def onchange_lst_price(self):
         for product in self:
             product.margin = product._get_margin()
 
     def _set_product_lst_price(self):
         for product in self:
-            if self._context.get('uom'):
-                uom = self.env['uom.uom'].browse(self._context['uom'])
+            if self._context.get("uom"):
+                uom = self.env["uom.uom"].browse(self._context["uom"])
                 value = uom._compute_price(product.lst_price, product.uom_id)
             else:
                 value = product.lst_price
             product.product_tmpl_id.list_price = value
             product.margin = self._get_margin(lst_price=value)
 
-    def price_compute(self, price_type, uom=False, currency=False,
-                      company=False):
-        if price_type == 'variant_lst_price':
+    def price_compute(
+        self, price_type, uom=False, currency=False, company=False
+    ):
+        if price_type == "variant_lst_price":
             return {p.id: p.lst_price for p in self}
         return super().price_compute(
-            price_type, uom=uom, currency=currency, company=company)
+            price_type, uom=uom, currency=currency, company=company
+        )

@@ -12,14 +12,19 @@ _log = logging.getLogger(__name__)
 
 
 class OgoneController(http.Controller):
-    _accept_url = '/payment/direct_order/feedback'
+    _accept_url = "/payment/direct_order/feedback"
 
     @http.route(
-        ['/payment/direct_order/feedback'],
-        type='http', auth='none', csrf=False)
+        ["/payment/direct_order/feedback"],
+        type="http",
+        auth="none",
+        csrf=False,
+    )
     def direct_order_form_feedback(self, **post):
         _log.info(
-            'Beginning form_feedback with post data %s', pprint.pformat(post))
-        request.env['payment.transaction'].sudo().form_feedback(
-            post, 'direct_order')
-        return utils.redirect(post.pop('return_url', '/'))
+            "Beginning form_feedback with post data %s", pprint.pformat(post)
+        )
+        request.env["payment.transaction"].sudo().form_feedback(
+            post, "direct_order"
+        )
+        return utils.redirect(post.pop("return_url", "/"))

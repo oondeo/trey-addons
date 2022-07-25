@@ -5,39 +5,38 @@ from odoo import api, fields, models
 
 
 class SaleOrderPayment(models.TransientModel):
-    _name = 'sale.order.payment'
-    _description = 'Wizard to register payments in a sale order'
+    _name = "sale.order.payment"
+    _description = "Wizard to register payments in a sale order"
 
     def _get_default_sale_order(self):
-        return self.env['sale.order'].browse(self._context['active_id'])
+        return self.env["sale.order"].browse(self._context["active_id"])
 
     sale_id = fields.Many2one(
-        comodel_name='sale.order',
-        string='Sale Order',
+        comodel_name="sale.order",
+        string="Sale Order",
         default=_get_default_sale_order,
         required=True,
     )
     journal_id = fields.Many2one(
-        comodel_name='account.journal',
-        string='Payment journal',
+        comodel_name="account.journal",
+        string="Payment journal",
         required=True,
     )
     currency_id = fields.Many2one(
-        related='sale_id.currency_id',
+        related="sale_id.currency_id",
     )
     amount_total = fields.Monetary(
-        related='sale_id.amount_total',
-        string='Total',
+        related="sale_id.amount_total",
+        string="Total",
     )
     amount = fields.Monetary(
-        string='Amount paid',
+        string="Amount paid",
     )
     money_back = fields.Monetary(
-        string='Money back',
-        compute='_compute_money_back'
+        string="Money back", compute="_compute_money_back"
     )
 
-    @api.depends('amount')
+    @api.depends("amount")
     def _compute_money_back(self):
         for wizard in self:
             wizard.money_back = wizard.amount - wizard.sale_id.amount_total
@@ -45,4 +44,4 @@ class SaleOrderPayment(models.TransientModel):
     def action_confirm(self):
         self.ensure_one()
         self.sale_id.session_pay(self.amount, self.journal_id)
-        return {'type': 'ir.actions.act_window_close'}
+        return {"type": "ir.actions.act_window_close"}

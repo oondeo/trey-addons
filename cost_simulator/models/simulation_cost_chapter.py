@@ -5,59 +5,57 @@ from odoo import api, fields, models
 
 
 class SimulationCostChapter(models.Model):
-    _name = 'simulation.cost.chapter'
-    _description = 'Simulation Cost Chapter'
-    _order = 'sequence, code'
+    _name = "simulation.cost.chapter"
+    _description = "Simulation Cost Chapter"
+    _order = "sequence, code"
 
     cost_id = fields.Many2one(
-        comodel_name='simulation.cost',
-        string='Cost',
+        comodel_name="simulation.cost",
+        string="Cost",
         required=True,
         index=True,
-        ondelete='cascade',
+        ondelete="cascade",
     )
     chapter_tmpl_id = fields.Many2one(
-        comodel_name='simulation.cost.chapter.template',
-        string='Chapter template',
+        comodel_name="simulation.cost.chapter.template",
+        string="Chapter template",
         readonly=True,
         required=True,
     )
     sequence = fields.Integer(
-        string='Sequence',
+        string="Sequence",
     )
     code = fields.Char(
-        string='Reference',
+        string="Reference",
     )
     name = fields.Char(
-        string='Name',
+        string="Name",
         required=True,
     )
     description = fields.Text(
-        string='Description',
+        string="Description",
     )
     subtotal_cost = fields.Float(
-        string='Subtotal Purchase',
+        string="Subtotal Purchase",
         readonly=True,
     )
     subtotal_sale = fields.Float(
-        string='Subtotal Sale',
+        string="Subtotal Sale",
         readonly=True,
     )
     subtotal_benefits = fields.Float(
-        string='Subtotal Benefits',
+        string="Subtotal Benefits",
         readonly=True,
     )
 
-    @api.multi
     def name_get(self):
         res = []
         for r in self:
             tmp = r.chapter_tmpl_id
-            name = tmp and '%s/' % tmp.name or ''
-            res.append((r.id, '%s%s' % (name, r.name)))
+            name = tmp and "%s/" % tmp.name or ""
+            res.append((r.id, "%s%s" % (name, r.name)))
         return res
 
-    @api.multi
     def compute(self):
         for cost in self:
             for line in cost.cost_id.line_ids:

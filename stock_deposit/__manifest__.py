@@ -18,24 +18,24 @@
 #
 ##############################################################################
 {
-    'name': 'Stock deposit',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Stock',
-    'version': '12.0.2.1.0',
-    'depends': [
-        'product',
-        'purchase_stock',
-        'sale',
-        'stock',
-        'stock_picking_invoice_link',
+    "name": "Stock deposit",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "product",
+        "purchase_stock",
+        "sale",
+        "stock",
+        "stock_picking_invoice_link",
     ],
-    'data': [
-        'views/res_partner_views.xml',
-        'views/stock_warehouse_views.xml',
-        'views/sale_order_views.xml',
-        'wizards/create_deposit.xml',
-        'wizards/stock_deposit.xml',
+    "data": [
+        "views/res_partner_views.xml",
+        "views/stock_warehouse_views.xml",
+        "views/sale_order_views.xml",
+        "wizards/create_deposit.xml",
+        "wizards/stock_deposit.xml",
     ],
 }

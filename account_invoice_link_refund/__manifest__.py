@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Account invoice link refund',
-    'summary': 'Access invoices related to that rectification invoice',
-    'category': 'Account',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'account_invoice_refund_link',
+    "name": "Account invoice link refund",
+    "summary": "Access invoices related to that rectification invoice",
+    "category": "Account",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "account_invoice_refund_link",
     ],
-    'data': [
-        'views/account_invoice_view.xml',
+    "data": [
+        "views/account_invoice_view.xml",
     ],
 }

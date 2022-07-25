@@ -18,20 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Sale order partner shipping strict',
-    'summary': (
-        'In sale only show delivery address contacts in shipping '
-        'address'
+    "name": "Sale order partner shipping strict",
+    "summary": (
+        "In sale only show delivery address contacts in shipping " "address"
     ),
-    'category': 'sale',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale',
+    "category": "sale",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "sale",
     ],
-    'data': [
-        'views/sale_order.xml'
-    ],
+    "data": ["views/sale_order.xml"],
 }

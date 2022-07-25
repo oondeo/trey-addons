@@ -18,18 +18,18 @@
 #
 ##############################################################################
 {
-    'name': 'Stock dropshipping multicompany fix',
-    'summary': '''
-Fix stock dropshipping to allow run in multicompany enviroment.''',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Warehouse',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'stock_dropshipping',
+    "name": "Stock dropshipping multicompany fix",
+    "summary": """
+Fix stock dropshipping to allow run in multicompany enviroment.""",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Warehouse",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "stock_dropshipping",
     ],
-    'data': [
-        'data/data.xml',
+    "data": [
+        "data/data.xml",
     ],
 }

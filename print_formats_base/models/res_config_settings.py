@@ -5,11 +5,11 @@ from odoo import fields, models
 
 
 class ResConfigSettings(models.TransientModel):
-    _inherit = 'res.config.settings'
+    _inherit = "res.config.settings"
 
     show_qty_total = fields.Boolean(
-        related='company_id.show_qty_total',
-        string='Show quantity total',
+        related="company_id.show_qty_total",
+        string="Show quantity total",
         readonly=False,
-        config_parameter='show_qty_total',
+        config_parameter="show_qty_total",
     )

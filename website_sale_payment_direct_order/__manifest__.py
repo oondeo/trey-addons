@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Website sale payment direct order',
-    'summary': 'Check partner financial risk to show payment direct order in '
-               'online shop',
-    'category': 'Website',
-    'version': '12.0.1.0.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'payment_direct_order',
-        'sale_financial_risk',
-        'website_sale',
+    "name": "Website sale payment direct order",
+    "summary": "Check partner financial risk to show payment direct order in "
+    "online shop",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "payment_direct_order",
+        "sale_financial_risk",
+        "website_sale",
     ],
 }

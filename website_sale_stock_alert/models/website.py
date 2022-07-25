@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class Website(models.Model):
-    _inherit = 'website'
+    _inherit = "website"
 
     limit_stock_alert = fields.Integer(
-        string='Maximum number of alerts to show',
+        string="Maximum number of alerts to show",
         default=3,
     )

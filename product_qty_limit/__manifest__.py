@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Product Qty Limit',
-    'summary': 'Set qty limit for variants',
-    'category': 'Product',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product',
+    "name": "Product Qty Limit",
+    "summary": "Set qty limit for variants",
+    "category": "Product",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product",
     ],
-    'data': [
-        'views/product_product_views.xml',
+    "data": [
+        "views/product_product_views.xml",
     ],
 }

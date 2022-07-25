@@ -5,17 +5,17 @@ from odoo import fields, models
 
 
 class Website(models.Model):
-    _inherit = 'website'
+    _inherit = "website"
 
     notify_stock_confirmed = fields.Boolean(
-        string='Notify stock confirmed',
+        string="Notify stock confirmed",
     )
     notify_stock_assigned = fields.Boolean(
-        string='Notify stock assigned',
+        string="Notify stock assigned",
     )
     notify_stock_done = fields.Boolean(
-        string='Notify stock done',
+        string="Notify stock done",
     )
     notify_stock_cancel = fields.Boolean(
-        string='Notify stock cancel',
+        string="Notify stock cancel",
     )

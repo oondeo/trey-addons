@@ -6,16 +6,16 @@ from odoo.addons import decimal_precision as dp
 
 
 class SaleReport(models.Model):
-    _inherit = 'sale.report'
+    _inherit = "sale.report"
 
     margin_percent = fields.Float(
-        string='Margin (%)',
-        group_operator='avg',
-        digits=dp.get_precision('Discount'),
+        string="Margin (%)",
+        group_operator="avg",
+        digits=dp.get_precision("Discount"),
     )
 
-    def _query(self, with_clause='', fields=None, groupby='', from_clause=''):
+    def _query(self, with_clause="", fields=None, groupby="", from_clause=""):
         if fields is None:
             fields = {}
-        fields['margin_percent'] = ', SUM(l.margin_percent) AS margin_percent'
+        fields["margin_percent"] = ", SUM(l.margin_percent) AS margin_percent"
         return super()._query(with_clause, fields, groupby, from_clause)

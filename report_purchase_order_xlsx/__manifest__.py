@@ -18,20 +18,20 @@
 #
 ###############################################################################
 {
-    'name': 'Report purchase order xlsx',
-    'summary': 'Allow to export purchase order to xlsx',
-    'category': 'Tools',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'purchase',
-        'purchase_order_sale_order_link',
-        'report_xlsx',
-        'sale',
+    "name": "Report purchase order xlsx",
+    "summary": "Allow to export purchase order to xlsx",
+    "category": "Tools",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "purchase",
+        "purchase_order_sale_order_link",
+        "report_xlsx",
+        "sale",
     ],
-    'data': [
-        'report/report_purchase_order_xlsx.xml',
+    "data": [
+        "report/report_purchase_order_xlsx.xml",
     ],
 }

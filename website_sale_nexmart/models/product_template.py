@@ -5,8 +5,8 @@ from odoo import fields, models
 
 
 class ProductTemplate(models.Model):
-    _inherit = 'product.template'
+    _inherit = "product.template"
 
     show_nexmart_data = fields.Boolean(
-        string='Show Nexmart data',
+        string="Show Nexmart data",
     )

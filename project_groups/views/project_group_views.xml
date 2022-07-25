@@ -66,7 +66,6 @@
         <field name="name">Projects</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">project.project</field>
-        <field name="view_type">form</field>
         <field name="view_mode">tree,form</field>
         <field name="domain">[('project_group_id', '=', active_id)]</field>
         <field name="help" type="html">

@@ -7,7 +7,7 @@ class ResPartner(models.Model):
     _inherit = "res.partner"
 
     default_supplierinfo_multiple_discount = fields.Char(
-        string='Default Supplier Multiple Disc. (%)',
+        string="Default Supplier Multiple Disc. (%)",
         help="This value will be used as the default one, for each new "
-             "supplierinfo line depending on that supplier.",
+        "supplierinfo line depending on that supplier.",
     )

@@ -5,13 +5,12 @@ from odoo import api, models
 
 
 class PurchaseOrderCheck(models.TransientModel):
-    _name = 'purchase.order.check'
-    _description = 'Purchase Order Check'
+    _name = "purchase.order.check"
+    _description = "Purchase Order Check"
 
-    @api.multi
     def action_check_status(self):
-        active_ids = self.env.context['active_ids']
-        purchases = self.env['purchase.order'].browse(active_ids)
+        active_ids = self.env.context["active_ids"]
+        purchases = self.env["purchase.order"].browse(active_ids)
         if not purchases:
             return
-        self.env['purchase.order'].ede_check_status(purchases)
+        self.env["purchase.order"].ede_check_status(purchases)

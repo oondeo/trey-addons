@@ -6,14 +6,14 @@ from odoo.addons import decimal_precision as dp
 
 
 class ProductStandardPriceHistory(models.Model):
-    _inherit = 'product.standard_price.history'
+    _inherit = "product.standard_price.history"
 
     market_cost = fields.Float(
-        string='Market cost',
-        group_operator='avg',
-        digits=dp.get_precision('Product Price'),
+        string="Market cost",
+        group_operator="avg",
+        digits=dp.get_precision("Product Price"),
     )
     team_id = fields.Many2one(
-        comodel_name='crm.team',
-        string='Team',
+        comodel_name="crm.team",
+        string="Team",
     )

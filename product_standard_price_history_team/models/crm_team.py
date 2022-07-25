@@ -5,17 +5,17 @@ from odoo import fields, models
 
 
 class CrmTeam(models.Model):
-    _inherit = 'crm.team'
+    _inherit = "crm.team"
 
     is_market = fields.Boolean(
-        string='Is a market',
+        string="Is a market",
     )
     market_commission = fields.Float(
-        string='Market commission',
+        string="Market commission",
     )
     market_carrier_id = fields.Many2one(
-        comodel_name='delivery.carrier',
-        string='Carrier',
+        comodel_name="delivery.carrier",
+        string="Carrier",
     )
 
     def _price_carrier_compute(self, product, standard_price=None):
@@ -23,19 +23,25 @@ class CrmTeam(models.Model):
         standard_price = standard_price or product.standard_price
         if not self.market_carrier_id:
             return standard_price
-        sale = self.env['sale.order'].new({
-            'company_id': self.env.user.company_id,
-            'partner_id': self.env.user.company_id.partner_id.id,
-            'order_line': [
-                (0, 0, {
-                    'product_id': product.id,
-                    'product_uom_qty': 1,
-                    'price_unit': standard_price,
-                }),
-            ]
-        })
+        sale = self.env["sale.order"].new(
+            {
+                "company_id": self.env.user.company_id,
+                "partner_id": self.env.user.company_id.partner_id.id,
+                "order_line": [
+                    (
+                        0,
+                        0,
+                        {
+                            "product_id": product.id,
+                            "product_uom_qty": 1,
+                            "price_unit": standard_price,
+                        },
+                    ),
+                ],
+            }
+        )
         carrier_price = self.market_carrier_id.rate_shipment(sale)
-        return standard_price + carrier_price['price']
+        return standard_price + carrier_price["price"]
 
     def price_cost_compute(self, product, standard_price=None):
         self.ensure_one()

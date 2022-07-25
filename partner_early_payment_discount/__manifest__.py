@@ -19,19 +19,17 @@
 ###############################################################################
 
 {
-    'name': 'Partner early payment discount',
-    'category': 'Account',
-    'summary': 'Partner early payment discount',
-    'version': '12.0.1.0.2',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale'
-    ],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/res_partner_early_payment_discount_views.xml',
-        'views/res_partner_views.xml',
+    "name": "Partner early payment discount",
+    "category": "Account",
+    "summary": "Partner early payment discount",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": ["sale"],
+    "data": [
+        "security/ir.model.access.csv",
+        "views/res_partner_early_payment_discount_views.xml",
+        "views/res_partner_views.xml",
     ],
 }

@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Import template product harmonized system',
-    'summary': 'Add fields about harmonized system to the product importer.',
-    'category': 'Tools',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'import_template_product',
-        'product_harmonized_system_delivery',
+    "name": "Import template product harmonized system",
+    "summary": "Add fields about harmonized system to the product importer.",
+    "category": "Tools",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "import_template_product",
+        "product_harmonized_system_delivery",
     ],
-    'data': [
-        'data/data.xml',
+    "data": [
+        "data/data.xml",
     ],
 }

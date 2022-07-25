@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Sale Report Product State',
-    'summary': 'Allows to filter by product state in sales pivot view',
-    'version': '12.0.1.0.0',
-    'category': 'Sales',
-    'website': 'https://www.trey.es',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': [
-        'product_state',
-        'sale',
+    "name": "Sale Report Product State",
+    "summary": "Allows to filter by product state in sales pivot view",
+    "version": "13.0.1.0.0",
+    "category": "Sales",
+    "website": "https://www.trey.es",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": [
+        "product_state",
+        "sale",
     ],
-    'data': [
-        'report/sale_report_views.xml',
+    "data": [
+        "report/sale_report_views.xml",
     ],
 }

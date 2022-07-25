@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class ProjectTask(models.Model):
-    _inherit = 'project.task'
+    _inherit = "project.task"
 
     task_priority_position = fields.Integer(
-        string='Task priority position',
-        help='Task position in priority list',
+        string="Task priority position",
+        help="Task position in priority list",
     )

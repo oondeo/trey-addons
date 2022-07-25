@@ -18,17 +18,17 @@
 #
 ##############################################################################
 {
-    'name': 'Account journal invoice limit',
-    'summary': 'Preventing journal invoices that exceed certain limits',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Invoicing Management',
-    'version': '12.0.1.1.0',
-    'depends': [
-        'account',
+    "name": "Account journal invoice limit",
+    "summary": "Preventing journal invoices that exceed certain limits",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Invoicing Management",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "account",
     ],
-    'data': [
-        'views/account_journal_view.xml',
+    "data": [
+        "views/account_journal_view.xml",
     ],
 }

@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Print Formats Sale',
-    'summary': 'Sale print formats',
-    'category': 'Sales Management',
-    'version': '12.0.1.6.2',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'account_payment_sale',
-        'sale',
-        'print_formats_base',
+    "name": "Print Formats Sale",
+    "summary": "Sale print formats",
+    "category": "Sales Management",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "account_payment_sale",
+        "sale",
+        "print_formats_base",
     ],
-    'data': [
-        'views/report_sale_order.xml',
+    "data": [
+        "views/report_sale_order.xml",
     ],
 }

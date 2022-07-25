@@ -18,23 +18,23 @@
 #
 ##############################################################################
 {
-    'name': 'Stock MTS+MTD rule',
-    'summary': 'Add a MTS+MTD route',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Warehouse',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'sale',
-        'sale_stock',
-        'stock',
-        'stock_dropshipping',
-        'stock_dropshipping_multicompany_fix',
+    "name": "Stock MTS+MTD rule",
+    "summary": "Add a MTS+MTD route",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Warehouse",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "sale",
+        "sale_stock",
+        "stock",
+        "stock_dropshipping",
+        "stock_dropshipping_multicompany_fix",
     ],
-    'data': [
-        'data/data.xml',
-        'views/stock_location_route_views.xml',
-        'views/stock_warehouse_views.xml',
+    "data": [
+        "data/data.xml",
+        "views/stock_location_route_views.xml",
+        "views/stock_warehouse_views.xml",
     ],
 }

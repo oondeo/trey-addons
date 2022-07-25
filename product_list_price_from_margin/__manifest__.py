@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Product list price compute from margin',
-    'summary': 'Product list price based on margin',
-    'category': 'Product',
-    'version': '12.0.2.2.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product',
-        'purchase_discount',
+    "name": "Product list price compute from margin",
+    "summary": "Product list price based on margin",
+    "category": "Product",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product",
+        "purchase_discount",
     ],
-    'data': [
-        'views/product_product_views.xml',
-        'views/product_template_views.xml',
+    "data": [
+        "views/product_product_views.xml",
+        "views/product_template_views.xml",
     ],
 }

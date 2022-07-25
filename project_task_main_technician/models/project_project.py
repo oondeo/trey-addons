@@ -5,10 +5,10 @@ from odoo import fields, models
 
 
 class ProjectProject(models.Model):
-    _inherit = 'project.project'
+    _inherit = "project.project"
 
     main_technical_id = fields.Many2one(
-        comodel_name='res.users',
-        domain=[('share', '=', False)],
-        string='Main technician',
+        comodel_name="res.users",
+        domain=[("share", "=", False)],
+        string="Main technician",
     )

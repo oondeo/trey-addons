@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Portal Contract',
-    'summary': 'Manage contracts in partner portal',
-    'category': 'Partner',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'contract',
-        'portal',
+    "name": "Portal Contract",
+    "summary": "Manage contracts in partner portal",
+    "category": "Partner",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "contract",
+        "portal",
     ],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/portal.xml',
+    "data": [
+        "security/ir.model.access.csv",
+        "views/portal.xml",
         # 'views/website.xml',
         # 'views/website_sale.xml',
         # 'views/website_sale_product_grid.xml',

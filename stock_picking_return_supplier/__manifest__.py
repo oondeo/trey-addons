@@ -18,25 +18,25 @@
 #
 ###############################################################################
 {
-    'name': 'Stock picking return supplier',
-    'summary': 'Create picking return to supplier',
-    'category': 'Stock',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale',
-        'stock',
-        'stock_dropshipping',
-        'stock_picking_purchase_order_link',
-        'stock_picking_show_return',
-        'purchase',
-        'product_supplierinfo_for_customer',
-        'product_supplierinfo_for_customer_menu',
+    "name": "Stock picking return supplier",
+    "summary": "Create picking return to supplier",
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "sale",
+        "stock",
+        "stock_dropshipping",
+        "stock_picking_purchase_order_link",
+        "stock_picking_show_return",
+        "purchase",
+        "product_supplierinfo_for_customer",
+        "product_supplierinfo_for_customer_menu",
     ],
-    'data': [
-        'wizards/stock_picking_return_supplier.xml',
-        'views/stock_picking_views.xml',
+    "data": [
+        "wizards/stock_picking_return_supplier.xml",
+        "views/stock_picking_views.xml",
     ],
 }

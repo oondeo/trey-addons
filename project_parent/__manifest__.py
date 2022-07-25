@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Project parent',
-    'summary': 'Link a parent project',
-    'category': 'Project',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'project',
+    "name": "Project parent",
+    "summary": "Link a parent project",
+    "category": "Project",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "project",
     ],
-    'data': [
-        'views/project_project_views.xml',
+    "data": [
+        "views/project_project_views.xml",
     ],
 }

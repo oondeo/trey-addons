@@ -18,16 +18,16 @@
 #
 ##############################################################################
 {
-    'name': 'Product form purchase link fix',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Stock',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'product_form_purchase_link',
+    "name": "Product form purchase link fix",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "product_form_purchase_link",
     ],
-    'data': [
-        'views/purchase_order_line_views.xml',
+    "data": [
+        "views/purchase_order_line_views.xml",
     ],
 }

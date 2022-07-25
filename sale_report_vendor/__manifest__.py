@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Sale report vendor',
-    'summary': 'Allows to group by vendor in sales pivot view',
-    'version': '12.0.1.0.0',
-    'category': 'Sales',
-    'website': 'https://www.trey.es',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': [
-        'sale',
+    "name": "Sale report vendor",
+    "summary": "Allows to group by vendor in sales pivot view",
+    "version": "13.0.1.0.0",
+    "category": "Sales",
+    "website": "https://www.trey.es",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": [
+        "sale",
     ],
-    'data': [
-        'views/sale_order_views.xml',
-        'views/sale_report_views.xml',
+    "data": [
+        "views/sale_order_views.xml",
+        "views/sale_report_views.xml",
     ],
-    'post_init_hook': 'post_init_hook',
+    "post_init_hook": "post_init_hook",
 }

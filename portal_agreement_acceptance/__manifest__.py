@@ -18,22 +18,22 @@
 #
 ###############################################################################
 {
-    'name': 'Portal Agreeents Acceptance',
-    'summary': 'Manage agreements acceptance in portal',
-    'category': 'Document Signatures',
-    'version': '12.0.1.3.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'agreement_acceptance',
-        'base',
-        'portal',
-        'portal_base',
-        'website',
+    "name": "Portal Agreeents Acceptance",
+    "summary": "Manage agreements acceptance in portal",
+    "category": "Document Signatures",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "agreement_acceptance",
+        "base",
+        "portal",
+        "portal_base",
+        "website",
     ],
-    'data': [
-        'views/portal_agreements.xml',
-        'views/res_config_settings.xml',
+    "data": [
+        "views/portal_agreements.xml",
+        "views/res_config_settings.xml",
     ],
 }

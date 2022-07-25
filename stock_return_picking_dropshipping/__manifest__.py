@@ -18,17 +18,17 @@
 #
 ##############################################################################
 {
-    'name': 'Stock return picking dropshipping',
-    'summary': '''
+    "name": "Stock return picking dropshipping",
+    "summary": """
 When a dropshipping stock picking is returned, any internal location can be
-selected in the "Return location" field.''',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Warehouse Management',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'stock',
-        'stock_dropshipping',
+selected in the "Return location" field.""",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Warehouse Management",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "stock",
+        "stock_dropshipping",
     ],
 }

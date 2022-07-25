@@ -5,7 +5,7 @@ from odoo import api, fields, models
 
 
 class AccountInvoice(models.Model):
-    _inherit = 'account.invoice'
+    _inherit = "account.invoice"
 
     amount_tax_signed = fields.Monetary(
         store=True,
@@ -14,6 +14,6 @@ class AccountInvoice(models.Model):
         store=True,
     )
 
-    @api.depends('amount_tax', 'amount_untaxed')
+    @api.depends("amount_tax", "amount_untaxed")
     def _compute_sign_taxes(self):
         super()._compute_sign_taxes()

@@ -18,18 +18,18 @@
 #
 ##############################################################################
 {
-    'name': 'Product Pricelist By Season',
-    'version': '12.0.1.0.0',
-    'summary': 'Support seasons for pricelist filters',
-    'category': 'Sales',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product_pricelist_base',
-        'product_season',
+    "name": "Product Pricelist By Season",
+    "version": "13.0.1.0.0",
+    "summary": "Support seasons for pricelist filters",
+    "category": "Sales",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product_pricelist_base",
+        "product_season",
     ],
-    'data': [
-        'views/product_pricelist_views.xml',
+    "data": [
+        "views/product_pricelist_views.xml",
     ],
 }

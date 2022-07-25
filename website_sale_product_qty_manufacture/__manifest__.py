@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'Webiste Sale Product Qty Manufacture',
-    'summary': 'Check stock for products with bom',
-    'category': 'Website',
-    'version': '12.0.1.0.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product_qty_manufacture',
-        'website',
-        'website_sale',
-        'website_sale_stock',
+    "name": "Webiste Sale Product Qty Manufacture",
+    "summary": "Check stock for products with bom",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product_qty_manufacture",
+        "website",
+        "website_sale",
+        "website_sale_stock",
     ],
 }

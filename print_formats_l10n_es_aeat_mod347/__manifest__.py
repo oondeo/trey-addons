@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Print Formats AEAT Model 347',
-    'summary': 'Fix 347 model print format markup',
-    'category': 'Accounting & Finance',
-    'version': '12.0.1.2.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'l10n_es_aeat_mod347',
-        'print_formats_base',
+    "name": "Print Formats AEAT Model 347",
+    "summary": "Fix 347 model print format markup",
+    "category": "Accounting & Finance",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "l10n_es_aeat_mod347",
+        "print_formats_base",
     ],
-    'data': [
-        'views/report_l10n_es_aeat_mod347.xml',
+    "data": [
+        "views/report_l10n_es_aeat_mod347.xml",
     ],
 }

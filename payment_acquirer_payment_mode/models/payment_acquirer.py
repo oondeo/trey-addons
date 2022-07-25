@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class PaymentAcquirer(models.Model):
-    _inherit = 'payment.acquirer'
+    _inherit = "payment.acquirer"
 
     payment_mode_id = fields.Many2one(
-        comodel_name='account.payment.mode',
-        string='Payment Mode',
+        comodel_name="account.payment.mode",
+        string="Payment Mode",
     )

@@ -18,21 +18,21 @@
 #
 ##############################################################################
 {
-    'name': 'CRM Business Unit',
-    'summary': 'Add business unit to Opportunity',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'crm',
-        'product_business_unit',
+    "name": "CRM Business Unit",
+    "summary": "Add business unit to Opportunity",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "crm",
+        "product_business_unit",
     ],
-    'data': [
-        'views/crm_lead.xml',
-        'views/product_business_unit.xml',
+    "data": [
+        "views/crm_lead.xml",
+        "views/product_business_unit.xml",
     ],
-    'application': False,
-    'installable': True,
+    "application": False,
+    "installable": True,
 }

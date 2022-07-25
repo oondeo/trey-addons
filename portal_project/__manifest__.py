@@ -18,25 +18,25 @@
 #
 ###############################################################################
 {
-    'name': 'Portal Project',
-    'summary': 'Manage projects in portal',
-    'category': 'Project',
-    'version': '12.0.1.8.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'contract',
-        'hr_timesheet',
-        'hr_timesheet_balance',
-        'portal',
-        'project',
-        'website',
+    "name": "Portal Project",
+    "summary": "Manage projects in portal",
+    "category": "Project",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "contract",
+        "hr_timesheet",
+        "hr_timesheet_balance",
+        "portal",
+        "project",
+        "website",
     ],
-    'data': [
-        'views/project_portal_templates.xml',
-        'views/project_views.xml',
-        'views/website_templates.xml',
+    "data": [
+        "views/project_portal_templates.xml",
+        "views/project_views.xml",
+        "views/website_templates.xml",
     ],
 }

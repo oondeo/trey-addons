@@ -5,17 +5,17 @@ from odoo import fields, models
 
 
 class Website(models.Model):
-    _inherit = 'website'
+    _inherit = "website"
 
     search_history_term_length = fields.Integer(
-        string='Search term length',
+        string="Search term length",
         default=3,
     )
     search_history_store = fields.Selection(
         selection=[
-            ('all', 'All'),
-            ('empty', 'Empty'),
+            ("all", "All"),
+            ("empty", "Empty"),
         ],
-        string='Store searches',
-        default='all',
+        string="Store searches",
+        default="all",
     )

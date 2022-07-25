@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Product pricelist item by conditions',
-    'summary': '''
-Add option in pricelist items to calculate prices based in conditions.''',
-    'category': 'Product',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'product',
-        'sale',
-        'sales_team',
+    "name": "Product pricelist item by conditions",
+    "summary": """
+Add option in pricelist items to calculate prices based in conditions.""",
+    "category": "Product",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "product",
+        "sale",
+        "sales_team",
     ],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/product_pricelist_item_views.xml',
+    "data": [
+        "security/ir.model.access.csv",
+        "views/product_pricelist_item_views.xml",
     ],
 }

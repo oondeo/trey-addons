@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class Website(models.Model):
-    _inherit = 'website'
+    _inherit = "website"
 
     limit_account = fields.Integer(
-        string='Maximum number of invoices to show',
+        string="Maximum number of invoices to show",
         default=3,
     )

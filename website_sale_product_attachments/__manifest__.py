@@ -18,20 +18,20 @@
 #
 ##############################################################################
 {
-    'name': 'Website Sale Product Attachments',
-    'summary': 'It allows view attachments and categories in website store',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Website',
-    'version': '12.0.1.1.0',
-    'depends': [
-        'product_attachments_edition',
-        'public_category_attachments_edition',
-        'website_sale',
+    "name": "Website Sale Product Attachments",
+    "summary": "It allows view attachments and categories in website store",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "product_attachments_edition",
+        "public_category_attachments_edition",
+        "website_sale",
     ],
-    'data': [
-        'templates/website_sale.xml',
-        'templates/website.xml',
+    "data": [
+        "templates/website_sale.xml",
+        "templates/website.xml",
     ],
 }

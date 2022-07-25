@@ -5,19 +5,19 @@ from odoo import api, fields, models
 
 
 class ProductTemplate(models.Model):
-    _inherit = 'product.template'
+    _inherit = "product.template"
 
     website_ids = fields.Many2many(
-        string='Websites',
-        comodel_name='website',
-        relation='product_template2website_rel',
-        column1='product_id',
-        column2='website_id')
+        string="Websites",
+        comodel_name="website",
+        relation="product_template2website_rel",
+        column1="product_id",
+        column2="website_id",
+    )
 
-    @api.multi
     def can_access_from_current_website(self, website_id=False):
         if not website_id:
-            website_id = self.env['website'].get_current_website().id
+            website_id = self.env["website"].get_current_website().id
         for product in self:
             if not product.website_ids:
                 continue

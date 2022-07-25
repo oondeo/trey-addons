@@ -18,18 +18,16 @@
 #
 ###############################################################################
 {
-    'name': 'Partner order average time',
-    'summary': 'Show number of days between orders',
-    'category': 'Sales',
-    'version': '12.0.1.1.1',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'sale',
+    "name": "Partner order average time",
+    "summary": "Show number of days between orders",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "sale",
     ],
-    'data': [
-        'views/res_partner.xml'
-    ],
+    "data": ["views/res_partner.xml"],
 }

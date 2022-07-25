@@ -18,22 +18,22 @@
 #
 ##############################################################################
 {
-    'name': 'Base manage exception',
-    'summary': 'Base module for managing exceptions',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Extra Tools',
-    'version': '12.0.1.3.0',
-    'depends': [
-        'base',
-        'mail',
+    "name": "Base manage exception",
+    "summary": "Base module for managing exceptions",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Extra Tools",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "base",
+        "mail",
     ],
-    'data': [
-        'security/res_groups_security.xml',
-        'security/ir.model.access.csv',
-        'views/base_manage_exception_views.xml',
-        'views/base_manage_exception_line_views.xml',
-        'views/menu.xml',
+    "data": [
+        "security/res_groups_security.xml",
+        "security/ir.model.access.csv",
+        "views/base_manage_exception_views.xml",
+        "views/base_manage_exception_line_views.xml",
+        "views/menu.xml",
     ],
 }

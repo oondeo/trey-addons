@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Print Formats Sale Sorted',
-    'summary': 'Sorting sale reports lines by product attributes sequences',
-    'version': '12.0.1.0.0',
-    'category': 'Sale',
-    'website': 'https://www.trey.es',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': [
-        'print_formats_sale',
-        'sale',
+    "name": "Print Formats Sale Sorted",
+    "summary": "Sorting sale reports lines by product attributes sequences",
+    "version": "13.0.1.0.0",
+    "category": "Sale",
+    "website": "https://www.trey.es",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": [
+        "print_formats_sale",
+        "sale",
     ],
-    'data': [
-        'views/report_sale_order.xml',
+    "data": [
+        "views/report_sale_order.xml",
     ],
 }

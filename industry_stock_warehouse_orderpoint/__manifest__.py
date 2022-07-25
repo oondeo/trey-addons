@@ -18,22 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Industrial Stock OrderPoint',
-    'summary': 'Stock OrderPoint Customization for Industry',
-    'category': 'Vertical',
-    'version': '12.0.1.2.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'stock',
-        'stock_warehouse_orderpoint_stock_info',
-        'stock_warehouse_orderpoint_stock_info_unreserved',
-
+    "name": "Industrial Stock OrderPoint",
+    "summary": "Stock OrderPoint Customization for Industry",
+    "category": "Vertical",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "stock",
+        "stock_warehouse_orderpoint_stock_info",
+        "stock_warehouse_orderpoint_stock_info_unreserved",
     ],
-    'data': [
-        'data/ir_cron_data.xml',
-        'views/stock_warehouse_orderpoint_view.xml',
-        'wizards/stock_warehouse_orderpoint_operation.xml',
+    "data": [
+        "data/ir_cron_data.xml",
+        "views/stock_warehouse_orderpoint_view.xml",
+        "wizards/stock_warehouse_orderpoint_operation.xml",
     ],
 }

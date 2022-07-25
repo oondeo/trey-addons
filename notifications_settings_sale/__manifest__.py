@@ -18,20 +18,20 @@
 #
 ###############################################################################
 {
-    'name': 'Notifications settings sale',
-    'summary': 'Sale notifications by mail',
-    'category': 'Sale',
-    'version': '12.0.1.1.2',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'notifications_settings',
-        'website_sale',
+    "name": "Notifications settings sale",
+    "summary": "Sale notifications by mail",
+    "category": "Sale",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "notifications_settings",
+        "website_sale",
     ],
-    'data': [
-        'data/notifications_settings_sale_email.xml',
-        'views/res_config_settings_views.xml',
+    "data": [
+        "data/notifications_settings_sale_email.xml",
+        "views/res_config_settings_views.xml",
     ],
 }

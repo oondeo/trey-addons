@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class ResCompany(models.Model):
-    _inherit = 'res.company'
+    _inherit = "res.company"
 
     show_qty_total = fields.Boolean(
-        string='Show quantity total',
-        help='Corresponding report print formats module must be installed',
+        string="Show quantity total",
+        help="Corresponding report print formats module must be installed",
     )

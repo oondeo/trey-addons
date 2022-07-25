@@ -18,17 +18,17 @@
 #
 ###############################################################################
 {
-    'name': 'CRM Team Partner',
-    'summary': 'Adds a partner to sales team',
-    'version': '12.0.1.0.0',
-    'category': 'CRM',
-    'website': 'https://www.trey.es',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': [
-        'sales_team',
+    "name": "CRM Team Partner",
+    "summary": "Adds a partner to sales team",
+    "version": "13.0.1.0.0",
+    "category": "CRM",
+    "website": "https://www.trey.es",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": [
+        "sales_team",
     ],
-    'data': [
-        'views/crm_team_views.xml',
+    "data": [
+        "views/crm_team_views.xml",
     ],
 }

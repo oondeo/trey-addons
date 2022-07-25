@@ -15,17 +15,21 @@ except (ImportError, IOError) as err:
 
 
 class ImportFile(models.TransientModel):
-    _inherit = 'import.file'
+    _inherit = "import.file"
 
     def dataframe_get(self):
         self.ensure_one()
-        if self.template_id.model_id.model == 'import.template.supplierinfo':
+        if self.template_id.model_id.model == "import.template.supplierinfo":
             buf = io.BytesIO()
             buf.write(base64.b64decode(self.file))
-            ext = self.file_filename.split('.')[-1:][0]
-            if ext in ['xlsx', 'xls']:
+            ext = self.file_filename.split(".")[-1:][0]
+            if ext in ["xlsx", "xls"]:
                 df = pd.read_excel(
-                    buf, engine='xlrd', encoding='utf-8', na_values=['NULL'],
-                    converters={'name': str})
+                    buf,
+                    engine="xlrd",
+                    encoding="utf-8",
+                    na_values=["NULL"],
+                    converters={"name": str},
+                )
                 return df.where((pd.notnull(df)), None)
         return super().dataframe_get()

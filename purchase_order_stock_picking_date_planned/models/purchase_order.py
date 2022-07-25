@@ -5,20 +5,19 @@ from odoo import api, fields, models
 
 
 class PurchaseOrder(models.Model):
-    _inherit = 'purchase.order'
+    _inherit = "purchase.order"
 
     custom_date_planned = fields.Datetime(
-        string='Custom Date Planned',
+        string="Custom Date Planned",
         readonly=True,
         states={
-            'draft': [('readonly', False)],
-            'sent': [('readonly', False)],
-            'to approve': [('readonly', False)],
+            "draft": [("readonly", False)],
+            "sent": [("readonly", False)],
+            "to approve": [("readonly", False)],
         },
-        help='Force delivery expected date before quotation were confirmed.',
+        help="Force delivery expected date before quotation were confirmed.",
     )
 
-    @api.multi
     def button_confirm(self):
         res = super().button_confirm()
         for order in self:
@@ -27,7 +26,9 @@ class PurchaseOrder(models.Model):
             for picking in order.picking_ids:
                 picking.scheduled_date = order.custom_date_planned
                 if picking.move_lines:
-                    picking.move_lines.write({
-                        'scheduled_date': order.custom_date_planned,
-                    })
+                    picking.move_lines.write(
+                        {
+                            "scheduled_date": order.custom_date_planned,
+                        }
+                    )
         return res

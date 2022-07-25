@@ -5,14 +5,17 @@ from odoo import api, models
 
 
 class ContractContract(models.Model):
-    _inherit = 'contract.contract'
+    _inherit = "contract.contract"
 
     @api.model
     def _finalize_invoice_creation(self, invoices):
         def get_account(invoice, account):
-            acc = account.search([
-                ('code', '=', account.code),
-                ('company_id', '=', invoice.company_id.id)])
+            acc = account.search(
+                [
+                    ("code", "=", account.code),
+                    ("company_id", "=", invoice.company_id.id),
+                ]
+            )
             return acc.id if acc else False
 
         for invoice in invoices:

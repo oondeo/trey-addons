@@ -9,13 +9,19 @@ from odoo.http import request
 class WebsiteSale(WebsiteSale):
     @http.route()
     def shop(
-            self, page=0, category=None, brand=None, search='', ppg=False,
-            **post):
+        self, page=0, category=None, brand=None, search="", ppg=False, **post
+    ):
         res = super().shop(
-            page=page, category=category, brand=brand, search=search, ppg=ppg,
-            **post)
-        res.qcontext['brands'] = (
+            page=page,
+            category=category,
+            brand=brand,
+            search=search,
+            ppg=ppg,
+            **post
+        )
+        res.qcontext["brands"] = (
             search
-            and res.qcontext['products'].mapped('product_brand_id')
-            or request.env['product.brand'].search([]))
+            and res.qcontext["products"].mapped("product_brand_id")
+            or request.env["product.brand"].search([])
+        )
         return res

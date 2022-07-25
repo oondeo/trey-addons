@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Print Formats Sale Order Not Valued',
-    'summary': 'Sale order print format with not valued lines',
-    'version': '12.0.1.0.0',
-    'category': 'Sale',
-    'website': 'https://www.trey.es',
-    'author': 'Trey (www.trey.es)',
-    'license': 'AGPL-3',
-    'depends': [
-        'print_formats_base',
-        'sale',
+    "name": "Print Formats Sale Order Not Valued",
+    "summary": "Sale order print format with not valued lines",
+    "version": "13.0.1.0.0",
+    "category": "Sale",
+    "website": "https://www.trey.es",
+    "author": "Trey (www.trey.es)",
+    "license": "AGPL-3",
+    "depends": [
+        "print_formats_base",
+        "sale",
     ],
-    'data': [
-        'views/report_sale_order_notvalued.xml',
+    "data": [
+        "views/report_sale_order_notvalued.xml",
     ],
 }

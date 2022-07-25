@@ -18,20 +18,20 @@
 #
 ###############################################################################
 {
-    'name': 'MRP production finished product',
-    'summary': 'Wizard to modify, edit or delete quantities in finished '
-               'products',
-    'category': 'Manufacture',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'mrp',
-        'stock',
+    "name": "MRP production finished product",
+    "summary": "Wizard to modify, edit or delete quantities in finished "
+    "products",
+    "category": "Manufacture",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "mrp",
+        "stock",
     ],
-    'data': [
-        'views/mrp_production_views.xml',
-        'wizards/mrp_production_finished_detail.xml',
+    "data": [
+        "views/mrp_production_views.xml",
+        "wizards/mrp_production_finished_detail.xml",
     ],
 }

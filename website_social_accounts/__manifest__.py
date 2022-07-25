@@ -18,19 +18,19 @@
 #
 ###############################################################################
 {
-    'name': 'Website Social Accounts',
-    'summary': 'Complete the default social network accounts list',
-    'category': 'Website',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'base',
-        'website',
+    "name": "Website Social Accounts",
+    "summary": "Complete the default social network accounts list",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "base",
+        "website",
     ],
-    'data': [
-        'views/res_company_views.xml',
-        'views/website_template.xml',
+    "data": [
+        "views/res_company_views.xml",
+        "views/website_template.xml",
     ],
 }

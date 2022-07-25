@@ -18,16 +18,16 @@
 #
 ##############################################################################
 {
-    'name': 'Orderpoint create purchase send mail',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Stock',
-    'version': '12.0.1.0.0',
-    'depends': [
-        'purchase_stock',
+    "name": "Orderpoint create purchase send mail",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Stock",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "purchase_stock",
     ],
-    'data': [
-        'views/res_company_views.xml',
+    "data": [
+        "views/res_company_views.xml",
     ],
 }

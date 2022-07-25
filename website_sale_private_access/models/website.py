@@ -5,10 +5,10 @@ from odoo import fields, models
 
 
 class Website(models.Model):
-    _inherit = 'website'
+    _inherit = "website"
 
     is_private_shop = fields.Boolean(
-        string='Is private shop',
+        string="Is private shop",
     )
 
     def get_is_private_shop(self):

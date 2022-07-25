@@ -5,15 +5,15 @@ from odoo import fields, models
 
 
 class BaseException(models.Model):
-    _name = 'base.manage.exception'
-    _description = 'Base manage exception'
+    _name = "base.manage.exception"
+    _description = "Base manage exception"
 
     name = fields.Char(
-        string='Name',
+        string="Name",
         required=True,
     )
     line_ids = fields.One2many(
-        comodel_name='base.manage.exception.line',
-        inverse_name='exception_id',
-        string='Exception lines',
+        comodel_name="base.manage.exception.line",
+        inverse_name="exception_id",
+        string="Exception lines",
     )

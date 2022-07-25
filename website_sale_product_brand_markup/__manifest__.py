@@ -18,18 +18,18 @@
 #
 ###############################################################################
 {
-    'name': 'Website Sale Product Brand Markup',
-    'summary': 'Improve brands list markup',
-    'category': 'Website',
-    'version': '12.0.1.0.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'website_sale_product_brand',
+    "name": "Website Sale Product Brand Markup",
+    "summary": "Improve brands list markup",
+    "category": "Website",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "website_sale_product_brand",
     ],
-    'data': [
-        'views/website_sale_product_brand.xml',
+    "data": [
+        "views/website_sale_product_brand.xml",
     ],
-    'installable': True,
+    "installable": True,
 }

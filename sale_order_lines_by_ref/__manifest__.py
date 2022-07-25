@@ -18,18 +18,18 @@
 #
 ##############################################################################
 {
-    'name': 'Sale order lines by ref',
-    'summary': 'Wizard to create sale order lines with the refs.',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'category': 'Sales',
-    'version': '12.0.1.1.1',
-    'depends': [
-        'sale',
+    "name": "Sale order lines by ref",
+    "summary": "Wizard to create sale order lines with the refs.",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "category": "Sales",
+    "version": "13.0.1.0.0",
+    "depends": [
+        "sale",
     ],
-    'data': [
-        'wizards/sale_order_lines_by_ref.xml',
-        'views/sale_order.xml',
+    "data": [
+        "wizards/sale_order_lines_by_ref.xml",
+        "views/sale_order.xml",
     ],
 }

@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Import template product',
-    'summary': 'Import product data from files Excel or CSV from templates',
-    'category': 'Tools',
-    'version': '12.0.2.0.3',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'import_template',
-        'product',
-        'product_brand',
-        'sale',
-        'website_sale',
+    "name": "Import template product",
+    "summary": "Import product data from files Excel or CSV from templates",
+    "category": "Tools",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "import_template",
+        "product",
+        "product_brand",
+        "sale",
+        "website_sale",
     ],
-    'data': [
-        'data/data.xml',
+    "data": [
+        "data/data.xml",
     ],
 }

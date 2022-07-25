@@ -18,21 +18,21 @@
 #
 ###############################################################################
 {
-    'name': 'Print Formats Picking Dropshipping',
-    'summary': 'Stock reports without company info for Dropshipping',
-    'category': 'Warehouse Management',
-    'version': '12.0.1.1.0',
-    'author': 'Trey (www.trey.es)',
-    'website': 'https://www.trey.es',
-    'license': 'AGPL-3',
-    'depends': [
-        'stock',
-        'web',
+    "name": "Print Formats Picking Dropshipping",
+    "summary": "Stock reports without company info for Dropshipping",
+    "category": "Warehouse Management",
+    "version": "13.0.1.0.0",
+    "author": "Trey (www.trey.es)",
+    "website": "https://www.trey.es",
+    "license": "AGPL-3",
+    "depends": [
+        "stock",
+        "web",
     ],
-    'data': [
-        'data/report_paperformat.xml',
-        'views/report_layout_dropshipping.xml',
-        'views/report_stock_deliveryslip_dropshipping.xml',
-        'views/report_stock_picking_dropshipping.xml',
+    "data": [
+        "data/report_paperformat.xml",
+        "views/report_layout_dropshipping.xml",
+        "views/report_stock_deliveryslip_dropshipping.xml",
+        "views/report_stock_picking_dropshipping.xml",
     ],
 }

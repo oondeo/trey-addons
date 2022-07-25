@@ -5,9 +5,9 @@ from odoo import fields, models
 
 
 class Message(models.Model):
-    _inherit = 'mail.message'
+    _inherit = "mail.message"
 
     is_reminder = fields.Boolean(
         default=False,
-        string='Is notified by mail',
+        string="Is notified by mail",
     )
