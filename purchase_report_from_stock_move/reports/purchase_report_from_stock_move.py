@@ -187,7 +187,7 @@ class PurchaseReportFromStockMove(models.Model):
             ", ".join(self._group_by()),
         )
 
-    @api.model_cr
+    @api.model
     def init(self):
         tools.drop_view_if_exists(self.env.cr, self._table)
         self.env.cr.execute(
